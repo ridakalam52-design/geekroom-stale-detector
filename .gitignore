@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.cache/
+runs/
+.env
+.bifrost-data/
+bifrost/*.db
+bifrost/*.db-*
+bifrost/logs/

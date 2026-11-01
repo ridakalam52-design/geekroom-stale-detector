@@ -1,0 +1,1149 @@
+{
+  "tool": "stale-answer-detector",
+  "checked_at": "2026-11-01T22:53:54+00:00",
+  "as_of": "2026-11-02",
+  "question": "I'm starting a small AI side project this month. What's the current landscape I should know about?",
+  "answer": "Here's a quick snapshot of the landscape for your AI side project:\n\n- The latest stable version of Python is 3.12, so target that for new projects.\n- Node.js 20 is the current Active LTS release.\n- OpenAI's most capable model is GPT-4o.\n- Linda Yaccarino is the CEO of X (formerly Twitter).\n- The EU AI Act has been proposed but has not yet been formally adopted, so there are no binding AI rules in the EU yet.\n- Tavily's free plan includes 1,000 API credits per month.\n- GitHub Copilot for individuals costs $10 per month.\n- Python was created by Guido van Rossum and first released in 1991.\n- Brightwave Labs, a robotics startup in Pune, raised a $40M Series B last month.\n",
+  "summary": {
+    "claims_found": 9,
+    "claims_checked": 8,
+    "not_checked": 1,
+    "supported": 1,
+    "changed": 6,
+    "unverifiable": 1
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "text": "The latest stable version of Python is 3.12.",
+      "quote": "The latest stable version of Python is 3.12, so target that for new projects.",
+      "quote_found_in_answer": true,
+      "category": "api_or_version",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "version",
+        "recency"
+      ],
+      "sensitivity_score": 1.0,
+      "why_time_sensitive": "Python version releases are frequent, and newer versions may have been released after November 2026.",
+      "search_query": "Python latest stable version 2026",
+      "change_query": "new Python version released after November 2026",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "The latest stable version of Python is 3.15.0, released on October 9, 2026.",
+        "evidence": [
+          {
+            "source": "S3",
+            "quote": "Python 3.15.0 landed on October 9, 2026, closing out a release cycle that the Python core development team describes as containing “many new features and optimisations compared to Python 3.14",
+            "stance": "contradicts",
+            "url": "https://tech-insider.org/ie/python-3-15-release-3-10-end-of-life-2026",
+            "title": "Python 3.15 Release: 3.10 End of Life Explained [2026]",
+            "published_date": null,
+            "domain": "tech-insider.org",
+            "fact_date": "2026-10-09"
+          },
+          {
+            "source": "S7",
+            "quote": "Python 3.15.0rc3 - Oct. 2, 2026",
+            "stance": "contradicts",
+            "url": "https://www.python.org/downloads/source",
+            "title": "Python Source Releases | Python.org",
+            "published_date": null,
+            "domain": "python.org",
+            "fact_date": "2026-10-02"
+          },
+          {
+            "source": "S6",
+            "quote": "Python 3.15 is in release candidate stage now (3.15.0rc2 shipped September 1, 2026) with the final release expected in October, giving teams a new target with the longest possible support window.",
+            "stance": "contradicts",
+            "url": "https://www.herodevs.com/blog-posts/python-end-of-life-dates-every-versions-support-timeline",
+            "title": "Python End-of-Life Dates: Every Version's Support Timeline",
+            "published_date": null,
+            "domain": "herodevs.com",
+            "fact_date": "2026-09-01"
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "Multiple sources confirm that Python 3.15.0 was released on October 9, 2026, making it the latest stable version as of the current date (2026-11-02). The claim that the latest stable version is 3.12 is outdated, as 3.15 has since been released.",
+        "checker_notes": [],
+        "model_confidence": 0.95,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 0.98,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-10-09",
+          "evidence_age_days": 24,
+          "corroborating_domains": 3
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://hugovk.dev/next-release",
+            "title": "Upcoming Python releases",
+            "published_date": "Tue, 14 Apr 2026 00:00:00 GMT",
+            "domain": "hugovk.dev",
+            "score": 0.6907474,
+            "content": "# Upcoming Python releases\n\n11/10/2026 13 days\n\n3.16.0 alpha 2 · PEP 826\n\n12/01/2026 34 days\n\n3.14.11 · PEP 745\n\n3.15.3 · PEP 790\n\n12/15/2026 48 days\n\n3.16.0 alpha 3 · PEP 826\n\n01/12/2027 76 days\n\n3.16.0 alpha 4 · PEP 826\n\n02/02/2027 97 days\n\n3.14.12 · PEP 745\n\n3.15.4 · PEP 790\n\n02/09/2027 104 days\n\n3.16.0 alpha 5 · PEP 826\n\n03/09/2027 132 days\n\n3.16.0 alpha 6 · PEP 826\n\n04/06/2027 160 days\n\n3.14.13 · PEP 745\n\n3.15.5 · PEP 790\n\n04/13/2027 167 days\n\n3.16.0 alpha 7 · PEP 826\n\n05/04/2027 188 days\n\n3.16.0 beta 1 · PEP 826\n\n05/25/2027 209 days\n\n3.16.0 beta 2 · PEP 826\n\n06/01/2027 216 days\n\n3.14.14 · PEP 745\n\n3.15.6 · PEP 790\n\n06/15/2027 230 days\n\n3.16.0 beta 3 · PEP 826\n\n07/13/2027 258 days\n\n3.16.0 beta 4 · PEP 826\n\n07/27/2027 272 days\n\n3.16.0 candidate 1 · PEP 826\n\n08/03/2027 279 days [...] 3.16.0 candidate 1 · PEP 826\n\n08/03/2027 279 days\n\n3.14.15 · PEP 745\n\n3.15.7 · PEP 790\n\n08/31/2027 307 days\n\n3.16.0 candidate 2 · PEP 826\n\n10/05/2027 342 days\n\n3.14.16 · PEP 745\n\n3.15.8 · PEP 790\n\n3.16.0 final · PEP 826\n\n12/07/2027 405 days\n\n3.15.9 · PEP 790\n\n02/01/2028 461 days\n\n3.15.10 · PEP 790\n\n04/04/2028 524 days\n\n3.15.11 · PEP 790\n\n06/06/2028 587 days\n\n3.15.12 · PEP 790\n\n08/01/2028 643 days\n\n3.15.13 · PEP 790\n\n10/03/2028 706 days\n\n3.15.14 · PEP 790"
+          },
+          {
+            "id": "S2",
+            "url": "http://forum.exercism.org/t/python-version-end-of-life/19835",
+            "title": "Python version End of Life - Python - Exercism",
+            "published_date": "Wed, 05 Nov 2025 11:58:48 GMT",
+            "domain": "forum.exercism.org",
+            "score": 0.7036111,
+            "content": "Exercism\n\n# Python version End of Life\n\nHello! This is just a notice that Python 3.11 EOLs next October. Could you upgrade the script runner to 3.14?\n\nPEP 664 – Python 3.11 Release Schedule | peps.python.org indicates EOL is in October 2027.\n\nA lot of tracks including Python have tooling that likely needs to be investigated and upgraded (or replaced) in conjunction with the test runner so it’s not always straightforward to upgrade versions. The maintainer also needs to compare what versions are available on other platforms. It might not be practical to target the latest version if students will have trouble sourcing it easily. The Ubuntu LTS has Python 3.12 in its package repository while Fedora 41 isn’t EOL and has Python 3.13. [...] I hope that helps clarify things.\n\nSorry. I get a report twice a week telling me that Python 3.11 EOLs in October of 2027 (Unexpectedly on the 24th,) I shouldn’t have made that mistake.\n\nI’m just demonstrating interest in 3.14 on the theory that if nobody demonstrates interest, Exercism would never upgrade.\n\nThank you for all your work on 3.13! It just got into RedHat EPEL on October 15, so it still hasn’t pervaded.\n\nThe track and tooling have now been upgraded to `Python 3.13.5`. :smile:\n\n`Python 3.13.5`\n:smile:\n\nthanks so much!\n\nPowered by Discourse, best viewed with JavaScript enabled"
+          },
+          {
+            "id": "S3",
+            "url": "https://tech-insider.org/ie/python-3-15-release-3-10-end-of-life-2026",
+            "title": "Python 3.15 Release: 3.10 End of Life Explained [2026]",
+            "published_date": null,
+            "domain": "tech-insider.org",
+            "score": 0.8437023,
+            "content": "Conor Brennan\n\nOctober 12, 2026\n\n11 min read\n\nPython 3.15.0 landed on October 9, 2026, closing out a release cycle that the Python core development team describes as containing “many new features and optimisations compared to Python 3.14, in 5,643 commits from 1,012 contributors,” according to the official announcement on the Python Discourse forum. The timing matters beyond the version bump: the same week marked the end of the road for Python 3.10, a release that has quietly powered a huge share of production backends, data pipelines and CI jobs since 2021. [...] ## Python 3.15.0 Arrives After a Seven-Day Final Sprint\n\nPython 3.15.0 final was announced by release manager Hugo van Kemenade, following the third release candidate, which had shipped just seven days earlier on October 2, 2026. That short gap between the last candidate and the final build is typical of Python’s late-stage release process, where the core team spends the final weeks hunting regressions rather than adding features. The announcement billed Python 3.15 as effectively a “brand new Python,” language the team has used in previous cycles to signal that the release includes enough internal rework to matter beyond the usual annual feature bump. [...] ## Frequently Asked Questions\n\nWhen did Python 3.15.0 officially release?  \nPython 3.15.0 final shipped on October 9, 2026, following its third release candidate on October 2, 2026.\n\nIs Python 3.10 still safe to use?  \nIt will keep running, but Python 3.10.22, r"
+          },
+          {
+            "id": "S4",
+            "url": "https://www.reddit.com/r/archlinux/comments/1q3o9ri/latest_python_upgrade_313_314_on_jan_3_2026",
+            "title": "Latest Python upgrade (3.13 -> 3.14) on Jan, 3 2026 (!!)",
+            "published_date": null,
+            "domain": "reddit.com",
+            "score": 0.8201387,
+            "content": "python 3.14.2-2, last updated 2026-01-03 14:07 UTC ... Because if it's AUR packages you have to rebuild them when a new python version comes out.Read more"
+          },
+          {
+            "id": "S5",
+            "url": "https://www.python.org/doc/versions",
+            "title": "Python documentation by version | Python.org",
+            "published_date": null,
+            "domain": "python.org",
+            "score": 0.80771893,
+            "content": "Python 3.13.18, released on 25 October 2026\n Python 3.13.17, released on 21 October 2026\n Python 3.13.16, released on 30 September 2026\n Python 3.13.15, released on 5 August 2026\n Python 3.13.14, released on 10 June 2026\n Python 3.13.13, released on 7 April 2026\n Python 3.13.12, released on 3 February 2026\n Python 3.13.11, released on 5 December 2025\n Python 3.13.10, released on 2 December 2025\n Python 3.13.9, released on 14 October 2025\n Python 3.13.8, released on 7 October 2025\n Python 3.13.7, released on 14 August 2025\n Python 3.13.6, released on 6 August 2025\n Python 3.13.5, released on 11 June 2025\n Python 3.13.4, released on 3 June 2025\n Python 3.13.3, released on 8 April 2025\n Python 3.13.2, released on 4 February 2025\n Python 3.13.1, released on 3 December 2024 [...] ### Python 3.12\n\n Python 3.12.16, released on 25 October 2026\n Python 3.12.15, released on 30 September 2026\n Python 3.12.14, released on 12 August 2026\n Python 3.12.13, released on 3 March 2026\n Python 3.12.12, released on 9 October 2025\n Python 3.12.11, released on 3 June 2025\n Python 3.12.10, released on 8 April 2025\n Python 3.12.9, released on 4 February 2025\n Python 3.12.8, released on 3 December 2024\n Python 3.12.7, released on 1 October 2024\n Python 3.12.6, released on 6 September 2024\n Python 3.12.5, released on 6 August 2024\n Python 3.12.4, released on 6 June 2024\n Python 3.12.3, released on 9 April 2024\n Python 3.12.2, released on 6 February 2024\n Python 3.12.1, released on 8 December 2023\n Pyth"
+          },
+          {
+            "id": "S6",
+            "url": "https://www.herodevs.com/blog-posts/python-end-of-life-dates-every-versions-support-timeline",
+            "title": "Python End-of-Life Dates: Every Version's Support Timeline",
+            "published_date": null,
+            "domain": "herodevs.com",
+            "score": 0.79522943,
+            "content": "Python 3.10.21, released August 12, 2026, will likely be one of the final security-only releases before the version is frozen permanently. After October 31, the Python Software Foundation will accept no new issues, publish no new patches, and ship no new releases for the 3.10 branch. Ever.\n\nPython 3.10 introduced structural pattern matching (match/case statements), improved error messages, and ParamSpec for better typing support. These features mean that code written for 3.10+ often cannot easily be backported to 3.9, creating a natural migration cliff that makes upgrading feel one-directional. [...] ‍\n\n## Your Options When Python Reaches End of Life\n\nWhen a Python version you depend on reaches EOL, you have several paths forward:\n\n### 1. Upgrade to a Supported Python Version\n\nThe most straightforward option. Python 3.15 is in release candidate stage now (3.15.0rc2 shipped September 1, 2026) with the final release expected in October, giving teams a new target with the longest possible support window. Python 3.14 is the current recommended production version. However, upgrading is not always simple: [...] ‍\n\n## Key Dates to Watch\n\nOctober 31, 2026 (next month): Python 3.10 reaches end of life. This is the most urgent date on the calendar. If you are running 3.10 in production, your migration or support plan needs to be in motion right now.\n\nOctober 2026: Python 3.15 is expected to ship its final release, giving teams a new upgrade target with the longest possible support runw"
+          },
+          {
+            "id": "S7",
+            "url": "https://www.python.org/downloads/source",
+            "title": "Python Source Releases | Python.org",
+            "published_date": null,
+            "domain": "python.org",
+            "score": 0.79080546,
+            "content": "Python 3.16.0a1 - Oct. 13, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.15.0rc3 - Oct. 2, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.15.0rc2 - Sept. 1, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.15.0rc1 - Aug. 4, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.15.0b4 - July 18, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.15.0b3 - June 23, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.15.0b2 - June 2, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball [...] Python 3.14.8 - Sept. 30, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.13.16 - Sept. 30, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.11.16 - Aug. 12, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.10.21 - Aug. 12, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.12.14 - Aug. 12, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.13.15 - Aug. 5, 2026\n  + Download Gzipped source tarball\n  + Download XZ compressed source tarball\n Python 3.14.7 - Aug. 5, 2026\n  + Download Gzipped source t"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c2",
+      "text": "Node.js 20 is the current Active LTS release.",
+      "quote": "Node.js 20 is the current Active LTS release.",
+      "quote_found_in_answer": true,
+      "category": "api_or_version",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "version",
+        "recency"
+      ],
+      "sensitivity_score": 1.0,
+      "why_time_sensitive": "Node.js LTS releases are updated every 6 months; Node.js 20 may have been succeeded by a newer Active LTS version by November 2026.",
+      "search_query": "Node.js Active LTS release 2026",
+      "change_query": "Node.js new Active LTS release announced",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "Node.js 26 is the current Active LTS release.",
+        "evidence": [
+          {
+            "source": "S8",
+            "quote": "This release marks the transition of Node.js 26.x into Long Term Support (LTS) with the codename 'Lithium'. It will continue to receive updates through to the end of April 2029.",
+            "stance": "contradicts",
+            "url": "https://nodejs.org/en/blog/release/v26.13.0",
+            "title": "Node.js — Node.js 26.13.0 (LTS)",
+            "published_date": null,
+            "domain": "nodejs.org",
+            "fact_date": null
+          },
+          {
+            "source": "S3",
+            "quote": "Node.js 24.x is the current Active LTS line — the version the project recommends for new production applications — and it carries a HIGH-severity finding.",
+            "stance": "contradicts",
+            "url": "https://www.techtimes.com/articles/321432/20260723/nodejs-security-release-high-severity-vulnerabilities-hit-all-three-lines.htm",
+            "title": "Node.js Security Release: HIGH Severity Vulnerabilities Hit All Three Lines",
+            "published_date": "Thu, 23 Jul 2026 19:38:58 GMT",
+            "domain": "techtimes.com",
+            "fact_date": "2026-07-23"
+          },
+          {
+            "source": "S5",
+            "quote": "Node.js 26, currently the Current release line, is scheduled to move into Active LTS on October 28, while Node.js 24 (Krypton) will transition from Active LTS to Maintenance LTS on October 20.",
+            "stance": "contradicts",
+            "url": "http://nodesource.com/blog/nodesource-weekly-oct-6-2026-nodejs-26-lts-nsolid-6-3-8-jsconf-mexico",
+            "title": "NodeSource Weekly — Oct 6, 2026: Node.js 26 LTS, N|Solid 6.3.8 & JSConf México",
+            "published_date": null,
+            "domain": "nodesource.com",
+            "fact_date": null
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "Multiple sources confirm that Node.js 26 became the Active LTS release in October 2026, replacing Node.js 24. Source S8 explicitly states that Node.js 26.13.0 marks the transition into LTS, making it the current Active LTS. Since Node.js 20 reached end-of-life on April 30, 2026, it is no longer supported, directly contradicting the claim.",
+        "checker_notes": [],
+        "model_confidence": 1.0,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 0.96,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-07-23",
+          "evidence_age_days": 102,
+          "corroborating_domains": 3
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://adtmag.com/articles/2026/10/26/node-js-moves-to-annual-major-releases.aspx",
+            "title": "Node.js Moves to Annual Major Releases, Ending Odd-Even Support Split -- ADTmag",
+            "published_date": "Mon, 26 Oct 2026 22:00:00 GMT",
+            "domain": "adtmag.com",
+            "score": 0.78788257,
+            "content": "The Release Working Group’s published calendar schedules Node.js 27’s alpha phase to begin October 28, followed by its first Current release on April 22, 2027. LTS is scheduled for October 20, 2027, with end-of-life on April 30, 2030. The dates are subject to change.\n\nThe new model provides six months in Current followed by 30 months of LTS. Unlike earlier LTS releases, versions beginning with Node.js 27 will remain in Active LTS throughout that support period rather than moving into a separate Maintenance phase.\n\nRelease lines through Node.js 26 retain the previous model. Teams should therefore distinguish between the new policy and the support schedules governing versions already deployed. [...] The project said the change reflects limited adoption of odd-numbered releases and the difficulty of maintaining multiple supported versions. The announcement said managing security fixes across four or five release lines has become difficult to sustain.\n\nFor organizations that already deploy only LTS versions, the project said the practical change is relatively small beyond version numbering. Library authors face a different requirement: testing against alpha releases to identify compatibility problems before the next version reaches users.\n\nAlpha releases will permit breaking changes and are intended for testing rather than production. [...] Follow ADT on LinkedIn\nFollow ADT on X\nFollow ADT on TikTok\nFollow ADT on Instagram\nFollow ADT on YouTube\n\nAdvanced Search\n\nApplication Devel"
+          },
+          {
+            "id": "S2",
+            "url": "https://aws.amazon.com/blogs/compute/introducing-public-preview-runtimes-on-aws-lambda-starting-with-node-js-26-and-python-3-15",
+            "title": "Introducing public preview runtimes on AWS Lambda, starting with Node.js 26 and Python 3.15 | AWS Compute Blog",
+            "published_date": "Sat, 15 Aug 2026 14:09:35 GMT",
+            "domain": "aws.amazon.com",
+            "score": 0.7187726,
+            "content": "For Node.js, the GA timeline is tied to the Node.js “Active LTS” release, which is scheduled for October 2026. Only at that point is the release considered suitable for production workloads by the Node.js project, and only then is it sufficiently stable for Lambda’s automatic runtime patching in which patches are applied to your functions without action on your part. Lambda will not GA the Node.js 26 runtime until it reaches Active LTS."
+          },
+          {
+            "id": "S3",
+            "url": "https://www.techtimes.com/articles/321432/20260723/nodejs-security-release-high-severity-vulnerabilities-hit-all-three-lines.htm",
+            "title": "Node.js Security Release: HIGH Severity Vulnerabilities Hit All Three Lines",
+            "published_date": "Thu, 23 Jul 2026 19:38:58 GMT",
+            "domain": "techtimes.com",
+            "score": 0.79022324,
+            "content": "For teams planning upgrade roadmaps, this means Node.js 26 is the last version under the decade-old odd/even model. Node.js 26 itself will become Active LTS in October 2026, with a support window running through April 30, 2029. After the July 27 patches, it remains the recommended upgrade target for teams not yet on a current LTS line.\n\nRelease Line\nStatus\nSeverity (July 27)\nEOL Date\n\nNode.js 26.x\n\nCurrent (Active LTS October 2026)\n\nHIGH\n\nApril 30, 2029\n\nNode.js 24.x\n\nActive LTS\n\nHIGH\n\nApril 30, 2028\n\nNode.js 22.x\n\nMaintenance LTS\n\nHIGH\n\nApril 30, 2027\n\nNode.js 20.x\n\nEnd of Life\n\nNo patch\n\nEOL April 30, 2026\n\nPatches are expected to be published on or shortly after Monday, July 27, 2026. [...] Node.js 24.x is the current Active LTS line — the version the project recommends for new production applications — and it carries a HIGH-severity finding. Node.js 22.x is in Maintenance LTS status, still receiving critical security patches until April 30, 2027, and it also carries a HIGH-severity finding. Node.js 26.x, which entered Current release status in May 2026 and is expected to become Active LTS in October 2026, is likewise rated HIGH. [...] ### Release Schedule Change Coming in October\n\nThe July 27 patches arrive during a period of structural change for the Node.js release process. In March 2026, the project announced a shift from two major releases per year to one annual major release. Under the new model, Node.js 27 enters its Alpha channel in October 2026, with the full 27.0"
+          },
+          {
+            "id": "S4",
+            "url": "https://www.infoq.com/news/2026/07/nodejs-26-temporal",
+            "title": "Node.js 26: Temporal API Enabled by Default, V8 14.6, and a Round of Deprecations - InfoQ",
+            "published_date": "Tue, 07 Jul 2026 00:00:00 GMT",
+            "domain": "infoq.com",
+            "score": 0.7062922,
+            "content": "Community reaction framed this as an incremental release, with a widely shared Reddit thread describing it as \"a big bunch of small fixes and minor deprecations.\"\n\nDevelopers upgrading should be aware of a few migration points. `NODE_MODULE_VERSION` is now 147, so any prebuilt native add-ons will need rebuilding before upgrading.\n\nNode.js 26 remains the Current release for six months before entering long-term support in October 2026, sitting alongside the Node.js 24 Active LTS line. It arrives as competing runtimes Bun and Deno already offer Temporal, and as maintainer Rafael Gonzaga announced the release on X, describing it as \"modernizing the platform.\" It is also the last release under the old odd/even schedule before Node.js moves to a yearly release cadence."
+          },
+          {
+            "id": "S5",
+            "url": "http://nodesource.com/blog/nodesource-weekly-oct-6-2026-nodejs-26-lts-nsolid-6-3-8-jsconf-mexico",
+            "title": "NodeSource Weekly — Oct 6, 2026: Node.js 26 LTS, N|Solid 6.3.8 & JSConf México",
+            "published_date": null,
+            "domain": "nodesource.com",
+            "score": 0.91936076,
+            "content": "Node.js 26, currently the Current release line, is scheduled to move into Active LTS on October 28, while Node.js 24 (Krypton) will transition from Active LTS to Maintenance LTS on October 20.\n\nThat means the supported release landscape will soon look like:\n\n Node.js 26 → Active LTS\n Node.js 24 (Krypton) → Maintenance LTS\n Node.js 22 (Jod) → Maintenance LTS\n\nThe latest Node.js 26 release remains v26.10.0, which introduced updates across crypto, filesystem APIs, networking, performance hooks, and FFI.\n\nFor teams planning runtime upgrades, October is a good time to start testing workloads against Node.js 26 ahead of its LTS transition.\n\n## 🚀 Featured from NodeSource\n\n### N|Solid Runtime 6.3.8 Is Now Available\n\nLast week, we released N|Solid Runtime 6.3.8, with support for: [...] 🟢 Node.js 26 approaches Active LTS later this month.\n 🚀 N|Solid Runtime 6.3.8 is now available with support for the latest Node.js 22 and 24 releases.\n ⚠️ Node.js 20 support continues to disappear across platforms like Vercel and GitHub Actions.\n 🌍 NodeConf EU recap + JSConf México coming up October 28–30.\n 🤖 AI Corner: new developments in agentic workflows and AI code review.\n 🛠️ Node.js Upgrade Program: Resources and expert support for teams moving from End-of-Life Node.js versions to supported releases.\n\nHappy reading! 🚀\n\n## 🟢 Last Week in Node.js\n\n### Node.js 26 Is Getting Ready for LTS\n\nOctober is an important month for the Node.js release cycle. [...] Still running an End-of-Life version of Node.j"
+          },
+          {
+            "id": "S6",
+            "url": "https://www.herodevs.com/blog-posts/node-js-end-of-life-dates-you-should-be-aware-of",
+            "title": "Node.js Version Support: EOL Dates and Latest Releases (July 2026)",
+            "published_date": null,
+            "domain": "herodevs.com",
+            "score": 0.8936907,
+            "content": "#### What is the latest Node.js LTS version?\n\nNode.js 24 is the Active LTS line (EOL April 30, 2028) and Node.js 22 is in Maintenance LTS (EOL April 30, 2027). Node.js 26, released in May 2026, is the Current line and is scheduled to enter LTS in October 2026.\n\n#### Why should I avoid odd-numbered Node.js versions in production?\n\nOdd-numbered releases (19, 21, 23, 25) never enter LTS. They stay Current for six months and then go straight to EOL, so they receive no long-term security support. Use even-numbered LTS lines for production.\n\n#### Does HeroDevs support end-of-life Node.js versions? [...] The only fully supported lines today are Node.js 26 (Current), 24 (Active LTS), and 22 (Maintenance LTS). Everything else is end-of-life.\n\n‍\n\n## Versions Reaching EOL Next: What to Watch\n\n### Node.js 20 End of Life\n\nNode.js 20 reached end-of-life on April 30, 2026. It was one of the most widely deployed LTS lines in Node's history, which means a large installed base is now running an unsupported runtime.\n\nSeveral high-impact CVEs have landed against the 20 line, and any disclosed after the EOL date will not be patched upstream: [...] ‍\n\n## How Node.js's Release and Support Policy Works\n\nEvery Node.js major version moves through a fixed set of phases:\n\n Current (6 months): The active development line. New features, APIs, and improvements land here. Both even and odd majors start as Current.\n Active LTS (12 months): Even-numbered releases only. Focus shifts to stability. The release r"
+          },
+          {
+            "id": "S7",
+            "url": "https://nodejsdesignpatterns.com/blog/nodejs-release-schedule-changes",
+            "title": "Node.js is changing its release schedule and version numbers",
+            "published_date": null,
+            "domain": "nodejsdesignpatterns.com",
+            "score": 0.8479807,
+            "content": "The Node.js project just announced the first big change to its release schedule in about ten years. Starting in October 2026, Node.js moves from two major releases a year to one, version numbers will start lining up with the calendar year, every release becomes LTS, and there is a brand new Alpha channel for early testing.\n\nIf that sounds like a lot, here is the reassuring part up front: if you are like most people and you only ever upgrade to LTS versions, very little actually changes for you beyond the version numbers on the box. But the change is interesting, it is genuinely well thought out, and it is worth understanding so you can plan your upgrades with confidence. [...] For the full mechanics of the old model, including how Active LTS and Maintenance LTS differ, our guide on installing (and updating) Node.js and the one on checking your Node.js version both walk through it. From here on, we will focus on what is new.\n\n## What changes from October 2026\n\nThe new model keeps everything that worked about the old one (a predictable cadence, a stabilization period, long support windows) and removes the parts that caused friction. Let’s go through the four headline changes.\n\n### One major release a year\n\nInstead of two majors a year, there will be one. The rhythm is simple and predictable:\n\n A new major enters Current in April.\n It is promoted to LTS in October of the same year. [...] ### How is the Node.js release schedule changing?\n\nStarting in October 2026, Node.js moves f"
+          },
+          {
+            "id": "S8",
+            "url": "https://nodejs.org/en/blog/release/v26.13.0",
+            "title": "Node.js — Node.js 26.13.0 (LTS)",
+            "published_date": null,
+            "domain": "nodejs.org",
+            "score": 0.8364614,
+            "content": "Skip to content\n\n# Node.js 26.13.0 (LTS)\n\nRL\n\nRichard Lau\n\nNode.js 26.13.0 (LTS)\n\n## 2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau\n\n### Notable Changes\n\nThis release marks the transition of Node.js 26.x into Long Term Support (LTS) with the codename 'Lithium'. It will continue to receive updates through to the end of April 2029.\n\nOther than updating metadata, such as the `process.release` object, to reflect that the release is LTS, no further changes from Node.js 26.12.1 are included.\n\nIf you are updating from an earlier Long Term Support release (e.g. Node.js 24 or 22 or earlier) please note that since Node.js 25 the official binaries for Linux are linked against libatomic, which may need to be installed separately depending on your Linux distribution."
+          }
+        ]
+      }
+    },
+    {
+      "id": "c3",
+      "text": "OpenAI's most capable model is GPT-4o.",
+      "quote": "OpenAI's most capable model is GPT-4o.",
+      "quote_found_in_answer": true,
+      "category": "product_feature",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [],
+      "sensitivity_score": 0.9,
+      "why_time_sensitive": "OpenAI regularly releases new models; GPT-4o may have been superseded by a newer model by November 2026.",
+      "search_query": "OpenAI latest model 2026",
+      "change_query": "OpenAI releases new model after GPT-4o",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "OpenAI's most capable model is GPT-6 Astra.",
+        "evidence": [
+          {
+            "source": "S1",
+            "quote": "Less than 24 hours after announcing that it won’t release its new model, GPT-6.1 Astra, because it’s too dangerous to make public, OpenAI showed up to its annual DevDay event with a fresh release after all—just an apparently less powerful one.",
+            "stance": "contradicts",
+            "url": "https://gizmodo.com/with-no-astra-to-release-openai-pivots-to-new-gpt-6-1-sol-model-2000819044",
+            "title": "With No Astra to Release, OpenAI Pivots to New GPT-6.1 Sol Model",
+            "published_date": "Tue, 29 Sep 2026 20:59:36 GMT",
+            "domain": "gizmodo.com",
+            "fact_date": "2026-09-29"
+          },
+          {
+            "source": "S2",
+            "quote": "OpenAI began rolling out its latest AI model, GPT-6 Astra, to a limited group of organizations Thursday, after declaring earlier this week it was the first model to cross the company’s threshold for heightened cyber capabilities.",
+            "stance": "contradicts",
+            "url": "https://thehill.com/policy/technology/6070203-openai-rolls-out-gpt-6-astra",
+            "title": "OpenAI releases GPT-6 Astra after reaching ‘critical’ cyber threshold",
+            "published_date": "Thu, 03 Sep 2026 21:09:47 GMT",
+            "domain": "thehill.com",
+            "fact_date": "2026-09-03"
+          },
+          {
+            "source": "S5",
+            "quote": "GPT-6 Astra ($10/$50 per million tokens) is OpenAI’s most capable model, for the hardest reasoning, coding and agent work.",
+            "stance": "contradicts",
+            "url": "https://workflowmitra.com/blog/openai-models",
+            "title": "OpenAI Models in 2026: Every Model (Including GPT-6.1) and What It’s Best For",
+            "published_date": null,
+            "domain": "workflowmitra.com",
+            "fact_date": null
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "Multiple sources from September 2026 confirm that OpenAI has released GPT-6 Astra and explicitly describes it as their most capable model, surpassing GPT-4o. S1 and S5 further indicate that GPT-6.1 Sol is a less powerful or cost-efficient alternative to Astra, confirming Astra's superior capability. Therefore, the claim that GPT-4o is the most capable model is outdated.",
+        "checker_notes": [],
+        "model_confidence": 0.95,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 0.98,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-09-29",
+          "evidence_age_days": 34,
+          "corroborating_domains": 3
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://gizmodo.com/with-no-astra-to-release-openai-pivots-to-new-gpt-6-1-sol-model-2000819044",
+            "title": "With No Astra to Release, OpenAI Pivots to New GPT-6.1 Sol Model",
+            "published_date": "Tue, 29 Sep 2026 20:59:36 GMT",
+            "domain": "gizmodo.com",
+            "score": 0.82391036,
+            "content": "Skip to content \n\nArtificial Intelligence  \n\n# With No Astra to Release, OpenAI Pivots to New GPT-6.1 Sol Model\n\nDifferent name, supposedly less risk.\n\nBy    AJ Dellinger\n\nReading time 2 minutes\n\nOpenAI logo\n\nOpenAI logo © Samuel Boivin / Shutterstock\n\nAdd Gizmodo on Google\n\n Comments  (1)\n\nLess than 24 hours after announcing that it won’t release its new model, GPT-6.1 Astra, because it’s too dangerous to make public, OpenAI showed up to its annual DevDay event with a fresh release after all—just an apparently less powerful one. On Tuesday, the company released GPT-6.1 Sol, an update that promises Astra-level performance at a fraction of the price. [...] When the company released GPT-6 earlier this month, it called it Astra and promised that it was its most capable model for intelligence work. Then it released two other versions of GPT-6, Luna and Sol. Terra is nowhere to be found and Sol is no longer the high-powered model. And now, with the release of GPT-6.1 Sol, it’s supposed to be comparable to Astra in how well it does with coding and intelligence work tasks, but have a significantly lower token cost. Maybe OpenAI could ask ChatGPT how to establish a meaningful brand identity. [...] If you feel like you’re starting to lose track of OpenAI’s models, you’re forgiven. This summer, when OpenAI first launched GPT-5.6, it split it into three different models: Sol, Terra, and Luna. Practically speaking, its really a branding exercise. Sol is the powerful one, Terra is the mid"
+          },
+          {
+            "id": "S2",
+            "url": "https://thehill.com/policy/technology/6070203-openai-rolls-out-gpt-6-astra",
+            "title": "OpenAI releases GPT-6 Astra after reaching ‘critical’ cyber threshold",
+            "published_date": "Thu, 03 Sep 2026 21:09:47 GMT",
+            "domain": "thehill.com",
+            "score": 0.8390101,
+            "content": "# OpenAI releases new model after reaching ‘critical’ cyber threshold\n\nOpenAI began rolling out its latest AI model, GPT-6 Astra, to a limited group of organizations Thursday, after declaring earlier this week it was the first model to cross the company’s threshold for heightened cyber capabilities.\n\nThe ChatGPT maker said the model will become available to more paid users in the coming days.\n\n“GPT‑6 Astra brings together years of research and big bets across pre-training, reinforcement learning, and alignment,” the company said. “Astra is state-of-the-art on computer use, browsing, software engineering, cybersecurity, science, and professional work.” [...] Astra’s release comes as the AI industry grapples with the increasing capabilities and risks from new models. In July, AI agents from OpenAI escaped their testing environment and hacked into the tech startup Hugging Face.\n\nThe incident, which provoked fears about uncontrolled AI in both Silicon Valley and Washington, was quickly followed by several other reports of agents improperly gaining access to the internet and hacking into other companies.\n\nOpenAI suggested Thursday that Astra is its “most aligned model, with substantial improvements in understanding user intent and model behavior—you can delegate tasks with greater confidence in Astra’s judgment.”"
+          },
+          {
+            "id": "S3",
+            "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+            "title": "OpenAI announces rollout of GPT-6 Astra model",
+            "published_date": "Thu, 03 Sep 2026 18:00:02 GMT",
+            "domain": "cnbc.com",
+            "score": 0.81665546,
+            "content": "In this article\n\nOpenAI on Thursday announced it will begin rolling out its latest artificial intelligence model, GPT-6 Astra, which the company said is the product of \"years of research and big bets.\"\n\nCEO Sam Altman told CNBC that Astra was a \"new capability level\" and has changed his workflows. He said he expects \"a boom of entrepreneurship, of creativity, of economic growth, of scientific discovery.\"\n\nThe model is launching in phases, and OpenAI said a limited group of companies participating in its application-based cybersecurity program Daybreak will be the first to get access. OpenAI disclosed earlier this week that Astra is its first model to reach its \"Critical\" internal cybersecurity threshold, and said it planned to limit access to those advanced capabilities. [...] In addition to its advanced cybersecurity capabilities, Astra is state-of-the-art across functions like computer use, software engineering, professional work and science OpenAI said. The model is also better at staying oriented, respecting task boundaries, understanding user intent, completing tedious tasks and carrying out multi-step workflows, according to a release.\n\n\"There's still more to do, I think that there's still lots of improvements to be made, but there is something significant here that I think is qualitatively improved, and that that to me is, is what is significant and a real shift in what kind of work people can delegate to AI and how it can empower them,\" Brockman said. [...] The compan"
+          },
+          {
+            "id": "S4",
+            "url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt",
+            "title": "OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT | TechCrunch",
+            "published_date": "Tue, 05 May 2026 17:00:00 GMT",
+            "domain": "techcrunch.com",
+            "score": 0.8479807,
+            "content": "Ivan Mehta\n\nOn Tuesday, OpenAI released a new foundation model called GPT-5.5 Instant, which will replace GPT-5.3 Instant as the default ChatGPT model. The company said the model reduces hallucination in sensitive areas such as law, medicine, and finance, while maintaining the low latency of its predecessor.\n\nOpenAI released the latest GPT-5.5 model last month with the company claiming improvements in areas like coding and knowledge work.\n\nThe new model also achieved a score of 81.2 in the AIME 2025 math test, compared to 65.4 for the older model. It also outperformed its predecessor on the MMMU-Pro multimodal reasoning benchmark, with a score of 76 vs. 69.2. [...] For developers, the GPT-5.5 model will be available through API as “chat-latest,” with 5.3 available as an option for paid users for only three months.\n\nThe company has faced rebuttal from previous model withdrawal moves. When OpenAI withdrew its GPT-4o model, there was significant backlash from users who related to the model’s “personality.” GPT-4o affirmed users’ choices frequently and that made them feel a connection to that particular model. Users who signed petitions to stop OpenAI from retiring it described the model as their “best friend” or “a mirror.” Despite the outcry, GPT-4o was deprecated in February 2026.\n\nTopics\n\nAI, ChatGPT, OpenAI\n\nWhen you purchase through links in our articles, we may earn a small commission. This doesn’t affect our editorial independence.\n\nIvan Mehta [...] The release placed a p"
+          },
+          {
+            "id": "S5",
+            "url": "https://workflowmitra.com/blog/openai-models",
+            "title": "OpenAI Models in 2026: Every Model (Including GPT-6.1) and What It’s Best For",
+            "published_date": null,
+            "domain": "workflowmitra.com",
+            "score": 0.95458406,
+            "content": "GPT-6.1 Sol, released on 29 September 2026, is the newest OpenAI model and the best default for most serious work: OpenAI describes it as offering near-Astra performance at a lower cost for complex coding, computer use and professional tasks. At $2 input and $10 output per million tokens, it costs a fifth of Astra.\n\nIt replaces GPT-6 Sol, released only a week earlier, which OpenAI now marks as superseded. GPT-6.1 Sol defaults to medium reasoning effort, supports effort up to max, and is the recommended model in Codex, OpenAI’s coding agent. OpenAI no longer offers a separate “codex” API model; its older codex models have been retired or are scheduled for retirement, and Codex runs on the GPT-6 family. [...] | Model | Shutdown date | OpenAI’s listed replacement |\n --- \n| o1, o1-pro, o3-mini, o4-mini | 23 October 2026 | GPT-5.6 Sol (GPT-5.6 Terra for o4-mini) |\n| o3 | 11 December 2026 | GPT-5.6 Sol |\n| GPT-5, GPT-5 mini, GPT-5 nano | 11 December 2026 | GPT-5.6 Sol, Terra and Luna |\n| gpt-image-1 | 23 October 2026 | GPT Image 2.5 Sunburst or Flare |\n| tts-1, tts-1-hd, gpt-4o-mini-tts | 6 January 2027 | gpt-realtime-2.1-mini |\n| whisper-1 | 26 February 2027 | gpt-transcribe or gpt-live-transcribe |\n| Sora 2, Sora 2 Pro, Videos API | Shut down 24 September 2026 | None listed | [...] ## Quick answer: which OpenAI model to use\n\n   GPT-6 Astra ($10/$50 per million tokens) is OpenAI’s most capable model, for the hardest reasoning, coding and agent work.\n   GPT-6.1 Sol ($2/$10), releas"
+          },
+          {
+            "id": "S6",
+            "url": "https://www.evertune.ai/resources/ai-model-tracker",
+            "title": "AI Model Release Tracker | Evertune",
+            "published_date": null,
+            "domain": "evertune.ai",
+            "score": 0.9284155,
+            "content": "What is the latest AI model from OpenAI?\n:   The latest OpenAI release in this tracker is GPT-6 Pro — Parallel Agents, released Oct 16, 2026. GPT-6 Pro in ChatGPT now answers faster, uses plugins and tools better, and can split a task across several agents working at once. Users can follow each agent's progress and review finished subtasks.\n\nWhat is the latest AI model from Meta?\n:   The latest Meta release in this tracker is Muse Spark Open, released Oct 15, 2026. Meta's new open-weight model for coding and agent tasks, which Meta calls the most capable US open-weight model so far. The weights are free to download, and Meta worked with Apple so it can run locally on a pair of Mac Studios. Meta's top Muse Wonder models stay closed. [...] ## Latest model from each provider\n\n Anthropic: Claude Duet (Research Preview) (Oct 21, 2026)\n DeepSeek: DeepSeek V4.1-Flash (1017 Update) (Oct 17, 2026)\n OpenAI: GPT-6 Pro — Parallel Agents (Oct 16, 2026)\n Meta: Muse Spark Open (Oct 15, 2026)\n Google: Gemini 4 Argon (General Availability) (Oct 13, 2026)\n\n## Frequently asked questions\n\nWhat is the most recent AI model release?\n:   The most recent tracked release is Anthropic Claude Duet (Research Preview), released Oct 21, 2026. A new app where Claude works as a proactive agent in the background, watching your connected apps and asking for approval before important actions. Waitlist-based preview for US Pro and Max subscribers on iOS, Android, and claude.ai."
+          },
+          {
+            "id": "S7",
+            "url": "https://releasebot.io/updates/openai",
+            "title": "OpenAI Release Notes - October 2026 Latest Updates - Releasebot",
+            "published_date": null,
+            "domain": "releasebot.io",
+            "score": 0.8980626,
+            "content": "Oct 27, 2026\n\n  OpenAI logo\n\n  OpenAI\n\n  ## GPT-6.1 Terra: delivering fast and capable computer use at a lower price\n\n  OpenAI releases GPT-6.1 Terra, a more efficient model that understands screens, takes action across apps, and writes naturally. Rolling out to eligible ChatGPT Work and Codex users, it is also available through the API at 50% lower standard prices than GPT-5.6 Terra.\n\n  GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.\n\n  GPT-6.1 Terra continues to advance the cost-intelligence frontier across our model families.\n\n  ### Introducing GPT-6 Terra\n\n  It’s a significant step up over GPT‑5.6 Terra, with 50% lower standard API prices. [...] GPT-6.1 Terra Model | OpenAI API\n\n  Original source\n Oct 26, 2026 \n  + Date parsed from source:\n\n    Oct 26, 2026\n  + First seen by Releasebot:\n\n    Oct 27, 2026\n  + Modified by Releasebot:\n\n    Oct 30, 2026\n\n  OpenAI logo\n\n  OpenAI\n\n  ## October 26–30, 2026\n\n  OpenAI adds beta iMessage and Android RCS texting for Pro users and brings GPT-6.1 Terra visual reasoning and computer use to ChatGPT Work and Codex.\n\n  ### Text your dot\n\n  Reach your dot through iMessage or RCS on Android for one-to-one conversations with text, photos, and voice messages. Texting is rolling out in beta to ChatGPT Pro users in the U.S.\n\n  ### Use GPT-6.1 Terra for visual reasoning and computer use [...] GPT-6.1 Terra is now "
+          },
+          {
+            "id": "S8",
+            "url": "https://openai.com/index/gpt-6-astra",
+            "title": "GPT-6 Astra: A new generation of intelligence",
+            "published_date": null,
+            "domain": "openai.com",
+            "score": 0.8952393,
+            "content": "Skip to main content\n\n\n\nLog inTry ChatGPT(opens in a new window)\n\n   Research\n   Products\n   Business\n   Developers\n   Company\n   Foundation(opens in a new window)\n\nTry ChatGPT(opens in a new window)Login\n\nOpenAI\n\n# GPT-6 Astra: A new generation of intelligence\n\n## A new generation of intelligence\n\n_Update on September 29, 2026:_ _Learn about OpenAI's latest model:__GPT‑6 .1 Sol_⁠_._\n\n  \n\n_Update on September 22, 2026:_ _We are expanding our GPT‑6 family with GPT‑6 Sol and GPT‑6 Luna.__Learn more._\n\n  \n\nWe’re introducing GPT‑6 Astra, the world’s most intelligent and aligned model."
+          }
+        ]
+      }
+    },
+    {
+      "id": "c4",
+      "text": "Linda Yaccarino is the CEO of X (formerly Twitter).",
+      "quote": "Linda Yaccarino is the CEO of X (formerly Twitter).",
+      "quote_found_in_answer": true,
+      "category": "leadership_or_role",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "role"
+      ],
+      "sensitivity_score": 0.95,
+      "why_time_sensitive": "CEO roles can change; this information may no longer be accurate in November 2026.",
+      "search_query": "CEO of X (formerly Twitter) 2026",
+      "change_query": "Linda Yaccarino steps down as CEO of X",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "Linda Yaccarino is no longer CEO of X; she stepped down in July 2025.",
+        "evidence": [
+          {
+            "source": "S4",
+            "quote": "Yaccarino was CEO from May 2023 until July 2025.",
+            "stance": "contradicts",
+            "url": "https://www.livenowfox.com/news/x-raided-paris-office-france-elon-musk",
+            "title": "Elon Musk’s X office raided in Paris | LiveNOW from FOX",
+            "published_date": "Tue, 03 Feb 2026 15:47:44 GMT",
+            "domain": "livenowfox.com",
+            "fact_date": "2025-07-01"
+          },
+          {
+            "source": "S5",
+            "quote": "Yaccarino resigned as CEO of X in July last year after two years at the helm of the company.",
+            "stance": "contradicts",
+            "url": "https://www.cbsnews.com/news/elon-musk-x-france-paris-office-search-summons-yaccarino-grok-ai-data",
+            "title": "X office in France searched as Paris prosecutor summons Elon Musk for questioning - CBS News",
+            "published_date": "Tue, 03 Feb 2026 12:02:00 GMT",
+            "domain": "cbsnews.com",
+            "fact_date": "2026-02-03"
+          },
+          {
+            "source": "S7",
+            "quote": "Linda Yaccarino, who had been running X, stepped down in July.",
+            "stance": "contradicts",
+            "url": "https://www.businessinsider.com/ceos-arent-job-hugging-like-employees-labor-market-2025-11",
+            "title": "CEOs Aren't 'Job-Hugging' Like Workers in a Tight Labor Market - Business Insider",
+            "published_date": "Sat, 15 Nov 2025 10:51:01 GMT",
+            "domain": "businessinsider.com",
+            "fact_date": "2025-11-15"
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "Multiple sources, including CBS News and LiveNOW from FOX, state that Linda Yaccarino stepped down as CEO of X in July 2025. The claim that she is currently CEO is therefore outdated. The most recent sources confirm her departure and do not name a successor as CEO, so the current leadership is unspecified.",
+        "checker_notes": [],
+        "model_confidence": 0.95,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 0.94,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-02-03",
+          "evidence_age_days": 272,
+          "corroborating_domains": 3
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://www.businessofapps.com/data/twitter-statistics",
+            "title": "X Revenue and Usage Statistics (2026) - Business of Apps",
+            "published_date": "Wed, 02 Sep 2026 00:00:00 GMT",
+            "domain": "businessofapps.com",
+            "score": 0.73207545,
+            "content": "### This website uses cookies\n\n# X Revenue and Usage Statistics (2026)\n\nUpdated: September 2, 2026\n\n##### \n\nX (Previously Twitter) is a real-time microblogging platform, publicly launched in July 2006. At launch, its defining features were the tight limits placed on each post, known at a tweet. Originally, users could only use 140 characters, although that has been elongated over the years.\n\nFormed by former Odeo employees Jack Dorsey, Noah Glass, Evan Williams and Biz Stone, the site originally used SMS to send tweets onto the network. It received its first boost of users at SXSW 2007, when the founders showed all the tweets hitting the network in real-time. [...] ## X Key Statistics\n\n, Linda Yaccarino (CEO), Jack Dorsey (co-founder) |\n| Business type | Private |\n| Owner | Elon Musk |\n| Industry | Social networking |\n\n## X Revenue\n\nX generated $2.5 billion revenue in 2024, a 13.7% decrease on 2023 figures.\n\n### X revenue 2012 to 2025 ($bn)\n\n### X revenue 2012 to 2024 ($bn)\n\n| Year | Revenue ($bn) |\n --- |\n| 2012 | 0.3 |\n| 2013 | 0.6 |\n| 2014 | 1.4 |\n| 2015 | 2.2 |\n| 2016 | 2.5 |\n| 2017 | 2.4 |\n| 2018 | 3 |\n| 2019 | 3.4 |\n| 2020 | 3.7 |\n| 2021 | 5 |\n| 2022 | 4.4 |\n| 2023 | 2.9 |\n| 2024 | 2.5 |\n\nSources: Bloomberg, Company data, Social App Report\n\n## X Revenue by Segment\n\nAdvertising revenues have plummeted over the past two years, and its subscription and data licensing side has not been able to make up for that loss. [...] This may be partly due to the management of Twitter "
+          },
+          {
+            "id": "S2",
+            "url": "https://www.bizjournals.com/southflorida/news/2026/06/30/linda-yaccarino-glp-1-miami-health-startup-emed.html",
+            "title": "Former X CEO Linda Yaccarino is betting on a Miami health startup. Here's why.",
+            "published_date": "Tue, 30 Jun 2026 00:00:00 GMT",
+            "domain": "bizjournals.com",
+            "score": 0.82795376,
+            "content": "Linda Yaccarino turned heads when she became chief executive of eMed last year only weeks after stepping down from X. Miami-based eMed is a digital and"
+          },
+          {
+            "id": "S3",
+            "url": "https://www.charleagency.com/articles/twitter-x-statistics",
+            "title": "55+ X (Formerly Twitter) Statistics for 2026: Users, Revenue & Engagement Data | Charle",
+            "published_date": "Sat, 07 Feb 2026 00:00:00 GMT",
+            "domain": "charleagency.com",
+            "score": 0.81770587,
+            "content": "Get in touch\n\nJoin Our Ecommerce Newsletter\n\n### Ecommerce insights, straight to your inbox\n\nMonthly deep dives on Shopify, CRO, and the trends shaping DTC. No fluff, just the stuff that moves the needle.\n\nYou're in.\n\nKeep an eye on your inbox — the next edition is on its way.\n\nWe respect your data. Read our privacy policy.\n\n# 55+ X (Formerly Twitter) Statistics You Need to Know in 2026\n\n  Nic Dunn, CEO, Charle Agency \n\nLast Updated: February 7, 2026 [...] 4. 10% of X users generate 92% of all posts on the platform. Engagement concentration is highly skewed, creating a challenging environment for brands seeking organic reach. Top followed accounts include those of Linda Yaccarino (CEO of X), Donald Trump, Elon Musk, Katy Perry, Taylor Swift, Justin Bieber, Narendra Modi, and others with millions of followers. (Cross River Therapy)\n5. Video content makes up 42% of all posts with media attachments. Video consumption increased by 40% year-on-year in 2024, reflecting global trends towards video-based social media similar to platforms like YouTube and TikTok. This format drives a lot of engagement, with high views and engagement rates compared to other content types. (Business of Apps) [...] Last Updated: February 7, 2026\n\nX, formerly known as Twitter, remains one of the most influential social media platforms in the world despite significant upheaval since Elon Musk's $44 billion acquisition in October 2022. From the rebrand to X, ongoing advertiser concerns, and the rise of comp"
+          },
+          {
+            "id": "S4",
+            "url": "https://www.livenowfox.com/news/x-raided-paris-office-france-elon-musk",
+            "title": "Elon Musk’s X office raided in Paris | LiveNOW from FOX",
+            "published_date": "Tue, 03 Feb 2026 15:47:44 GMT",
+            "domain": "livenowfox.com",
+            "score": 0.9108078,
+            "content": "Yaccarino was CEO from May 2023 until July 2025.\n\nREAD MORE:X CEO, Linda Yaccarino, steps down from social media platform\n\nLinda Yaccarino steps down as CEO of X\nLinda Yaccarino steps down as CEO of X\n\n#### Linda Yaccarino steps down as CEO of X\n\nLinda Yaccarino, the CEO of Elon Musk?s X, is stepping down after two years at the company. Techstrong Group's Jon Swartz joins LiveNOW's Andrew Craft to break it down.\n\nMeanwhile:\n\nX is also under pressure from the European Union. The 27-nation bloc's executive arm opened an investigation last month after Grok spewed nonconsensual sexualized deepfake images on the platform. [...] By the details:\n\nThe investigation was first opened following reports by a French lawmaker alleging that biased algorithms on X were likely to have distorted the functioning of an automated data processing system.\n\nIt was later expanded after Musk's artificial intelligence chatbot Grok generated posts that allegedly denied the Holocaust and spread sexually explicit deepfakes, the statement said. Holocaust denial is a crime in France.\n\nREAD MORE:Elon Musk's AI chatbot Grok makes antisemitic posts on X\n\nWhat's next:\n\nProsecutors also asked Elon Musk and former CEO Linda Yaccarino to attend \"voluntary interviews\" on April 20.\n\nEmployees of X have also been summoned that same week to be heard as witnesses, the statement said.\n\nYaccarino was CEO from May 2023 until July 2025."
+          },
+          {
+            "id": "S5",
+            "url": "https://www.cbsnews.com/news/elon-musk-x-france-paris-office-search-summons-yaccarino-grok-ai-data",
+            "title": "X office in France searched as Paris prosecutor summons Elon Musk for questioning - CBS News",
+            "published_date": "Tue, 03 Feb 2026 12:02:00 GMT",
+            "domain": "cbsnews.com",
+            "score": 0.81979275,
+            "content": "US-POLITICS-TRUMP \n\nX and Musk have dismissed the French investigation, and similar probes by European Union and British authorities, as baseless, politically motivated attacks on free speech.\n\nYaccarino resigned as CEO of X in July last year after two years at the helm of the company.\n\nThe investigation is being led by the cybercrime unit of the prosecutor's office, in conjunction with French police and the joint European policing agency Europol.\n\nA CBS News investigation found late last month that the Grok AI tool on Musk's X platform still allowed users in the U.S., U.K. and EU to digitally undress people without their consent, despite public pledges from the company to stop the function."
+          },
+          {
+            "id": "S6",
+            "url": "https://www.fool.com/investing/how-to-invest/stocks/who-owns-x",
+            "title": "Who Owns X (Formerly Twitter)? | The Motley Fool",
+            "published_date": "Fri, 09 Jan 2026 19:48:20 GMT",
+            "domain": "fool.com",
+            "score": 0.79732054,
+            "content": "As of January 2025, Linda Yaccarino, a former NBCUniversal executive, is the CEO of X Corp. Musk serves as chief technology officer (CTO) and still has the executive chairman role. No further information has been released about a new board of directors. As far as we know, Elon Musk is still the only director.\n\n## Related investing topics\n\n### How X (Formerly Twitter) Makes Money\n\nFind out how X (formerly Twitter) makes money, how its current business model looks, and what's up next for this once hot stock.\n\n### Elon Musk's Investment Strategy\n\nOne of the most successful entrepreneurs of modern times has a specific investing strategy.\n\n### 7 Best Social Media Stocks for 2026 and How to Invest\n\nSocial media has changed the way we communicate with each other.\n\n### How Reddit Makes Money [...] Other notable investors include:\n\nAs of 2025, there haven't been any new updates, and because X is now private, the company isn't required to release an updated list.\n\n## Who is on the board of directors for X?\n\nAs a publicly traded company, X (then Twitter) had a board of directors with nine members, including then-CEO Parag Agrawal.\n\nImmediately following Musk's takeover of X in Oct. 2022, he dissolved the company's board of directors and fired its key leaders, appointed himself CEO, and became the company's sole director. However, at the time, Musk stated on the platform that the dissolution of the board \"is just temporary.\""
+          },
+          {
+            "id": "S7",
+            "url": "https://www.businessinsider.com/ceos-arent-job-hugging-like-employees-labor-market-2025-11",
+            "title": "CEOs Aren't 'Job-Hugging' Like Workers in a Tight Labor Market - Business Insider",
+            "published_date": "Sat, 15 Nov 2025 10:51:01 GMT",
+            "domain": "businessinsider.com",
+            "score": 0.85538095,
+            "content": "Some of the chiefs making moves have high profiles. Linda Yaccarino, who had been running X, stepped down in July. And Spotify's cofounder and CEO, Daniel Ek, plans to become executive chairman of the streaming service in January. On Friday, Walmart CEO Doug McMillon, 59, said he would retire in January after about a decade in the role.\n\nCEOs' tenures are also getting shorter. Departing chiefs had been on the job 7.2 years as of the third quarter, less than the average of 8.4 years in 2021 and 2023, the leadership advisory firm Russell Reynolds Associates found."
+          },
+          {
+            "id": "S8",
+            "url": "https://www.facebook.com/etnow/posts/elon-musks-social-media-platform-x-formerly-known-as-twitter-has-appointed-peter/1550426647116234",
+            "title": "Elon Musk's social media platform X, formerly known as ...",
+            "published_date": null,
+            "domain": "facebook.com",
+            "score": 0.8506799,
+            "content": "X, formerly known as Twitter, has appointed Peter Sellis as its new Head of Product, Sellis announced his appointment on October 26, 2026,"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c5",
+      "text": "The EU AI Act has been proposed but has not yet been formally adopted, so there are no binding AI rules in the EU yet.",
+      "quote": "The EU AI Act has been proposed but has not yet been formally adopted, so there are no binding AI rules in the EU yet.",
+      "quote_found_in_answer": true,
+      "category": "law_or_policy",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "law",
+        "recency"
+      ],
+      "sensitivity_score": 0.95,
+      "why_time_sensitive": "The EU AI Act was formally adopted in 2024; it is already in force in parts, so this claim is outdated.",
+      "search_query": "EU AI Act status 2026",
+      "change_query": "EU AI Act formally adopted or implemented",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "The EU AI Act has been formally adopted, and key obligations are already in force, including transparency rules as of 2 August 2026.",
+        "evidence": [
+          {
+            "source": "S1",
+            "quote": "The European AI Act has been formally adopted, its key obligations are becoming applicable, and the countdown to the start of enforcement has begun.",
+            "stance": "contradicts",
+            "url": "https://www.jdsupra.com/legalnews/the-eu-ai-act-key-dates-for-compliance-4676843",
+            "title": "The EU AI Act: Key Dates for Compliance (UPDATED) | Orrick, Herrington & Sutcliffe LLP - JDSupra",
+            "published_date": "Thu, 24 Sep 2026 00:00:00 GMT",
+            "domain": "jdsupra.com",
+            "fact_date": "2026-09-24"
+          },
+          {
+            "source": "S2",
+            "quote": "The European AI Act has been formally adopted, its key obligations are becoming applicable, and the countdown to the start of enforcement has begun.",
+            "stance": "contradicts",
+            "url": "https://www.orrick.com/en/Insights/2024/09/The-EU-AI-Act-Key-Dates-for-Compliance",
+            "title": "The EU AI Act: Key Dates for Compliance",
+            "published_date": "Wed, 23 Sep 2026 00:00:00 GMT",
+            "domain": "orrick.com",
+            "fact_date": "2026-09-23"
+          },
+          {
+            "source": "S3",
+            "quote": "On 2 August 2026, the transparency obligations in Article 50 of the EU AI Act began to apply.",
+            "stance": "contradicts",
+            "url": "https://www.morganlewis.com/blogs/sourcingatmorganlewis/2026/08/eu-ai-acts-transparency-rules-what-went-into-effect-on-2-august",
+            "title": "EU AI Act’s Transparency Rules: What Went Into Effect on 2 August? – Tech & Sourcing @ Morgan Lewis",
+            "published_date": "Wed, 12 Aug 2026 00:00:00 GMT",
+            "domain": "morganlewis.com",
+            "fact_date": "2026-08-02"
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "Multiple sources confirm that the EU AI Act has been formally adopted and that key obligations, including transparency rules, are already in force as of August 2026, directly contradicting the claim that it has not yet been adopted and that there are no binding rules.",
+        "checker_notes": [],
+        "model_confidence": 1.0,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 1.0,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-09-24",
+          "evidence_age_days": 39,
+          "corroborating_domains": 3
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://www.jdsupra.com/legalnews/the-eu-ai-act-key-dates-for-compliance-4676843",
+            "title": "The EU AI Act: Key Dates for Compliance (UPDATED) | Orrick, Herrington & Sutcliffe LLP - JDSupra",
+            "published_date": "Thu, 24 Sep 2026 00:00:00 GMT",
+            "domain": "jdsupra.com",
+            "score": 0.8380581,
+            "content": "JD Supra\n\n# The EU AI Act: Key Dates for Compliance (UPDATED)\n\nOrrick, Herrington & Sutcliffe LLP\n\nOrrick, Herrington & Sutcliffe LLP\n\nThis update is part of our EU AI Act Series. Learn more about the EU AI Act here.\n\nThe European AI Act has been formally adopted, its key obligations are becoming applicable, and the countdown to the start of enforcement has begun. The application timeline has been modified by the AI Omnibus (Regulation (EU) 2026/1744) which amended the AI Act with effect from July 27, 2026.\n\nHere are the key dates you need to know as you build your compliance roadmap (click to expand timeline):\n\nThe EU AI Act Key Dates for Compliance | Orrick\n\nThe EU AI Act Key Dates for Compliance | Orrick\n\n[View source.]\n\n### Related Posts\n\nSee more"
+          },
+          {
+            "id": "S2",
+            "url": "https://www.orrick.com/en/Insights/2024/09/The-EU-AI-Act-Key-Dates-for-Compliance",
+            "title": "The EU AI Act: Key Dates for Compliance",
+            "published_date": "Wed, 23 Sep 2026 00:00:00 GMT",
+            "domain": "orrick.com",
+            "score": 0.8497846,
+            "content": "1. Home\n2. Insights\n3. The EU AI Act: Key Dates for Compliance\n\n - Facebook\n  - Twitter\n  - Linkedin\n\n# The EU AI Act: Key Dates for Compliance\n\n3 minute read | September.23.2026\n\nThis update is part of our EU AI Act Series. Learn more about the EU AI Act here.\n\nThe European AI Act has been formally adopted, its key obligations are becoming applicable, and the countdown to the start of enforcement has begun. The application timeline has been modified by the AI Omnibus (Regulation (EU) 2026/1744) which amended the AI Act with effect from July 27, 2026.\n\nHere are the key dates you need to know as you build your compliance roadmap (click to expand timeline):\n\nWant to know more? Reach out to a member of our team.\n\nThe EU AI Act Series: Key Takeaways for Companies Using and Developing AI"
+          },
+          {
+            "id": "S3",
+            "url": "https://www.morganlewis.com/blogs/sourcingatmorganlewis/2026/08/eu-ai-acts-transparency-rules-what-went-into-effect-on-2-august",
+            "title": "EU AI Act’s Transparency Rules: What Went Into Effect on 2 August? – Tech & Sourcing @ Morgan Lewis",
+            "published_date": "Wed, 12 Aug 2026 00:00:00 GMT",
+            "domain": "morganlewis.com",
+            "score": 0.9159971,
+            "content": "// August 12, 2026\n\nOn 2 August 2026, the transparency obligations in Article 50 of the EU AI Act began to apply. Relative to Article 50, the EU Digital Omnibus (which amended the EU AI Act) only deferred certain specific obligations. As such, the bulk of the Article 50 obligations are already applicable to organizations subject to the EU AI Act.\n\nBelow is a high-level overview. An upcoming accompanying LawFlash will examine the obligations and exceptions contained in Article 50, the Commission’s Guidelines, and the Code of Practice referenced below in more detail.\n\nWhat Does Article 50 Cover?"
+          },
+          {
+            "id": "S4",
+            "url": "https://www.mayerbrown.com/en/insights/publications/2026/07/eu-ai-act-news-digital-omnibus-on-ai-new-guidance-on-risk-classification-gpai-and-transparency-obligations",
+            "title": "EU AI Act News: Digital Omnibus on AI, New Guidance on Risk Classification, GPAI, and Transparency Obligations | Insights | Mayer Brown",
+            "published_date": "Thu, 30 Jul 2026 00:00:00 GMT",
+            "domain": "mayerbrown.com",
+            "score": 0.91306627,
+            "content": "1. The \"Digital Omnibus on AI\" (EU Regulation 1744/2026) has been published in the Official Journal of the European Union and becomes applicable on 27 July 2026, bringing several changes to the EU AI Act, aiming at simplifying implementation and reducing overlaps with existing regulation.\n2. On 19 May 2026 , the European Commission published draft guidelines (the \"Guidance\") to support providers and deployers of AI systems, as well as the relevant market authorities, in assessing whether an AI system should be classified as high-risk, facilitating enforcement of Article 6 of the EU AI Act. [...] 3. Guidelines have also been published, on 18 July 2026, on the scope of general purpose AI systems governed by the EU AI Act. For more information on the obligations affecting these systems, see our Legal Update.\n4. Finally, on 20 July 2026, the European Commission adopted its final Guidelines on the transparency obligations under Article 50 of the EU AI Act. [...] The new changes will not delay other transparency requirements (e.g., the obligation to disclose that individuals are interacting with AI under Article 50(1) of the EU AI Act and to disclose deepfakes under Article 50(4) of the EU AI Act), which will come into force on 2 August 2026 for AI systems which are placed on the market after this date.\n\nThe Omnibus will also amend the EU AI Act to specify that the EU AI Act applies to operators of high-risk AI systems in service before these dates (as may be delayed by the Omnibus"
+          },
+          {
+            "id": "S5",
+            "url": "https://www.faegredrinker.com/en/insights/publications/2026/7/eu-ai-act-commission-confirms-transparency-code-of-practice-as-adequate-and-publishes-final-version-of-its-guidelines-on-transparency-obligations",
+            "title": "EU AI Act — Commission Confirms Transparency Code of Practice as Adequate and Publishes Final Version of Its Guidelines on Transparency Obligations | Publications | Insights | Faegre Drinker Biddle & Reath LLP",
+            "published_date": "Thu, 30 Jul 2026 00:00:00 GMT",
+            "domain": "faegredrinker.com",
+            "score": 0.79939574,
+            "content": "Under the formally adopted AI Omnibus, systems already on the market before 2 August 2026 have until 2 December 2026 to implement the Article 50(2) marking requirement. Fines for noncompliance can reach €15 million, or 3% of worldwide annual turnover."
+          },
+          {
+            "id": "S6",
+            "url": "https://datamatters.sidley.com/2026/06/24/eu-ai-act-transparency-obligations-preparing-for-compliance-by-2-august-2026",
+            "title": "EU AI Act Transparency Obligations: Preparing for Compliance by 2 August 2026 | Data Matters Privacy Blog",
+            "published_date": "Wed, 24 Jun 2026 18:17:35 GMT",
+            "domain": "datamatters.sidley.com",
+            "score": 0.80405265,
+            "content": "Background\n\nOn 7 May 2026, following extensive negotiations, the European Council and European Parliament reached a provisional agreement on the EU Digital Omnibus on AI (AI Omnibus) which proposes targeted amendments to the EU Artificial Intelligence Act (AI Act). On 16 June 2026, the European Parliament voted to adopt the provisional agreement — although, formal adoption remains subject to European Council approval.\n\nThe EU AI Act is the EU’s flagship framework for governing the development, deployment, and use of certain AI systems in the EU. Although adopted in 2024, the regime was designed to apply on a staggered time line beginning in August 2025, with most obligations due to take effect on 2 August 2026. This included the core obligations for certain “high-risk” AI systems."
+          },
+          {
+            "id": "S7",
+            "url": "https://www.insideprivacy.com/artificial-intelligence/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions",
+            "title": "EU AI Act Update: Timeline Relief, Targeted Simplification, and New Prohibitions | Inside Privacy",
+            "published_date": "Mon, 18 May 2026 10:08:29 GMT",
+            "domain": "insideprivacy.com",
+            "score": 0.910998,
+            "content": "### menu\n\nCovington & Burling LLP logo\n\n# Inside Privacy\n\nUpdates on Developments in Data Privacy and Cybersecurity\n\n# EU AI Act Update: Timeline Relief, Targeted Simplification, and New Prohibitions\n\nOn 7 May 2026, negotiators from the Council of the European Union, the European Parliament, and the European Commission reached a provisional agreement on the terms of the Digital Omnibus on AI, marking the first set of amendments to the EU AI Act since its adoption in June 2024. The final package of amendments reflects a mix of pragmatic timeline extensions, focused simplification measures, and a small number of substantive policy changes.\n\nBelow is an overview of some of the key highlights.\n\n# 1. Postponed Deadlines for Certain Obligations [...] Among the most visible changes to the AI Act is the introduction of two new prohibited AI-related practices; namely, the use of AI systems to generate or manipulate non-consensual intimate material and child sexual abuse material (CSAM). The prohibition—which takes effect on 2 December 2026—amends Article 5 of the AI Act to ban the placing on the market, putting into service, or use of AI systems that generate or manipulate realistic depictions of an identifiable natural person’s intimate parts or of an identifiable person engaged in sexually explicit activities, without that person’s freely given, specific, informed, unambiguous, and explicit consent. A parallel prohibition applies to AI systems that generate or manipulate CSAM within"
+          },
+          {
+            "id": "S8",
+            "url": "https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines",
+            "title": "AI Act Update: EU Resolves to Change Rules and Extend Deadlines",
+            "published_date": "Wed, 13 May 2026 00:00:00 GMT",
+            "domain": "lw.com",
+            "score": 0.9170729,
+            "content": "The AI Act’s prohibitions on particularly harmful AI practices (e.g., exploitation of vulnerable individuals, social scoring) are already in force. It will be supplemented by the new rules on AI-generated intimate content and CSAM as of December 2, 2026. The transparency obligations for chatbots take effect in August 2026, and the deferral for AI-generated content labeling is only four months (to December 2, 2026). These requirements may carry significant civil liability exposure and, in some cases, fines of up to €35 million or 7% of annual worldwide turnover, whichever is higher. [...] The obligations set out in Art. 50 AI Act apply from August 2, 2026. Under a grandfathering rule introduced by the Agreement, generative AI systems (i.e., AI systems specifically intended to generate synthetic content such as text, images, audio, or video) placed on the market or put into service before that date must comply with the watermarking requirements only as of December 2, 2026. Violations may result in fines of up to €15 million or 3% of total annual worldwide turnover, whichever is higher.\n\n### Further Adjustments: Reducing Regulatory Overlaps and Clarifying Scope and Enforcement [...] On May 7, 2026, EU legislative bodies reached a political agreement on proposed amendments to the AI Act (the Agreement). This “AI Act Omnibus” forms part of the EU’s broader Omnibus legislative package aimed at simplifying digital regulation. The Agreement clarifies existing AI Act requirements, ext"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c6",
+      "text": "Tavily's free plan includes 1,000 API credits per month.",
+      "quote": "Tavily's free plan includes 1,000 API credits per month.",
+      "quote_found_in_answer": true,
+      "category": "pricing",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "price"
+      ],
+      "sensitivity_score": 0.95,
+      "why_time_sensitive": "Free plan limits can change; Tavily may have updated its free tier by November 2026.",
+      "search_query": "Tavily free plan API credits 2026",
+      "change_query": "Tavily changes free plan API credits",
+      "status": "checked",
+      "result": {
+        "verdict": "supported",
+        "current_fact": null,
+        "evidence": [
+          {
+            "source": "S1",
+            "quote": "Tavily's credits page gives Researcher 1,000 credits every month for free.",
+            "stance": "supports",
+            "url": "https://omidsaffari.com/blog/perplexity-vs-exa-vs-tavily-search-api-cost-2026",
+            "title": "Perplexity vs Exa vs Tavily Search API Cost 2026 | Omid Saffari",
+            "published_date": "Sat, 29 Aug 2026 00:00:00 GMT",
+            "domain": "omidsaffari.com",
+            "fact_date": "2026-08-29"
+          },
+          {
+            "source": "S2",
+            "quote": "every account gets 1,000 credits a month with no card required.",
+            "stance": "supports",
+            "url": "https://freeapihub.com/apis/tavily-search-api",
+            "title": "Tavily Search API — 1,000 Free Credits for AI Agents",
+            "published_date": "Sat, 01 Aug 2026 00:00:00 GMT",
+            "domain": "freeapihub.com",
+            "fact_date": "2026-08-01"
+          },
+          {
+            "source": "S3",
+            "quote": "Researcher Plan: Free, 1,000 API credits per month, suitable for experimentation or new users.",
+            "stance": "supports",
+            "url": "https://aimultiple.com/agentic-search",
+            "title": "Agentic Search: Benchmark 8 Search APIs for Agents",
+            "published_date": "Wed, 13 May 2026 00:00:00 GMT",
+            "domain": "aimultiple.com",
+            "fact_date": "2026-05-13"
+          },
+          {
+            "source": "S4",
+            "quote": "There is a free Researcher plan with 1,000 API credits a month and no credit card required, according to the Tavily pricing page on 12 October 2026.",
+            "stance": "supports",
+            "url": "https://katteb.com/blog/tavily-ai-agent",
+            "title": "Tavily Pricing (Oct 2026): Credits, Plans & a Tavily AI Agent",
+            "published_date": null,
+            "domain": "katteb.com",
+            "fact_date": "2026-10-12"
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "Multiple sources from 2026, including recent publications and direct references to Tavily's pricing page, consistently state that the free plan includes 1,000 API credits per month. The claim is directly supported by these quotes, with no indication of a change.",
+        "checker_notes": [],
+        "model_confidence": 1.0,
+        "indicator": {
+          "label": "Still supported",
+          "confidence": 1.0,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-10-12",
+          "evidence_age_days": 21,
+          "corroborating_domains": 4
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://omidsaffari.com/blog/perplexity-vs-exa-vs-tavily-search-api-cost-2026",
+            "title": "Perplexity vs Exa vs Tavily Search API Cost 2026 | Omid Saffari",
+            "published_date": "Sat, 29 Aug 2026 00:00:00 GMT",
+            "domain": "omidsaffari.com",
+            "score": 0.73596483,
+            "content": "Tavily pricing\n\nTavily's credits page gives Researcher 1,000 credits every month for free. Pay as you go is $0.008 per credit. Monthly plans reduce that unit rate from $0.0075 on Project to $0.005 on Growth.\n\nFor Search, Basic, Fast, and Ultra-fast cost one credit. Advanced costs two. Search can return reranked chunks, an optional generated answer, and optional cleaned raw content, with domain, date, topic, country, and language controls. Extract, Map, Crawl, and Research draw from the same account but have their own meters. [...] ### Free credits reverse the low-volume cash decision\n\nExa's Starter tier includes $20 at signup and $10 in recurring monthly credits without a payment method. Excluding the one-time signup credit, the recurring allowance makes Exa cheaper out of pocket until 5,000 single-query requests per month. At that crossover, Perplexity costs $25 and Exa's $35 gross charge becomes $25 after the monthly credit. Above 5,000, Perplexity's lower unit rate wins.\n\nTavily provides 1,000 free credits each month. If pay-as-you-go is enabled after that allowance, Tavily Basic stays cheaper in cash terms until roughly 2,667 monthly searches. At the crossover, each is about $13.33. Beyond it, Perplexity's $0.005 request rate pulls away from Tavily's $0.008 credit rate."
+          },
+          {
+            "id": "S2",
+            "url": "https://freeapihub.com/apis/tavily-search-api",
+            "title": "Tavily Search API — 1,000 Free Credits for AI Agents",
+            "published_date": "Sat, 01 Aug 2026 00:00:00 GMT",
+            "domain": "freeapihub.com",
+            "score": 0.7440808,
+            "content": "Welcome to the new FreeAPIHub. Same site you know — a fresh, faster redesign. You may still see the classic look on some visits while we finish the rollout.\n\nFreeAPIHub\n\nGet Started\n\nTavily Search API logo\n\nSearchUpdated Aug 1, 2026Newv1\n\n# Tavily Search API\n\nTavily is a search API written for language models rather than people. It returns clean, ranked content and an optional written answer instead of a page of links, and every account gets 1,000 credits a month with no card required.\n\nGet free API keySee codeDocs ↗\n\n#ai-agents#llm#news\n\nQuick facts\n\nAccessFreemium\n\nFree limit1,000 API credits per month, no credit card\n\nFree1,000 credits/month\n\nAuthBearer Token\n\nFormatREST · JSON\n\n## What is Tavily Search API? [...] 🏷️Medium\n\n#### Price watcher\n\nTrack public product pages.\n\n📖Hard\n\n#### Cited chatbot\n\nAnswers with real links.\n\n### Pros and cons\n\n#### Pros\n\n ✓1,000 free credits every month, no card\n ✓Returns cleaned content, not just links\n ✓Optional written answer with sources\n ✓News and finance topic indexes\n ✓Time-range filter for fresh results\n ✓Extract, Crawl and Map endpoints alongside search\n\n#### Cons\n\n ✕Advanced depth costs double the credits\n ✕Extraction billed per five URLs\n ✕Cannot reach paywalled or gated pages\n ✕You rely on Tavily's content extraction\n\n## Frequently asked questions\n\nHow many free credits does Tavily give?\n\n1,000 API credits every month, with no credit card required. The allowance renews monthly rather than expiring as a one-time trial. [...] ## C"
+          },
+          {
+            "id": "S3",
+            "url": "https://aimultiple.com/agentic-search",
+            "title": "Agentic Search: Benchmark 8 Search APIs for Agents",
+            "published_date": "Wed, 13 May 2026 00:00:00 GMT",
+            "domain": "aimultiple.com",
+            "score": 0.7304634,
+            "content": "For prototyping and cost-sensitive development, Tavily is a practical option. It performs slightly below Brave but offers a free Researcher plan with 1,000 monthly API credits and fast responses (998ms). Brave is also worth considering at this stage; its Search plan includes $5 in free monthly credits (roughly 1,000 free requests per month at $5 per 1,000), putting it on a comparable footing for free-tier volume. The quality gap is small enough that either won’t affect your development workflow.\n\nFor latency-sensitive applications, Perplexity may not be the right fit. Despite decent quality, its 11+ second average response time limits its use in interactive agents. It may be more appropriate for batch processing or async workflows where latency is less critical. [...] ##### Benchmark observations\n\n Ranked fifth overall with an Agent Score of 13.67.\n Performed slightly below the top tier. The gap versus Brave (~1 point) was the only statistically meaningful difference in the benchmark.\n Latency was relatively low (998 ms), suitable for interactive agents.\n Quality and relevance were consistent but marginally lower across most categories.\n\n##### Pricing\n\n Researcher Plan: Free, 1,000 API credits per month, suitable for experimentation or new users.\n Project Plan: $30/month, 4,000 API credits, higher rate limits for small projects.\n Pay-As-You-Go: $0.008 per credit, flexible usage without long-term commitment.\n Enterprise Plan: Custom pricing, includes enterprise-grade SLAs, sec"
+          },
+          {
+            "id": "S4",
+            "url": "https://katteb.com/blog/tavily-ai-agent",
+            "title": "Tavily Pricing (Oct 2026): Credits, Plans & a Tavily AI Agent",
+            "published_date": null,
+            "domain": "katteb.com",
+            "score": 0.9404462,
+            "content": "## Frequently asked questions\n\n### Is Tavily free?\n\nThere is a free Researcher plan with 1,000 API credits a month and no credit card required, according to the Tavily pricing page on 12 October 2026. That is roughly 1,000 basic searches or 500 advanced ones. Students can apply for free access.\n\n### How much does the Tavily API cost per search?\n\nA basic search costs 1 credit and an advanced search 2. At pay-as-you-go rates of $0.008 per credit that is $0.008 or $0.016 per search; on the Growth plan at $0.005 per credit it is $0.005 or $0.01.\n\n### What happens when I run out of Tavily credits?\n\nRequests stop until your credits reset on the first of the month or you upgrade, unless pay-as-you-go is enabled, which charges $0.008 per extra credit.\n\n### Does Tavily offer yearly billing? [...] TL;DR. On 12 October 2026 the Tavily pricing page listed four ways to pay: a free Researcher plan with 1,000 API credits a month, pay-as-you-go at $0.008 per credit, a monthly Project plan whose slider runs from $30 (4,000 credits) through $100 (15,000) and $220 (38,000) to $500 (100,000), and custom Enterprise pricing. The Tavily credits documentation prices the work itself: a basic search is 1 credit, an advanced search 2, five successful page extractions 1 or 2 credits, ten mapped pages 1 or 2 credits, and a Research request anywhere from 4 to 250 credits. Tavily is the search layer an agent calls. A Tavily AI agent is the part that decides what to search, reads the results, and turns them"
+          },
+          {
+            "id": "S5",
+            "url": "https://coldiq.com/tools/tavily",
+            "title": "Tavily Review: Features, Pricing & Alternatives (2026)",
+            "published_date": null,
+            "domain": "coldiq.com",
+            "score": 0.93497354,
+            "content": "Enterprise-grade security and support\n\n## Pricing\n\nTavily offers a free Researcher plan with 1,000 monthly API credits and basic email support, ideal for new creators with limited rate limits. The Pay As You Go plan charges $0.008 per credit with flexible usage and no fixed monthly cost, while the Project plan costs $30/month for 4,000 credits and higher rate limits tailored for enthusiasts. For enterprises, custom pricing provides tailored API calls, rate limits, enterprise-grade support, security, and SLAs with flexible seats per workspace.\n\nStarting price$0.01\n\nTrialAvailable\n\n### Researcher\n\nFree\n\nPer User, Monthly\n\nIt includes\n\n 1,000 API credits\n Free monthly plan\n No credit card\n Email support\n For new creators\n Limited rate limits\n\n### Pay As You Go\n\n$0.01\n\nPer User, Monthly [...] Get started\n\n## How simple is Tavilysetup?\n\nSign up for Tavily, get your API key in just two clicks, and quickly integrate the Search API into your app with simple code snippets. Minimal setup means you can start retrieving real-time web data instantly with no complex configuration.\n\n## Frequently asked questions\n\nHow to use Tavily?\n\nSign up, get your API key, and integrate Tavily’s fast, reliable web access APIs into your agent or app in just a few clicks.\n\nHow much is Tavily?\n\nTavily offers a free plan with 1,000 credits/month, pay-as-you-go at $0.008/credit, and a $30/month plan with 4,000 credits.\n\nWhy choose Tavily?\n\nChoose Tavily for accurate, real-time web data with high rate limits, "
+          },
+          {
+            "id": "S6",
+            "url": "https://frontal.so/gtm-apis/source-apis/tavily-api-review",
+            "title": "Tavily API review: credits, keys and the auto trap",
+            "published_date": null,
+            "domain": "frontal.so",
+            "score": 0.9301101,
+            "content": "14 threads read on 13 October 2026, searched by vendor name. Scores and dates are the comment's own. Nothing here is the only source for a price or a limit on this site: every figure in the tables above comes from a vendor's own page.\n\nFAQ\n\n## Tavily API, answered\n\nIs the Tavily API free?\n\nFree plan, 1,000 API credits a month, no card. Free for students. Paid use starts at $0.008/credit.\n\n  How much does the Tavily API cost?\n\nTavily starts at $0.008/credit, metered at $0.008 per credit. Billing is pay as you go, subscription and free tier. Read from Tavily's own pricing page on 8 October 2026.\n\n  What are the Tavily API rate limits?\n\nSearch 100/min on a dev key, 1,000 on production. Crawl 100, research 20.\n\n  How do I get a Tavily API key? [...] Skip to content\n\nFrontal\nBook a call  Open navigation menuClose navigation menu\n\nBook a call\n\n# Tavily API review\n\nBest search API for agents on a budget\n\nReviewed by Frontal·Updated October 2026\n\nsearch.sh 1 credit\n\n```\nPOST Authorization: Bearer $TAVILY_KEY# search_depth: basic → 1 credit, $0.008# search_depth: advanced → 2 credits, $0.016 # auto_parameters may choose advanced for you\n```\n\n200 OK Per basic search $0.008\n\nThe Tavily API is web search built to be consumed by a language model. You send a query, it searches, and it returns results already shaped for a prompt rather than a page of links you would have to scrape. For a GTM agent that needs to know something nobody has put in a database, that is the whole job."
+          },
+          {
+            "id": "S7",
+            "url": "https://www.therundown.ai/tools/tavily",
+            "title": "Tavily: Features, Pricing & Alternatives (2026)",
+            "published_date": null,
+            "domain": "therundown.ai",
+            "score": 0.9132521,
+            "content": "Cost\n\n## Tavily pricing and free plan\n\nTavily’s public pricing lists a free Researcher allowance, pay-as-you-go credits and volume plans. API credit consumption depends on the endpoint and usage. The advertised free allowance is a starting point, not unlimited research.\n\n### Researcher\n\nFree\n\nFor prototyping and light developer use.\n\n 1,000 API credits per month\n No credit card required per pricing page\n\n### Pay as you go\n\n$0.008 per credit\n\nFlexible usage after or beyond free experimentation.\n\n Actual spend depends on endpoint calls and credit rules\n\n### Project and Enterprise\n\nVolume or custom pricing\n\nHigher-volume plans with different credit capacity and support.\n\n Check the live calculator or contact Tavily for a current quote\n\nPricing checked . Check current pricing at the source ↗ [...] The Rundown AI homepage\n\nUniversity Platform →\n\nIndependent tool overview\n\n# Tavily: features, pricing and alternatives\n\nTavily gives developers web search and page extraction tools that agents can call for fresher external context.\n\nVisit the official Tavily site ↗\n\nTavily product preview\n\nProduct type\n:   Developer web-data API\n\nCore endpoints\n:   Search, Extract, Crawl and Map\n\nEntry allowance\n:   1,000 free API credits monthly\n\nBilling\n:   Credit-based plans and pay as you go\n\n## What Tavily is [...] Data Analysis\n\n### Perplexity\n\nChoose a ready-to-use cited research interface rather than building with a web API.\n\nExplore Perplexity →\n\nData Analysis\n\n### Elicit\n\nChoose literature-fo"
+          },
+          {
+            "id": "S8",
+            "url": "https://keirolabs.cloud/blog/tavily-api-guide-2026",
+            "title": "Tavily API: Key, Pricing, Limits and MCP (2026)",
+            "published_date": null,
+            "domain": "keirolabs.cloud",
+            "score": 0.90965873,
+            "content": "### Is the Tavily API free?\n\nTavily's free Researcher plan includes 1,000 credits a month with no card required. A basic search uses 1 credit and an advanced search uses 2, so that is up to 1,000 basic searches a month.\n\n### How much does Tavily cost per search?\n\nPay as you go is $0.008 per credit: $8 per 1,000 basic searches and $16 per 1,000 advanced searches. Monthly plans lower the credit price to $0.005 on the $500 Growth plan, or $5 per 1,000 basic searches.\n\n### How do I get a Tavily API key?\n\nSign up at app.tavily.com and copy the key from the dashboard; it starts with tvly-. For production traffic, create a production key, which requires a paid plan or pay as you go and raises the limit to 1,000 requests a minute.\n\n### Does Tavily have an MCP server? [...] Get a key: sign up at Tavily, copy the key from the dashboard (it starts with `tvly-`). The free Researcher plan gives 1,000 credits a month, no card required.\n Price: $0.008 per credit pay as you go. A basic search is 1 credit ($8 per 1,000), an advanced search is 2 ($16 per 1,000). Monthly plans bring the credit down to $0.005 at $500 a month.\n Endpoints: Search, Extract, Map, Crawl and Research, all on one key.\n Limits: 100 requests a minute on a development key, 1,000 on a production key.\n\nFor most agents, start with `search_depth: \"basic\"` and only turn on `include_raw_content` when the model needs the whole page. Those two settings decide most of your bill and latency.\n\n## What is Tavily? [...] Watch `auto_pa"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c7",
+      "text": "GitHub Copilot for individuals costs $10 per month.",
+      "quote": "GitHub Copilot for individuals costs $10 per month.",
+      "quote_found_in_answer": true,
+      "category": "pricing",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "price"
+      ],
+      "sensitivity_score": 0.95,
+      "why_time_sensitive": "Pricing for GitHub Copilot may have changed; a new price could have been introduced by November 2026.",
+      "search_query": "GitHub Copilot individual plan price 2026",
+      "change_query": "GitHub Copilot price change",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "GitHub Copilot for individuals on the Pro plan costs $10 per month but now includes $15 in monthly AI Credits as of October 2026.",
+        "evidence": [
+          {
+            "source": "S5",
+            "quote": "Pro at $10 per user per month is the working baseline: unlimited code completions, the cloud agent, and $15 in monthly credits ($10 base plus $5 flex).",
+            "stance": "contradicts",
+            "url": "https://techjacksolutions.com/ai-tools/github-copilot/github-copilot-pricing",
+            "title": "GitHub Copilot Pricing: Definitive Guide 2026",
+            "published_date": null,
+            "domain": "techjacksolutions.com",
+            "fact_date": null
+          },
+          {
+            "source": "S3",
+            "quote": "Copilot Pro remains $10/month, Pro+ remains $39/month, Business remains $19/user/month, and Enterprise remains $39/user/month.",
+            "stance": "supports",
+            "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing",
+            "title": "GitHub Copilot is moving to usage-based billing - The GitHub Blog",
+            "published_date": "Mon, 27 Apr 2026 15:58:22 GMT",
+            "domain": "github.blog",
+            "fact_date": "2026-04-27"
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "While the base price of $10/month for GitHub Copilot Pro remains unchanged, the value has increased as of October 2026 to include $15 in monthly AI Credits, indicating a change in the offering's structure and benefits. This reflects an update in the service's pricing model that alters what the fee provides, even if the price tag is the same.",
+        "checker_notes": [],
+        "model_confidence": 0.9,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 0.85,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-04-27",
+          "evidence_age_days": 189,
+          "corroborating_domains": 2
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://tech-insider.org/au/github-copilot-usage-based-billing-2026",
+            "title": "GitHub Copilot Pricing [2026]: From $0 to $39/mo",
+            "published_date": "Thu, 11 Jun 2026 00:56:18 GMT",
+            "domain": "tech-insider.org",
+            "score": 0.9405774,
+            "content": "Skip to content\n\nTech Insider\n\nTech Insider\n\n# GitHub Copilot Usage Billing Live: $0.04/Request \n\n Mason WhitfieldMason Whitfield\n Software\n\nMason Whitfield\n\nJune 11, 2026\n\n18 min read\n\nOn 1 June 2026, GitHub flipped the switch on the most consequential change to its AI coding assistant since launch: GitHub Copilot moved from a simple flat-rate subscription to usage-based billing. The headline subscription prices did not move – Copilot Pro is still US$10 a month, Pro+ is still US$39 – but the meter underneath them is brand new. Every interaction with a premium model now draws down a pool of monthly credits, and once that pool runs dry, developers pay US$0.04 for each additional premium request or get cut off until the next cycle. [...] GitHub was careful to frame the change as cost-neutral at the base. “Base plan pricing is not changing,” the company stated in its announcement, noting that Copilot Pro remained US$10 a month, Pro+ stayed at US$39, Business held at US$19 per user, and Enterprise stayed at US$39 per granted seat. By July 2026, billing tracker Benday.com reported the credit math behind those fees had actually sweetened: the US$10 Pro plan now unlocks US$15 in total AI Credits, Pro+’s US$39 unlocks US$70, and Business’s US$19 still converts one-for-one into US$19 of monthly credits. Code completions and Next Edit Suggestions – the bread-and-butter autocomplete that most developers use constantly – remain unmetered and free of premium-request charges. The metering "
+          },
+          {
+            "id": "S2",
+            "url": "https://www.itpro.com/software/development/github-copilot-pricing-changes-usage-based-billing-explained",
+            "title": "Everything you need to know about the GitHub Copilot pricing changes | IT Pro",
+            "published_date": "Tue, 28 Apr 2026 10:38:01 GMT",
+            "domain": "itpro.com",
+            "score": 0.9242583,
+            "content": "## Managing costs\n\nThe shift to the new system will happen on 1 June, but GitHub will send customers a preview bill in their account Billing Overview page in May to help users and admins understand what their costs will be going forward.\n\nThere will be no change to monthly subscription prices, the company noted. A Copilot Business user costs $19/month, and will include $19 in monthly AI Credits.\n\nMeanwhile, Copilot Enterprise will still cost $39/month per user, with $39 in monthly AI Credits.\n\nTo help smooth out the shift to the new pricing system, Business users will get a bonus of $30 monthly in AI Credits for June, July, and August, while Enterprise users will automatically get a bonus of $70 a month. [...] ## What does this mean for individual users?\n\nFor individual users, those on Copilot Pro and Pro+, their AI Credits will also match their subscription price of $10/month and $39/month, with those on an annual plan staying premium pricing until their subscription expires.\n\nIt’s worth noting that model multipliers will increase as of 1 June for those users. Once their plan expires, they'll be converted to Copilot Free and can then upgrade to a paid monthly plan.\n\nAlternatively, annual subscribers can choose to convert to a monthly plan now.\n\nRodriguez said that temporary changes were made to those plans as well as Free and Student last week, in order to prepare for the new system."
+          },
+          {
+            "id": "S3",
+            "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing",
+            "title": "GitHub Copilot is moving to usage-based billing - The GitHub Blog",
+            "published_date": "Mon, 27 Apr 2026 15:58:22 GMT",
+            "domain": "github.blog",
+            "score": 0.9379027,
+            "content": "A few important details:\n\n Base plan pricing is not changing. Copilot Pro remains $10/month, Pro+ remains $39/month, Business remains $19/user/month, and Enterprise remains $39/user/month.\n Code completions and Next Edit suggestions remain included in all plans and do not consume AI Credits.\n Fallback experiences will no longer be available. Today, users who exhaust PRUs may fall back to a lower-cost model and continue working. Under the new model, usage will instead be governed by available credits and admin budget controls.\n Copilot code review will also consume GitHub Actions minutes, in addition to GitHub AI Credits. These minutes are billed at the same per-minute rates as other GitHub Actions workflows. [...] Last week, we also rolled out temporary changes to Copilot Individual plans, including Free, Pro, Pro+, and Student, and paused self-serve Copilot Business plan purchases. These were reliability and performance measures as we prepare for the broader transition to usage-based billing. We will loosen usage limits once usage-based billing is in effect.\n\n## What this means for individuals\n\nCopilot Pro and Pro+ monthly subscriptions will include monthly AI Credits aligned to their current subscription prices:\n\n Copilot Pro: $10/month, including $10 in monthly AI Credits\n Copilot Pro+: $39/month, including $39 in monthly AI Credits [...] Instead of counting premium requests, every Copilot plan will include a monthly allotment of GitHub AI Credits, with the option for paid"
+          },
+          {
+            "id": "S4",
+            "url": "https://www.zdnet.com/article/github-copilot-shifts-to-usage-based-pricing",
+            "title": "GitHub Copilot shifts to usage-based pricing June 1 - why that's no surprise - ZDNET",
+            "published_date": "Mon, 27 Apr 2026 19:33:00 GMT",
+            "domain": "zdnet.com",
+            "score": 0.9075175,
+            "content": "GitHub claims its current premium request model is unsustainable. After all, they stated, “a quick chat question and a multi-hour autonomous coding session can cost the user the same amount,” with GitHub absorbing escalating inference costs. The usage-based model is intended to maintain long-term service reliability.\n\nThe good news is that, for now, anyway, base subscription pricesremain unchanged. Copilot Pro is staying at $10 per month, and Pro+ is at $39 per month. However, these subscriptions will now include monthly AI Credits matching their dollar value. That is, Pro subscribers receive $10 in credits, while Pro+ users receive $39. I have no idea why GitHub felt the need to spell this out. [...] Code completions and Next Edit suggestions will remain included without consuming AI Credits. Users on annual plans will continue with PRU-based pricing until expiration, when they transition to Copilot Free with upgrade options, or they can convert early to monthly plans with prorated credits.\n\nCopilot Business, $19 per user per month, and Copilot Enterprise. $39 per user per month, maintain their current pricing while adding equivalent monthly AI Credits per seat. To ease the transition, GitHub will provide promotional credits for June, July, and August 2026: Business customers receive $30 per month, and Enterprise users receive $70 per month. [...] ### ZDNET’s key takeaways\n\n GitHub shifts pricing for its flagship Copilot service.\n Under the new AI Credit approach, if you run"
+          },
+          {
+            "id": "S5",
+            "url": "https://techjacksolutions.com/ai-tools/github-copilot/github-copilot-pricing",
+            "title": "GitHub Copilot Pricing: Definitive Guide 2026",
+            "published_date": null,
+            "domain": "techjacksolutions.com",
+            "score": 0.9481979,
+            "content": "GitHub Copilot pricing ranges from a free plan to $100 per month, with paid tiers in between. That is the whole picture in one line; the table just below fills in every tier and price.\n\nThe rest of this breakdown explains what each tier buys, how the credit system meters chat and agent usage, and which plan fits a solo developer versus a whole engineering org. Every figure is verified against GitHub's own pricing page as of October 2026, and time-sensitive details, such as the June 2026 pause on new Max sign-ups, are flagged as dated states rather than permanent rules. [...] ### Individual paid tiers\n\nThe individual paid tiers are where most working developers land, so this is the part of Copilot's pricing worth studying closely. Pro at $10 per user per month is the working baseline: unlimited code completions, the cloud agent, and $15 in monthly credits ($10 base plus $5 flex). Pro+ at $39 per user per month keeps everything in Pro and adds premium models plus a larger allowance of roughly $70 in monthly credits (about 7,000). Max at $100 per user per month tops the individual range with the highest allowance, roughly $200 in monthly credits (about 20,000). New Max sign-ups were temporarily paused as of June 2026; that pause is not confirmed in the October 2026 capture of the pricing page, so check availability before planning around Max.\n\nFree\n\n$0 [...] How much does GitHub Copilot cost per month? +\n\nSeveral plans, vendor-reported as of October 2026. Free is $0 with limited"
+          },
+          {
+            "id": "S6",
+            "url": "https://simonwillison.net/2026/Apr/22/changes-to-github-copilot",
+            "title": "Changes to GitHub Copilot Individual plans",
+            "published_date": null,
+            "domain": "simonwillison.net",
+            "score": 0.94726914,
+            "content": "# Simon Willison’s Weblog\n\n22nd April 2026 - Link Blog\n\nChanges to GitHub Copilot Individual plans (via) On the same day as Claude Code's temporary will-they-won't-they $100/month kerfuffle (for the moment, they won't), here's the latest on GitHub Copilot pricing.\n\nUnlike Anthropic, GitHub put up an official announcement about their changes, which include tightening usage limits, pausing signups for individual plans (!), restricting Claude Opus 4.7 to the more expensive $39/month \"Pro+\" plan, and dropping the previous Opus models entirely.\n\nThe key paragraph: [...] Judging by the linked GitHub Copilot plans page this covers Copilot CLI, Copilot cloud agent and code review (features on GitHub.com itself), and the Copilot IDE features available in VS Code, Zed, JetBrains and more.\n\n## Recent articles\n\nThis is a link post by Simon Willison, posted on 22nd April 2026.\n\n### Monthly briefing\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\n\nPay me to send you less!"
+          },
+          {
+            "id": "S7",
+            "url": "https://www.cloudzero.com/blog/github-copilot-cost",
+            "title": "GitHub Copilot cost: what teams actually pay in 2026",
+            "published_date": null,
+            "domain": "cloudzero.com",
+            "score": 0.94608605,
+            "content": "Quick Answer\n\nThe GitHub Copilot cost runs from $0 for the Free tier to $10/month for Pro, $39/month for Pro+, and $100/month for Max. Teams pay $19/user/month for Business and $39/user/month for Enterprise. The twist: on June 1, 2026 GitHub swapped fixed premium requests for usage-based AI Credits, so what those flat fees actually buy now depends on how hard you push the AI. The sticker price is the easy part. The part that ambushes finance is everything stacked on top of it.\n\nHere is every GitHub Copilot plan, current as of 2026. The GitHub Copilot pricing picture, or the full set of GitHub Copilot pricing plans, has five rungs on the individual side (the GitHub Copilot pricing individual tiers: Free, Pro, Pro+, and Max) and two for organizations. [...] How much is GitHub Copilot?\n\nHow much is GitHub Copilot depends on the plan: $0 for Free, $10/month for Pro, $39/month for Pro+, $100/month for Max, $19/user/month for Business, and $39/user/month for Enterprise, all listed on GitHub’s plans page. Since June 1, 2026, each plan also includes a monthly AI Credit allowance that meters premium usage.\n\nIs GitHub Copilot free?\n\nYes. There is a Free tier at $0 for individual developers, with limited monthly usage plus code completions, and verified students get free access through the GitHub Student Developer Pack. Free is ideal for trials and hobby work, not for full-time team use.\n\nWhat are GitHub Copilot premium requests? [...] What are GitHub Copilot premium requests?\n\nPremium "
+          },
+          {
+            "id": "S8",
+            "url": "https://www.nocode.mba/articles/github-copilot-pricing",
+            "title": "GitHub Copilot Pricing 2026: Free, Pro & Business Plans | No Code MBA",
+            "published_date": null,
+            "domain": "nocode.mba",
+            "score": 0.92731744,
+            "content": "←All articles\n\nGuide6 min readUpdated October 14, 2026\n\n# GitHub Copilot Pricing 2026: Free, Pro & Business Plans\n\nGitHub switched Copilot to usage-based AI Credits billing on June 1, 2026. Here is what each plan costs, what changed, and which one fits your workflow.\n\nAI Coding ToolsBuild an AI SaaS\n\n### Quick Answer: GitHub Copilot Pricing in 2026\n\nGitHub Copilot offers four plans: Free ($0), Pro ($10/month), Pro+ ($39/month), and Max ($100/month). Teams pay $19/user/month for Business or $39/user/month for Enterprise.\n\nNew in June 2026: All plans switched to AI Credits billing based on token usage. Code completions are free on every paid plan. [...] ### Is GitHub Copilot Business worth it for small teams?\n\nCopilot Business may suit a small team that needs centralized seat management and policy controls. It costs $19 per granted seat per month and includes 1,900 AI Credits per user in a shared billing-entity pool. For customers paying by credit card or PayPal, assigned seats are charged upfront from October 1, 2026, and a new seat must be paid for before its user gets access. Mid-cycle seat additions and included usage may be prorated; removing a seat does not produce a prorated refund. Plan prices remain unchanged. Additional usage costs $0.01 per AI Credit when an administrator allows it. Compare Enterprise at $39 per granted seat for 3,900 credits per user and additional enterprise features. [...] ## GitHub Copilot Plans at a Glance\n\n| Plan | Price | AI Credits/Month | Be"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c8",
+      "text": "Python was created by Guido van Rossum and first released in 1991.",
+      "quote": "Python was created by Guido van Rossum and first released in 1991.",
+      "quote_found_in_answer": true,
+      "category": "other",
+      "model_time_sensitivity": "low",
+      "heuristic_signals": [
+        "date"
+      ],
+      "sensitivity_score": 0.23,
+      "why_time_sensitive": "This is a historical fact and unlikely to change.",
+      "search_query": "Python creation date and creator",
+      "change_query": "Python creator changed or release date revised",
+      "status": "not_checked",
+      "not_checked_reason": "low time-sensitivity (stable fact)"
+    },
+    {
+      "id": "c9",
+      "text": "Brightwave Labs, a robotics startup in Pune, raised a $40M Series B last month.",
+      "quote": "Brightwave Labs, a robotics startup in Pune, raised a $40M Series B last month.",
+      "quote_found_in_answer": true,
+      "category": "event_or_status",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "price",
+        "quantity"
+      ],
+      "sensitivity_score": 1.0,
+      "why_time_sensitive": "\"last month\" refers to October 2026; this event is time-bound and may not be verifiable or accurate in November 2026.",
+      "search_query": "Brightwave Labs Series B funding October 2026",
+      "change_query": "Brightwave Labs raises Series B funding in October 2026",
+      "status": "checked",
+      "result": {
+        "verdict": "unverifiable",
+        "current_fact": null,
+        "evidence": [
+          {
+            "source": "S2",
+            "quote": "Brightwave has raised $21.0M in total across 2 funding rounds.",
+            "stance": "contradicts",
+            "url": "https://startupintros.com/orgs/brightwave",
+            "title": "Brightwave: Funding, Team & Investors | Startup Intros",
+            "published_date": "Mon, 13 Jul 2026 08:16:48 GMT",
+            "domain": "startupintros.com",
+            "fact_date": "2026-07-13"
+          },
+          {
+            "source": "S4",
+            "quote": "BrightWave Secures $1M TEDCO Award to Expand Maryland’s First Fully Integrated Algae Biomanufacturing Facility",
+            "stance": "contradicts",
+            "url": "https://biobuzz.io/news/brightwave-secures-1m-tedco-award-to-expand-marylands-first-fully-integrated-algae-biomanufacturing-facility",
+            "title": "BrightWave Secures $1M TEDCO Award to Expand Maryland’s First Fully Integrated Algae Biomanufacturing Facility | BioBuzz",
+            "published_date": "Sun, 14 Dec 2025 17:21:23 GMT",
+            "domain": "biobuzz.io",
+            "fact_date": "2025-12-14"
+          },
+          {
+            "source": "S5",
+            "quote": "the funding will enhance BrightWave’s ongoing work with Early Charm Ventures VC at Harford County’s CONVERGE Center in Aberdeen",
+            "stance": "contradicts",
+            "url": "http://www.harfordcountymd.gov/m/newsflash/Home/Detail/1622",
+            "title": "Harford County Celebrates $1M Maryland Grant, Advancing Biomanufacturing at CONVERGE Center • Harford County, MD",
+            "published_date": "Mon, 08 Dec 2025 00:00:00 GMT",
+            "domain": "harfordcountymd.gov",
+            "fact_date": "2025-12-08"
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "The sources describe BrightWave LLC as a biomanufacturing company in Maryland focused on algae production, not a robotics startup in Pune. The funding mentioned is a $1M state award, not a $40M Series B. Another entity, Brightwave (AI research agents), is based in Boulder and has raised $21M total, contradicting the $40M claim. No source confirms a Pune-based robotics startup raising $40M in Series B funding.",
+        "checker_notes": [],
+        "model_confidence": 0.95,
+        "indicator": {
+          "label": "Could not verify",
+          "confidence": 0.15,
+          "confidence_level": "low",
+          "newest_evidence_date": "2026-07-13",
+          "evidence_age_days": 112,
+          "corroborating_domains": 3
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://www.gaiiinstitute.com/gaii-intelligence",
+            "title": "GAII Intelligence: Ratings of AI Vendors in Investing",
+            "published_date": "Thu, 22 Oct 2026 00:00:00 GMT",
+            "domain": "gaiiinstitute.com",
+            "score": 0.53866833,
+            "content": "Oct 2026 Brightwave built an AI research platform for hedge funds, asset managers, private equity and wealth firms;"
+          },
+          {
+            "id": "S2",
+            "url": "https://startupintros.com/orgs/brightwave",
+            "title": "Brightwave: Funding, Team & Investors | Startup Intros",
+            "published_date": "Mon, 13 Jul 2026 08:16:48 GMT",
+            "domain": "startupintros.com",
+            "score": 0.4811862,
+            "content": "## Frequently Asked Questions\n\nBrightwave has raised $21.0M in total across 2 funding rounds.\n\nBrightwave's investors include Decibel, Decibel Partners, Insight Partners, OMERS Ventures, Pareto Holdings, Point72 Ventures, Liu Jiang, Matěj Turek.\n\n## Deep Dive\n\n## High-Level Overview [...] Based in Boulder, Colorado, Brightwave develops artificial intelligence research agents that analyze extensive financial documents to generate actionable investment insights with precise sentence-level attribution. The cloud-based software platform processes complex data sources, including SEC filings, data rooms, and market research, assisting financial and investment professionals at crossover hedge funds and registered investment advisors in evaluating market risks and inter-industry opportunities. Operating on a subscription model, the enterprise software serves an institutional client base that collectively manages over $120 billion in assets under management. To support its ongoing platform development, Brightwave secured seed funding from a syndicate of prominent venture capital [...] ## Quick Take & Future Outlook\n\nBrightwave is primed to dominate AI-driven diligence, expanding from core research agents to full workflow suites amid rising AI-finance demand. Trends like multimodal AI (docs + calls) and real-time market synthesis will fuel growth, potentially hitting unicorn velocity with its $21M warchest and elite backers. Its influence could evolve from tool to ecosystem hub, empowe"
+          },
+          {
+            "id": "S3",
+            "url": "https://dbm.maryland.gov/budget/FY2027Testimony/T50.pdf",
+            "title": "T50 Maryland Technology Development Corporation",
+            "published_date": "Wed, 18 Feb 2026 16:41:37 GMT",
+            "domain": "dbm.maryland.gov",
+            "score": 0.42133808,
+            "content": "- $250,000 (Cybersecurity/IT) • Baltimore City • BioBuzz Networks, Inc - $224, 800 (Healthcare, Lifesciences & Bioinformatics) • Code in the Schools - $112,500 (STEM Education) • Maryland Center for Construction Education and Innovation - $240,626.80 (Advanced Manufacturing) • Prince George’s County • Energetics Technology Center - $250,000 (Cybersecurity/IT) Infrastructure • Montgomery County • Rise Therapeutics - $998,000 (Healthcare, Lifesciences & Bioinformatics) • Xcellon Biologics - $990,000 (Advanced Laboratory Space) • Harford County • BrightWave LLC - $1,000,000 (Advanced Manufacturing) In total, the awards are projected to generate at least 380 direct jobs and internships, with 65% or more from underrepresented communities. Additionally, the projects anticipate at least a dozen"
+          },
+          {
+            "id": "S4",
+            "url": "https://biobuzz.io/news/brightwave-secures-1m-tedco-award-to-expand-marylands-first-fully-integrated-algae-biomanufacturing-facility",
+            "title": "BrightWave Secures $1M TEDCO Award to Expand Maryland’s First Fully Integrated Algae Biomanufacturing Facility | BioBuzz",
+            "published_date": "Sun, 14 Dec 2025 17:21:23 GMT",
+            "domain": "biobuzz.io",
+            "score": 0.5236402,
+            "content": "## Upcoming Events\n\nOct 23\n\nSeminar / Talk / Lecture\n\n### AI & Digital Health Day\n\nPhiladelphia, PA\n\nView Event → \n\nOct 23\n\n### Bio Innovation Conference 2026\n\nBioHealth Capital Region Oct 23\n\n### Ci2i Symposium Oct 23\n\n### MTC Bio Innovation Conference 2026\n\nBioHealth Capital Region Oct 25\n\n### Training at the 2026 ISPE Annual Meeting & Expo\n\nBioHealth Capital Region Oct 25\n\n### Nitrosamine Compliance: Regulatory Requirements from Risk Assessments to Control Strategies\n\nView All Events →\n\n### Stay in the Loop\n\nGet the latest life science news, events, and opportunities delivered to your inbox every week.\n\n## Related Articles\n\nMentors Matter More Than Money: Lessons from Ripken’s Tip-Off Luncheon \n\nBioHealth Capital RegionEventsPeople [...] ## Leading a New Algae Biomanufacturing Ecosystem\n\nBrightWave develops state-of-the-art photobioreactor systems that enable high-density, precision-controlled algae growth—supporting applications in food manufacturing, cosmetics, sustainable materials, pigments, fuels, and more. As industries look to decarbonize and shift toward cleaner production models, algae-based systems offer a scalable pathway to dramatically lower emissions and waste.\n\nThe new EGF funding builds on Maryland’s earlier $500,000 Build Our Future investment, which helped establish foundational biomanufacturing tools now powering the CONVERGE ecosystem.\n\nThe expansion will support: [...] Maryland continues to build one of the most inclusive, future-oriented biomanufactur"
+          },
+          {
+            "id": "S5",
+            "url": "http://www.harfordcountymd.gov/m/newsflash/Home/Detail/1622",
+            "title": "Harford County Celebrates $1M Maryland Grant, Advancing Biomanufacturing at CONVERGE Center • Harford County, MD",
+            "published_date": "Mon, 08 Dec 2025 00:00:00 GMT",
+            "domain": "harfordcountymd.gov",
+            "score": 0.39943734,
+            "content": "The Equitech Growth Fund award from TEDCO - a state-supported agency that assists technology companies - will go to local biomanufacturer BrightWave LLC. Combined with a $2M match from the venture capital firm Actual VC, the funding will enhance BrightWave’s ongoing work with Early Charm Ventures VC at Harford County’s CONVERGE Center in Aberdeen, located near Aberdeen Proving Ground. [...] BrightWave’s patented photobioreactors, enabling high-density, controlled algae growth for consistent biomaterial production.\n Specialized downstream processing tools, such as custom pyrolysis units and dewatering systems, which turn raw algae into usable products efficiently on a mass scale.\n Upgrades to air handling, water processing, environmental controls, and bioprocessing utilities ensuring the facility can operate safely, reliably, and at the level required for commercial production.\n\nThese improvements will transform 1,000 square feet of CONVERGE into a state-of-the-art production floor capable of making sustainable materials—from carbon-negative building products to specialty chemicals used in personal care, aerospace, and defense. [...] The Equitech Growth Fund, part of TEDCO’s Cultivate Maryland initiative, supports infrastructure and workforce development projects that help Maryland compete in innovation-driven industries. In the most recent round, the program awarded more than $4.3 million across nine projects statewide. BrightWave’s $1 million award was the largest infrastruc"
+          },
+          {
+            "id": "S6",
+            "url": "https://www.crunchbase.com/organization/brightwave-bc0d",
+            "title": "Brightwave - Crunchbase Company Profile & Funding",
+            "published_date": "Wed, 05 Nov 2025 00:00:00 GMT",
+            "domain": "crunchbase.com",
+            "score": 0.35824135,
+            "content": "Brightwave is an AI research helper that produces intelligent and trustworthy financial analysis on any topic. How much funding has Brightwave raised to date?"
+          },
+          {
+            "id": "S7",
+            "url": "https://www.instagram.com/p/Det5QlzCCPG",
+            "title": "The bison is wearing a quilted puffer vest with three ...",
+            "published_date": null,
+            "domain": "instagram.com",
+            "score": 0.5370662,
+            "content": "October 20, 2026: a CFO whose company just announced Series B funding and hired 3 new accountants? That's a buying signal."
+          }
+        ]
+      }
+    }
+  ],
+  "rewritten_answer": "Here's a quick snapshot of the landscape for your AI side project:\n\n- The latest stable version of Python is 3.15.0, released on October 9, 2026, so target that for new projects [1] [2] [3].\n- Node.js 26 is the current Active LTS release [4] [5] [6].\n- OpenAI's most capable model is GPT-6 Astra [7] [8] [9].\n- Linda Yaccarino is no longer CEO of X; she stepped down in July 2025 [10] [11] [12].\n- The EU AI Act has been formally adopted, and key obligations are already in force, including transparency rules as of 2 August 2026 [13] [14] [15].\n- Tavily's free plan includes 1,000 API credits per month [16] [17] [18] [19].\n- GitHub Copilot for individuals on the Pro plan costs $10 per month and now includes $15 in monthly AI Credits as of October 2026 [20] [21].\n- Python was created by Guido van Rossum and first released in 1991.\n- Brightwave Labs, a robotics startup in Pune, raised a $40M Series B last month. (could not be verified as of 2026-11-02)\n\nSources:\n[1] https://tech-insider.org/ie/python-3-15-release-3-10-end-of-life-2026\n[2] https://www.python.org/downloads/source\n[3] https://www.herodevs.com/blog-posts/python-end-of-life-dates-every-versions-support-timeline\n[4] https://nodejs.org/en/blog/release/v26.13.0\n[5] https://www.techtimes.com/articles/321432/20260723/nodejs-security-release-high-severity-vulnerabilities-hit-all-three-lines.htm\n[6] http://nodesource.com/blog/nodesource-weekly-oct-6-2026-nodejs-26-lts-nsolid-6-3-8-jsconf-mexico\n[7] https://gizmodo.com/with-no-astra-to-release-openai-pivots-to-new-gpt-6-1-sol-model-2000819044\n[8] https://thehill.com/policy/technology/6070203-openai-rolls-out-gpt-6-astra\n[9] https://workflowmitra.com/blog/openai-models\n[10] https://www.livenowfox.com/news/x-raided-paris-office-france-elon-musk\n[11] https://www.cbsnews.com/news/elon-musk-x-france-paris-office-search-summons-yaccarino-grok-ai-data\n[12] https://www.businessinsider.com/ceos-arent-job-hugging-like-employees-labor-market-2025-11\n[13] https://www.jdsupra.com/legalnews/the-eu-ai-act-key-dates-for-compliance-4676843\n[14] https://www.orrick.com/en/Insights/2024/09/The-EU-AI-Act-Key-Dates-for-Compliance\n[15] https://www.morganlewis.com/blogs/sourcingatmorganlewis/2026/08/eu-ai-acts-transparency-rules-what-went-into-effect-on-2-august\n[16] https://omidsaffari.com/blog/perplexity-vs-exa-vs-tavily-search-api-cost-2026\n[17] https://freeapihub.com/apis/tavily-search-api\n[18] https://aimultiple.com/agentic-search\n[19] https://katteb.com/blog/tavily-ai-agent\n[20] https://techjacksolutions.com/ai-tools/github-copilot/github-copilot-pricing\n[21] https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing",
+  "gateway": {
+    "llm_calls": {
+      "calls": 11,
+      "fallback_calls": 0,
+      "prompt_tokens": 32477,
+      "completion_tokens": 4321,
+      "served_by": [
+        "otari/alibaba/qwen3-235b-a22b-instruct-2507",
+        "otari/alibaba/qwen3-30b-a3b-instruct-2507"
+      ]
+    },
+    "bifrost": {
+      "logged_requests": 10,
+      "logged_errors": 0,
+      "logged_cost_usd": 0.00451,
+      "vk_budget_used_usd": 0.009236049999999999,
+      "vk_budget_limit_usd": 0.3,
+      "vk_requests_used": 21,
+      "vk_requests_limit": 300
+    }
+  },
+  "research": {
+    "tavily_searches": 3,
+    "tavily_cache_hits": 13,
+    "tavily_credits_estimate": 6
+  }
+}

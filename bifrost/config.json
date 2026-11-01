@@ -1,0 +1,177 @@
+{
+  "$schema": "https://www.getbifrost.ai/schema",
+  "client": {
+    "enable_logging": true,
+    "drop_excess_requests": false,
+    "allowed_origins": [
+      "*"
+    ],
+    "enforce_auth_on_inference": true
+  },
+  "logs_store": {
+    "enabled": true,
+    "type": "sqlite",
+    "config": {
+      "path": "./logs.db"
+    }
+  },
+  "providers": {
+    "otari": {
+      "keys": [
+        {
+          "name": "otari-key",
+          "value": "env.OTARI_API_KEY",
+          "models": [
+            "*"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "network_config": {
+        "base_url": "https://api.otari.ai/api",
+        "default_request_timeout_in_seconds": 60,
+        "max_retries": 1
+      },
+      "custom_provider_config": {
+        "base_provider_type": "openai",
+        "allowed_requests": {
+          "chat_completion": true,
+          "chat_completion_stream": true,
+          "list_models": true
+        }
+      },
+      "proxy_config": {
+        "type": "environment"
+      }
+    },
+    "otari-down": {
+      "keys": [
+        {
+          "name": "otari-down-key",
+          "value": "env.OTARI_API_KEY",
+          "models": [
+            "*"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "network_config": {
+        "base_url": "http://127.0.0.1:9",
+        "default_request_timeout_in_seconds": 5,
+        "max_retries": 0
+      },
+      "custom_provider_config": {
+        "base_provider_type": "openai",
+        "allowed_requests": {
+          "chat_completion": true
+        }
+      }
+    }
+  },
+  "governance": {
+    "virtual_keys": [
+      {
+        "id": "vk-stale-detector",
+        "name": "stale-detector",
+        "description": "Key used by the stale-answer detector CLI",
+        "value": "env.BIFROST_VK",
+        "is_active": true,
+        "rate_limit_id": "rl-stale-detector",
+        "provider_configs": [
+          {
+            "provider": "otari",
+            "weight": 1,
+            "allowed_models": [
+              "alibaba/qwen3-30b-a3b-instruct-2507",
+              "mistralai/mistral-small-3",
+              "alibaba/qwen3-235b-a22b-instruct-2507",
+              "meta/llama-3.1-8b-instruct"
+            ],
+            "key_ids": [
+              "*"
+            ]
+          },
+          {
+            "provider": "otari-down",
+            "weight": 0,
+            "allowed_models": [
+              "alibaba/qwen3-30b-a3b-instruct-2507",
+              "alibaba/qwen3-235b-a22b-instruct-2507"
+            ],
+            "key_ids": [
+              "*"
+            ]
+          }
+        ]
+      }
+    ],
+    "budgets": [
+      {
+        "id": "budget-stale-detector",
+        "virtual_key_id": "vk-stale-detector",
+        "max_limit": 0.3,
+        "reset_duration": "1M"
+      }
+    ],
+    "rate_limits": [
+      {
+        "id": "rl-stale-detector",
+        "token_max_limit": 400000,
+        "token_reset_duration": "1d",
+        "request_max_limit": 300,
+        "request_reset_duration": "1d"
+      }
+    ],
+    "pricing_overrides": [
+      {
+        "id": "6f1c2a10-0000-4000-8000-000000000001",
+        "name": "Otari Qwen3-30B-A3B instruct",
+        "scope_kind": "provider",
+        "provider_id": "otari",
+        "match_type": "exact",
+        "pattern": "alibaba/qwen3-30b-a3b-instruct-2507",
+        "request_types": [
+          "chat_completion"
+        ],
+        "pricing_patch": "{\"input_cost_per_token\": 1e-07, \"output_cost_per_token\": 3e-07}"
+      },
+      {
+        "id": "6f1c2a10-0000-4000-8000-000000000002",
+        "name": "Otari Mistral Small 3",
+        "scope_kind": "provider",
+        "provider_id": "otari",
+        "match_type": "exact",
+        "pattern": "mistralai/mistral-small-3",
+        "request_types": [
+          "chat_completion"
+        ],
+        "pricing_patch": "{\"input_cost_per_token\": 5e-08, \"output_cost_per_token\": 8e-08}"
+      },
+      {
+        "id": "6f1c2a10-0000-4000-8000-000000000004",
+        "name": "Otari Qwen3-235B-A22B instruct",
+        "scope_kind": "provider",
+        "provider_id": "otari",
+        "match_type": "exact",
+        "pattern": "alibaba/qwen3-235b-a22b-instruct-2507",
+        "request_types": [
+          "chat_completion"
+        ],
+        "pricing_patch": "{\"input_cost_per_token\": 9e-08, \"output_cost_per_token\": 5.5e-07}"
+      },
+      {
+        "id": "6f1c2a10-0000-4000-8000-000000000003",
+        "name": "Otari Llama 3.1 8B instruct",
+        "scope_kind": "provider",
+        "provider_id": "otari",
+        "match_type": "exact",
+        "pattern": "meta/llama-3.1-8b-instruct",
+        "request_types": [
+          "chat_completion"
+        ],
+        "pricing_patch": "{\"input_cost_per_token\": 2.2e-07, \"output_cost_per_token\": 2.2e-07}"
+      }
+    ]
+  },
+  "setup_token": "env.BIFROST_SETUP_TOKEN"
+}

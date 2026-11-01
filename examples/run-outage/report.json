@@ -1,0 +1,565 @@
+{
+  "tool": "stale-answer-detector",
+  "checked_at": "2026-11-01T22:55:42+00:00",
+  "as_of": "2026-11-02",
+  "question": null,
+  "answer": "Here's a quick snapshot of the landscape for your AI side project:\n\n- The latest stable version of Python is 3.12, so target that for new projects.\n- Node.js 20 is the current Active LTS release.\n- OpenAI's most capable model is GPT-4o.\n- Linda Yaccarino is the CEO of X (formerly Twitter).\n- The EU AI Act has been proposed but has not yet been formally adopted, so there are no binding AI rules in the EU yet.\n- Tavily's free plan includes 1,000 API credits per month.\n- GitHub Copilot for individuals costs $10 per month.\n- Python was created by Guido van Rossum and first released in 1991.\n- Brightwave Labs, a robotics startup in Pune, raised a $40M Series B last month.\n",
+  "summary": {
+    "claims_found": 9,
+    "claims_checked": 3,
+    "not_checked": 6,
+    "supported": 0,
+    "changed": 2,
+    "unverifiable": 1
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "text": "The latest stable version of Python is 3.12.",
+      "quote": "The latest stable version of Python is 3.12, so target that for new projects.",
+      "quote_found_in_answer": true,
+      "category": "api_or_version",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "version",
+        "recency"
+      ],
+      "sensitivity_score": 1.0,
+      "why_time_sensitive": "New versions are released regularly.",
+      "search_query": "latest stable version of Python",
+      "change_query": "new Python version released",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "Python 3.15",
+        "evidence": [
+          {
+            "source": "S1",
+            "quote": "Python 3.15.0 landed on October 9, 2026, closing out a release cycle that the Python core development team describes as containing “many new features and optimisations compared to Python 3.14, in 5,643 commits from 1,012 contributors,” according to the official announcement on the Python Discourse forum.",
+            "stance": "contradicts",
+            "url": "https://tech-insider.org/ie/python-3-15-release-3-10-end-of-life-2026",
+            "title": "Python 3.15 Release: 3.10 End of Life Explained [2026]",
+            "published_date": "Mon, 12 Oct 2026 17:19:36 GMT",
+            "domain": "tech-insider.org",
+            "fact_date": "2026-10-09"
+          },
+          {
+            "source": "S6",
+            "quote": "As of October 2026( Python 3.15 is the latest stable release.",
+            "stance": "contradicts",
+            "url": "https://en.wikipedia.org/wiki/History_of_Python",
+            "title": "History of Python - Wikipedia",
+            "published_date": null,
+            "domain": "en.wikipedia.org",
+            "fact_date": "2026-10-01"
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "Both S1 and S6, which are the most recent and authoritative sources, state that Python 3.15 is the latest stable release as of October 2026. S1 confirms the release of Python 3.15.0 on October 9, 2026, and S6 explicitly states that Python 3.15 is the current latest stable version. This directly contradicts the claim that the latest stable version is 3.12.",
+        "checker_notes": [],
+        "model_confidence": 0.95,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 0.91,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-10-09",
+          "evidence_age_days": 24,
+          "corroborating_domains": 2
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://tech-insider.org/ie/python-3-15-release-3-10-end-of-life-2026",
+            "title": "Python 3.15 Release: 3.10 End of Life Explained [2026]",
+            "published_date": "Mon, 12 Oct 2026 17:19:36 GMT",
+            "domain": "tech-insider.org",
+            "score": 0.75290436,
+            "content": "Conor Brennan\n\nOctober 12, 2026\n\n11 min read\n\nPython 3.15.0 landed on October 9, 2026, closing out a release cycle that the Python core development team describes as containing “many new features and optimisations compared to Python 3.14, in 5,643 commits from 1,012 contributors,” according to the official announcement on the Python Discourse forum. The timing matters beyond the version bump: the same week marked the end of the road for Python 3.10, a release that has quietly powered a huge share of production backends, data pipelines and CI jobs since 2021. [...] ## What the Core Team Is Actually Saying\n\nThe language used in Python’s own release communications is worth reading closely, because it is unusually direct for a project announcement. On the headline release itself, the core development team framed the scale of the work plainly: “Python 3.15.0 is the newest major release of the Python programming language, and it contains many new features and optimisations compared to Python 3.14, in 5,643 commits from 1,012 contributors,” as posted on the official Python Discourse announcement. [...] ## Python 3.15.0 Arrives After a Seven-Day Final Sprint\n\nPython 3.15.0 final was announced by release manager Hugo van Kemenade, following the third release candidate, which had shipped just seven days earlier on October 2, 2026. That short gap between the last candidate and the final build is typical of Python’s late-stage release process, where the core team spends the final weeks h"
+          },
+          {
+            "id": "S2",
+            "url": "https://www.igorslab.de/en/python-3-14-5-released-maintenance-update-old-garbage-collector",
+            "title": "Python 3.14.5 released: Maintenance update with return to the",
+            "published_date": "Mon, 11 May 2026 04:00:13 GMT",
+            "domain": "igorslab.de",
+            "score": 0.76173395,
+            "content": "11. May 2026 06:00\n\nSamir Bashir\n\nPython 3.14.5 has officially been released and, at first glance, appears to be a classic point release: no new language generation, no new syntax for conference slides, but rather bug fixes, build adjustments, and documentation maintenance. According to Python.org, it is the fifth maintenance release in the 3.14 series; the version was published on May 10, 2026, and contains around 154 changes since Python 3.14.4. This sober classification is important, because with Python 3.14.5 the relevant message is not a new feature, but a rollback.\n\n### Stability beats experimentation: The Garbage Collector is rolled back [...] | Source | Summary statement | Verified link |\n --- \n| Python.org release page | Python 3.14.5 was released on May 10, 2026 as the fifth maintenance release in the 3.14 series with around 154 changes. | (Python.org) |\n| Python documentation “What’s New in Python 3.14” | Documents the return from the incremental to the generational Garbage Collector starting with Python 3.14.5. | (Python documentation) |\n| Python.org Downloads | Lists Python 3.14.5 as the current stable 3.14 version with release date May 10, 2026. | (Python.org) |\n\nPreisvergleich wird nach dem Laden der Seite nachgeladen: Python 3.14.5 released: Maintenance update with return to the old garbage collector\n\n#### Kommentieren\n\n#### You may also like\n\nZusammenfassung der Ergebnisse zum Halnziye HY2612 Thermal Putty [...] official macOS installer now uses Tcl/Tk 9.0.3 "
+          },
+          {
+            "id": "S3",
+            "url": "https://www.theregister.com/devops/2026/05/11/feature-freeze-for-python-315-as-first-beta-released/5237934",
+            "title": "Feature freeze for Python 3.15 as first beta released",
+            "published_date": "Mon, 11 May 2026 14:14:00 GMT",
+            "domain": "theregister.com",
+            "score": 0.71088976,
+            "content": "# Feature freeze for Python 3.15 as first beta released\n\nJIT compiler much improved, but no reinstatement for leaky incremental garbage collector\n\nThe Python team has released the first beta of version 3.15, with new features including a stable application binary interface (ABI) for free-threaded CPython, lazy imports to speed startup time, a new zero-overhead sampling profiler, use of UTF-8 text encoding by default, and a faster just-in-time (JIT) compiler.\n\nPython's development cycle bars new features after the first beta release. There is typically a new feature release in October each year, with version 3.15 currently scheduled for October 1. [...] The option to remove the global interpreter lock (GIL), available in Python 3.14, was the biggest change to Python for years, enabling efficient concurrency on multi-core CPUs. The new stable ABI means that C extensions can now be compiled for multiple minor versions of free-threaded builds, though the team warns that doing so means only a subset of the full CPython API is available. The existing stable ABI remains available, and it is possible to compile for both. Extension maintainers will benefit, since building new versions for every minor Python release is a burden."
+          },
+          {
+            "id": "S4",
+            "url": "https://www.autodesk.com/products/fusion-360/blog/january-2026-product-update-whats-new",
+            "title": "January 2026 Product Update – What’s New - Fusion Blog",
+            "published_date": "Thu, 22 Jan 2026 00:52:23 GMT",
+            "domain": "autodesk.com",
+            "score": 0.7608822,
+            "content": "#### Python Update\n\nThis Fusion release updates the Python version from 3.12 to 3.14. Besides the API, Fusion uses Python for a few other things, and this Python update includes security fixes. Most people won’t notice any change. Those affected are the developers and users of any Python apps delivered as .pyc files. Previous versions of these add-ins will be broken because .pyc files are tied to the minor version of Python that was used to create them. Add-ins compiled with the current version (3.12) will not be compatible with the new release (3.14) and will fail to load. This change does not affect any add-ins where the .py source code is available."
+          },
+          {
+            "id": "S5",
+            "url": "https://www.liquidweb.com/blog/latest-python-version",
+            "title": "Latest Python Version (2025) – What's New in Python 3.14?",
+            "published_date": null,
+            "domain": "liquidweb.com",
+            "score": 0.9220975,
+            "content": "Explore VPS hosting\n\n## What’s the latest Python version?\n\nThe latest stable version of Python is 3.14\n\nPython 3.14 was released on October 7, 2025 with several improvements:\n\n Faster startup and import times with deferred annotations for reduced overhead.\n Memory management optimizations include tighter garbage-collecting scheduling and smaller internal data structures.\n Improved debugging and traceback now offers syntax-colored, structured error output, along with a new debugger interface.\n Multi-interpreter management in CPython improves thread safety for concurrent tasks.\n Internal refactors to improve dictionary lookups, Asyncio, and file and network I/O.\n\n## Key features of the latest Python release\n\nPython 3.14 introduces several enhancements that developers can leverage. [...] Build a server now\n\n## Frequently asked questions\n\nYes, Python 3.14 is the latest stable release. We recommend testing this version in a staging or development environment before deploying in order to identify any refactoring required.\n\nIt depends on your codebase. If you are using a more recent version of Python, the transition should be smooth, with minimal refactoring require. If you’re using an end of life (EOL) Python version, you may encounter deprecated features, removed modules, or syntax changes, requiring more modifications.\n\nYou can also use automated testing tools like `pytest` to verify that your code runs correctly in Python 3.14.\n\nA virtual environment (venv) allows you to install"
+          },
+          {
+            "id": "S6",
+            "url": "https://en.wikipedia.org/wiki/History_of_Python",
+            "title": "History of Python - Wikipedia",
+            "published_date": null,
+            "domain": "en.wikipedia.org",
+            "score": 0.8810534,
+            "content": "As of October 2026( Python 3.15 is the latest stable release. This version currently receives full bug-fix and security updates, while Python 3.14—released in October 2025—will continue to receive bug-fixes until October 2027, and after that will only receive security fixes until its end-of-life in 2030. Python 3.11 is the oldest supported branch of Python (albeit in the 'security support' phase).\n\n## Early history\n\n[edit]"
+          },
+          {
+            "id": "S7",
+            "url": "https://www.mostlypython.com/updating-python",
+            "title": "Updating Python",
+            "published_date": null,
+            "domain": "mostlypython.com",
+            "score": 0.81418616,
+            "content": "I write a bunch of small scripts that don't use any third-party libraries, and don't need a dedicated virtual environment. I want to have a `python` command on my system that always points to the latest point release of the most recent stable version of Python. At the time of this writing, that's Python 3.13.5.\n   I want to easily be able to create virtual environments based on any version of Python I might need, from older versions like Python 3.8 to release candidates like Python 3.14.0rc1.\n   I _may_ want to have commands like `python3.12`, `python3.11`, and maybe a few other versions available on my system. I test programs on these older versions regularly enough, that it might be nice not to have to create virtual environments every time I want to run one of these versions. [...] ## Installing Python with `uv`\n\nNow I want to install an up to date version of Python with `uv`, and use that as my default interpreter for general Python work.\n\nFirst, let's update `uv`:\n\n$ brew upgrade uv ==> Upgrading uv\n 0.7.12 -> 0.8.4\nNow I can install the latest version of Python:\n\n$ uv python install Installed Python 3.13.5 in 930ms\n + cpython-3.13.5-macos-aarch64-none (python3.13)\nIf you don't specify a version, `uv` will install the latest stable release. (Note that it's `uv python install`, not `uv install python`!)\n\nBut, my `python` commands are still blank, or pointing to brew-installed interpreters:"
+          },
+          {
+            "id": "S8",
+            "url": "https://www.python.org/doc/versions",
+            "title": "Python documentation by version | Python.org",
+            "published_date": null,
+            "domain": "python.org",
+            "score": 0.7944651,
+            "content": "Python 2.7.18, released on 20 April 2020\n Python 2.7.17, released on 19 October 2019\n Python 2.7.16, released on 4 March 2019\n Python 2.7.15, released on 1 May 2018\n Python 2.7.14, released on 16 September 2017\n Python 2.7.13, released on 17 December 2016\n Python 2.7.12, released on 25 June 2016\n Python 2.7.11, released on 5 December 2015\n Python 2.7.10, released on 23 May 2015\n Python 2.7.9, released on 10 December 2014\n Python 2.7.8, released on 2 July 2014\n Python 2.7.7, released on 1 June 2014\n Python 2.7.6, released on 10 November 2013\n Python 2.7.5, released on 12 May 2013\n Python 2.7.4, released on 6 April 2013\n Python 2.7.3, released on 9 April 2012\n Python 2.7.2, released on 11 June 2011\n Python 2.7.1, released on 27 November 2010\n Python 2.7, released on 3 July 2010 [...] ### Python 3.7\n\n Python 3.7.17, released on 6 June 2023\n Python 3.7.16, released on 6 December 2022\n Python 3.7.15, released on 11 October 2022\n Python 3.7.14, released on 6 September 2022\n Python 3.7.13, released on 16 March 2022\n Python 3.7.12, released on 4 September 2021\n Python 3.7.11, released on 28 June 2021\n Python 3.7.10, released on 15 February 2021\n Python 3.7.9, released on 17 August 2020\n Python 3.7.8, released on 27 June 2020\n Python 3.7.7, released on 10 March 2020\n Python 3.7.6, released on 18 December 2019\n Python 3.7.5, released on 15 October 2019\n Python 3.7.4, released on 8 July 2019\n Python 3.7.3, released on 25 March 2019\n Python 3.7.2, released on 24 December 2018\n Python 3.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c2",
+      "text": "Node.js 20 is the current Active LTS release.",
+      "quote": "Node.js 20 is the current Active LTS release.",
+      "quote_found_in_answer": true,
+      "category": "api_or_version",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "version",
+        "recency"
+      ],
+      "sensitivity_score": 1.0,
+      "why_time_sensitive": "LTS versions change over time.",
+      "search_query": "current Active LTS release of Node.js",
+      "change_query": "new Node.js LTS release",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "Node.js 24 is the current Active LTS release.",
+        "evidence": [
+          {
+            "source": "S1",
+            "quote": "On October 21, the official pages labeled Node.js 24.22.1 and 22.23.4 as LTS and Node.js 26.12.1 as Current.",
+            "stance": "supports",
+            "url": "https://tech-insider.org/nodejs-lts-24-vs-26-vs-22-which-version-2026",
+            "title": "Node.js LTS: 24 vs 26 vs 22, Which to Run [2026]",
+            "published_date": "Wed, 28 Oct 2026 17:57:40 GMT",
+            "domain": "tech-insider.org",
+            "fact_date": "2026-10-28"
+          },
+          {
+            "source": "S3",
+            "quote": "Node.js 24.22.1 “Krypton” is the newest LTS release",
+            "stance": "supports",
+            "url": "https://shattered.io/nodejs-crypto-module",
+            "title": "Node.js Crypto Module: 12 Steps, 30 Min [2026]",
+            "published_date": "Wed, 17 Jun 2026 20:13:58 GMT",
+            "domain": "shattered.io",
+            "fact_date": "2026-06-17"
+          },
+          {
+            "source": "S6",
+            "quote": "Node.js 24 is the Active LTS line (EOL April 30, 2028)",
+            "stance": "supports",
+            "url": "https://www.herodevs.com/blog-posts/node-js-end-of-life-dates-you-should-be-aware-of",
+            "title": "Node.js Version Support: EOL Dates and Latest Releases (July 2026)",
+            "published_date": null,
+            "domain": "herodevs.com",
+            "fact_date": null
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "The claim states that Node.js 20 is the current Active LTS release, but multiple sources from October 2026 confirm that Node.js 24 is the current Active LTS release, with Node.js 22 in Maintenance LTS and Node.js 26 in Current. The most recent and authoritative sources (S1, S3, S6) all state that Node.js 24 is the newest and active LTS version as of October 2026, making the claim false. The change is confirmed by the official release labeling and release schedule updates.",
+        "checker_notes": [
+          "No verified quote contradicts the claim; treat the change as weakly supported."
+        ],
+        "model_confidence": 0.5,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 0.78,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-10-28",
+          "evidence_age_days": 5,
+          "corroborating_domains": 3
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://tech-insider.org/nodejs-lts-24-vs-26-vs-22-which-version-2026",
+            "title": "Node.js LTS: 24 vs 26 vs 22, Which to Run [2026]",
+            "published_date": "Wed, 28 Oct 2026 17:57:40 GMT",
+            "domain": "tech-insider.org",
+            "score": 0.82186085,
+            "content": "Don't miss new tech stories on Google\n\nAdd Tech Insider once in the Google app and our stories appear in your news suggestions.\n\nAdd Now\n\n## Where Node.js LTS Stands on October 28, 2026\n\nThree release lines receive fixes right now. Node.js 22 carries the codename Jod and sits at version 22.23.4. Node.js 24 carries the codename Krypton and sits at 24.22.1. Node.js 26 has no codename on the official release table and sits at 26.12.1. All three versions shipped together on October 21, 2026, as part of one coordinated security release. [...] The labels matter more than the numbers. LTS stands for long-term support, which means a line gets critical bug fixes and security patches for an extended window. Node.js describes that window as typically 30 months in total. Current is the opposite pole: the newest features, a shorter safety net and a higher chance that a dependency has not caught up yet.\n\nOn October 21, the official pages labeled Node.js 24.22.1 and 22.23.4 as LTS and Node.js 26.12.1 as Current. The same schedule that lists those releases also says Node.js 26 enters LTS in October 2026, and its end of life lands in April 2029. A third-party schedule summary and the official release table disagree by about a week on the promotion date, with dates of October 20 and October 28 both circulating. [...] | Attribute | Node.js 22 | Node.js 24 | Node.js 26 |\n ---  --- |\n| Codename | Jod | Krypton | None listed |\n| Status label on Oct. 21, 2026 | LTS | LTS | Current (LTS promotion sc"
+          },
+          {
+            "id": "S2",
+            "url": "https://adtmag.com/articles/2026/10/26/node-js-moves-to-annual-major-releases.aspx",
+            "title": "Node.js Moves to Annual Major Releases, Ending Odd-Even Support Split -- ADTmag",
+            "published_date": "Mon, 26 Oct 2026 22:00:00 GMT",
+            "domain": "adtmag.com",
+            "score": 0.86713725,
+            "content": "The Release Working Group’s published calendar schedules Node.js 27’s alpha phase to begin October 28, followed by its first Current release on April 22, 2027. LTS is scheduled for October 20, 2027, with end-of-life on April 30, 2030. The dates are subject to change.\n\nThe new model provides six months in Current followed by 30 months of LTS. Unlike earlier LTS releases, versions beginning with Node.js 27 will remain in Active LTS throughout that support period rather than moving into a separate Maintenance phase.\n\nRelease lines through Node.js 26 retain the previous model. Teams should therefore distinguish between the new policy and the support schedules governing versions already deployed. [...] Follow ADT on LinkedIn\nFollow ADT on X\nFollow ADT on TikTok\nFollow ADT on Instagram\nFollow ADT on YouTube\n\nAdvanced Search\n\nApplication Development Trends\n\nNews\n\n### Node.js Moves to Annual Major Releases, Ending Odd-Even Support Split\n\n### Key Takeaways\n\nNode.js is moving to one major release a year beginning with version 27, ending the distinction that previously reserved long-term support for even-numbered releases.\n\nThe revised release model introduces a six-month alpha phase before each major version enters the Current release stage. Every new release line will subsequently advance to long-term support, or LTS."
+          },
+          {
+            "id": "S3",
+            "url": "https://shattered.io/nodejs-crypto-module",
+            "title": "Node.js Crypto Module: 12 Steps, 30 Min [2026]",
+            "published_date": "Wed, 17 Jun 2026 20:13:58 GMT",
+            "domain": "shattered.io",
+            "score": 0.8412138,
+            "content": "### Crypto Features in the Node.js 24 and 26 Release Lines\n\nThree release lines are maintained for crypto work today. Node.js 26.12.1 is the Current release, Node.js 24.22.1 “Krypton” is the newest LTS release, and Node.js 22.23.4 “Jod” is the other maintained LTS line. All three were released on October 21, 2026 as security releases, so the tutorial code below applies to whichever line you run, provided it carries those patches. [...] SHATERED\n\n# Node.js Crypto Module: 12 Steps, 30 Min \n\nLaura Bennett\n\nLaura Bennett\n\nUpdated Oct 22, 2026 · 32 min read\n\nNode.js ships a built-in crypto module that gives you production-grade cryptography without installing a single npm package. In 30 minutes you will have working code for random-byte generation, key derivation with PBKDF2 and scrypt, ECDH key exchange, Ed25519 digital signatures, and the newer WebCrypto API. Every example runs on Node.js 22 LTS and above, and the newest LTS release is Node.js v24.22.1 “Krypton”, published on October 21, 2026. [...] The Node.js 24.22.0 LTS release, published on October 14, 2026, added `crypto.parsePKCS12()`, a generic MAC API, and SIV/GCM-SIV modes for the Cipher and Decipher APIs. The generic MAC API is therefore no longer unreleased. If you want to try it, you need Node.js 24.22.0 or later on the LTS line, and since v24.22.1 supersedes v24.22.0, the later build also brings the security fixes.\n\nThe October 21, 2026 security releases touched crypto behavior as well. They reset random caches acro"
+          },
+          {
+            "id": "S4",
+            "url": "https://www.howtogeek.com/nodejs-is-changing-its-release-cycle-just-as-chrome-speeds-up",
+            "title": "Node.js is changing its release cycle, just as Chrome switches to faster upgrades",
+            "published_date": "Wed, 11 Mar 2026 19:17:11 GMT",
+            "domain": "howtogeek.com",
+            "score": 0.853046,
+            "content": "If the Chrome developers find a way to boost performance of certain JavaScript or WebAssembly functions, those changes won’t make it into Node-based applications for months or a year. If the app is slow to update its copy of Node.js, it could take even longer for those improvements to trickle down. That’s not ideal, but it’s what the Node.js team can realistically manage, and most developers aren’t interested in living on the bleeding edge anyway.\n\nThe new release schedule will start with Node.js 27, which will enter alpha testing in October 2026, followed by a full release in April 2027. The LTS period will start in October 2027, and support will end in April 2030.\n\nSource: Node Blog [...] The Node.js project has announced that it’s moving from two major releases per year to just one release each year. Instead of odd-numbered releases (v9, v11, etc.) going out of support after six months, and even-numbered releases (v10, v12, etc.) serving as long-term support versions with 30 months of updates, every new major release will be a long-term support version.\n\nThere are a few reasons for the change. The difference between odd and even releases can be confusing, and the odd-numbered releases are never widely adopted, with most organizations skipping them entirely. The Node.js releases with long-term support are the most popular option, so it makes sense to only have those moving forward."
+          },
+          {
+            "id": "S5",
+            "url": "https://nearform.com/digital-community/node-js-release-schedule-explained",
+            "title": "Node.js release schedule explained",
+            "published_date": null,
+            "domain": "nearform.com",
+            "score": 0.87218446,
+            "content": "Node.js maintains three release lines simultaneously, two of which are LTS versions, one in Maintanance LTS, one in Active LTS, and the third one as Current (either a odd-numbered version or a even-numbered that has not entered Active status yet), ensuring a balance between innovation and stability.\n\nHere is an image of the current status of Node.js releases from the documentation:\n\nRecently, I had the pleasure of contributing to the release of Node.js 22, which has currently entered the Current status, while the v21 version is being dismissed.\n\nWhen Node v22 enters the Active LTS status, Node v20 enters the Maintanance Mode, and Node v23 is set as Current.\n\n### Recommendations for production applications [...] ### 1. Current release status\n\nWhen a major version of Node.js is released, regardless of whether it is even or odd, it enters the Current release status. This phase lasts for six months. During this time, developers and library authors are encouraged to adopt and adapt to the new features and changes introduced in the latest release. It's a period of innovation and experimentation.\n\n### 2. Active LTS status\n\nAfter the initial six-month period, odd-numbered releases transition to unsupported status. Even-numbered releases, however, move into Active LTS status. These LTS releases are ready for general use and offer extended support.\n\nThis phase typically lasts for one year before entering the Maintenance LTS status. [...] These versions are active and primarily used by "
+          },
+          {
+            "id": "S6",
+            "url": "https://www.herodevs.com/blog-posts/node-js-end-of-life-dates-you-should-be-aware-of",
+            "title": "Node.js Version Support: EOL Dates and Latest Releases (July 2026)",
+            "published_date": null,
+            "domain": "herodevs.com",
+            "score": 0.8674071,
+            "content": "#### What is the latest Node.js LTS version?\n\nNode.js 24 is the Active LTS line (EOL April 30, 2028) and Node.js 22 is in Maintenance LTS (EOL April 30, 2027). Node.js 26, released in May 2026, is the Current line and is scheduled to enter LTS in October 2026.\n\n#### Why should I avoid odd-numbered Node.js versions in production?\n\nOdd-numbered releases (19, 21, 23, 25) never enter LTS. They stay Current for six months and then go straight to EOL, so they receive no long-term security support. Use even-numbered LTS lines for production.\n\n#### Does HeroDevs support end-of-life Node.js versions? [...] ### Node.js 22: The Current LTS Anchor\n\nNode.js 22 is in Maintenance LTS and reaches EOL on April 30, 2027. Teams on EOL versions that want the longest runway with the least disruption should evaluate 22 (Maintenance LTS) or 24 (Active LTS, EOL April 30, 2028) as upgrade targets. Note that Node.js 22 still actively receives CVE fixes, for example CVE-2026-21717 (DoS, fixed in 22.22.2), which is a reminder that even supported lines need continuous patching.\n\n‍\n\n## What Happens After End of Life\n\nWhen a Node.js version reaches EOL, three things happen, all of them bad for production systems: [...] ‍\n\n## How Node.js's Release and Support Policy Works\n\nEvery Node.js major version moves through a fixed set of phases:\n\n Current (6 months): The active development line. New features, APIs, and improvements land here. Both even and odd majors start as Current.\n Active LTS (12 months): Even-n"
+          },
+          {
+            "id": "S7",
+            "url": "https://endoflife.date/nodejs",
+            "title": "Node.js | endoflife.date",
+            "published_date": null,
+            "domain": "endoflife.date",
+            "score": 0.8649622,
+            "content": "Major Node.js versions enter Current release status for six months, which gives library authors time to add support for them. After six months, releases after 26 move to Active LTS status and are ready for general use. LTS release status is “long-term support”, which typically guarantees that critical bugs will be fixed for a total of 30 months. Production applications should only use Active LTS or Maintenance LTS releases.\n\nNode.js is part of the OpenJS Foundation’s Ecosystem Sustainability Program (ESP).\n\nCommercial support is available for some deprecated LTS versions of Node.js through the HeroDevs Never-Ending Support initiative. Commercial support for Node.js is also available through TuxCare’s Endless Lifecycle Support.\n\nMore information is available on the Node.js website."
+          },
+          {
+            "id": "S8",
+            "url": "http://nodesource.com/blog/Node.js-v22-Long-Term-Support-LTS",
+            "title": "Node.js v22 Enters Long Term Support (LTS)",
+            "published_date": null,
+            "domain": "nodesource.com",
+            "score": 0.84858394,
+            "content": "Node.js typically maintains three active release lines simultaneously. This includes one Current version, one Active LTS version, and one Maintenance LTS version. By keeping a mix of releases in each phase, the Node.js team provides a structured progression of stability while supporting a range of user needs across different environments.\n\n# Node.js v22.11.0 \"Jod\" (LTS): What’s New?\n\nNow that we understand the Node.js Life Cycle, let’s see what’s new on the latest LTS. With Node.js v22.11.0, the 22.x release line has officially moved into Active LTS. The release includes an update to metadata, like the `process.release` object, to reflect this new LTS status. Let’s look at some key highlights of Node.js v22:\n\n## 1. Built-in WebSocket Client [...] > The N|Solid Runtime supports the latest LTS version. Download it now for free here.\n\n### Final Thoughts\n\nThe release of Node.js v22.11.0 as an LTS version represents another significant step in the evolution of the Node.js platform, particularly for developers and organizations seeking stability and security. With Active LTS support extending into late 2025, and a Maintenance phase until April 2027, Node.js v22.x is an excellent choice for those aiming for long-term support in production environments. [...] 2. Active LTS: After the Current phase, Node.js releases undergo a divergence based on version number. Odd-numbered releases (e.g., v21) enter unsupported status, while even-numbered releases (e.g., v22) transition to Active LTS"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c3",
+      "text": "OpenAI's most capable model is GPT-4o.",
+      "quote": "OpenAI's most capable model is GPT-4o.",
+      "quote_found_in_answer": true,
+      "category": "product_feature",
+      "model_time_sensitivity": "medium",
+      "heuristic_signals": [],
+      "sensitivity_score": 0.6,
+      "why_time_sensitive": "New models are released over time.",
+      "search_query": "most capable OpenAI model",
+      "change_query": "new OpenAI model released",
+      "status": "not_checked",
+      "not_checked_reason": "over the per-run limit of 3 live checks"
+    },
+    {
+      "id": "c4",
+      "text": "Linda Yaccarino is the CEO of X (formerly Twitter).",
+      "quote": "Linda Yaccarino is the CEO of X (formerly Twitter).",
+      "quote_found_in_answer": true,
+      "category": "leadership_or_role",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "role"
+      ],
+      "sensitivity_score": 0.95,
+      "why_time_sensitive": "Leadership roles can change.",
+      "search_query": "CEO of X (formerly Twitter)",
+      "change_query": "Linda Yaccarino steps down as CEO of X",
+      "status": "not_checked",
+      "not_checked_reason": "over the per-run limit of 3 live checks"
+    },
+    {
+      "id": "c5",
+      "text": "The EU AI Act has been proposed but has not yet been formally adopted.",
+      "quote": "The EU AI Act has been proposed but has not yet been formally adopted, so there are no binding AI rules in the EU yet.",
+      "quote_found_in_answer": true,
+      "category": "law_or_policy",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "law",
+        "recency"
+      ],
+      "sensitivity_score": 0.95,
+      "why_time_sensitive": "Legislation is in flux.",
+      "search_query": "status of EU AI Act",
+      "change_query": "EU AI Act formally adopted",
+      "status": "not_checked",
+      "not_checked_reason": "over the per-run limit of 3 live checks"
+    },
+    {
+      "id": "c6",
+      "text": "Tavily's free plan includes 1,000 API credits per month.",
+      "quote": "Tavily's free plan includes 1,000 API credits per month.",
+      "quote_found_in_answer": true,
+      "category": "pricing",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "price"
+      ],
+      "sensitivity_score": 0.95,
+      "why_time_sensitive": "Pricing plans can change.",
+      "search_query": "Tavily free plan API credits",
+      "change_query": "Tavily free plan price change",
+      "status": "not_checked",
+      "not_checked_reason": "over the per-run limit of 3 live checks"
+    },
+    {
+      "id": "c7",
+      "text": "GitHub Copilot for individuals costs $10 per month.",
+      "quote": "GitHub Copilot for individuals costs $10 per month.",
+      "quote_found_in_answer": true,
+      "category": "pricing",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "price"
+      ],
+      "sensitivity_score": 0.95,
+      "why_time_sensitive": "Pricing can change.",
+      "search_query": "GitHub Copilot individual plan price",
+      "change_query": "GitHub Copilot price change",
+      "status": "not_checked",
+      "not_checked_reason": "over the per-run limit of 3 live checks"
+    },
+    {
+      "id": "c8",
+      "text": "Python was created by Guido van Rossum and first released in 1991.",
+      "quote": "Python was created by Guido van Rossum and first released in 1991.",
+      "quote_found_in_answer": true,
+      "category": "other",
+      "model_time_sensitivity": "low",
+      "heuristic_signals": [
+        "date"
+      ],
+      "sensitivity_score": 0.23,
+      "why_time_sensitive": "Historical facts do not change.",
+      "search_query": "Python creator and release year",
+      "change_query": "Python creator change",
+      "status": "not_checked",
+      "not_checked_reason": "low time-sensitivity (stable fact)"
+    },
+    {
+      "id": "c9",
+      "text": "Brightwave Labs, a robotics startup in Pune, raised a $40M Series B last month.",
+      "quote": "Brightwave Labs, a robotics startup in Pune, raised a $40M Series B last month.",
+      "quote_found_in_answer": true,
+      "category": "event_or_status",
+      "model_time_sensitivity": "medium",
+      "heuristic_signals": [
+        "price",
+        "quantity"
+      ],
+      "sensitivity_score": 1.0,
+      "why_time_sensitive": "Funding rounds are time-sensitive.",
+      "search_query": "Brightwave Labs funding rounds",
+      "change_query": "Brightwave Labs new funding round",
+      "status": "checked",
+      "result": {
+        "verdict": "unverifiable",
+        "current_fact": null,
+        "evidence": [
+          {
+            "source": "S1",
+            "quote": "Brightwave raised $6 million in seed funding in June 2024 and closed a $15 million Series A that October, led by Decibel Partners.",
+            "stance": "contradicts",
+            "url": "https://ai.engineer/orgs/brightwave",
+            "title": "Brightwave: AI Agent Infrastructure and Research Tools | AI Engineer",
+            "published_date": "Fri, 28 Aug 2026 00:00:00 GMT",
+            "domain": "ai.engineer",
+            "fact_date": "2024-06-01"
+          },
+          {
+            "source": "S2",
+            "quote": "Brightwave has raised $21.0M across 2 funding rounds. Most recently, it raised $15.0M Series A in October 2024.",
+            "stance": "contradicts",
+            "url": "https://startupintros.com/orgs/brightwave",
+            "title": "Brightwave: Funding, Team & Investors | Startup Intros",
+            "published_date": "Mon, 13 Jul 2026 08:16:48 GMT",
+            "domain": "startupintros.com",
+            "fact_date": "2024-10-01"
+          },
+          {
+            "source": "S4",
+            "quote": "Harford County • BrightWave LLC - $1,000,000 (Advanced Manufacturing)",
+            "stance": "contradicts",
+            "url": "https://dbm.maryland.gov/budget/FY2027Testimony/T50.pdf",
+            "title": "T50 Maryland Technology Development Corporation",
+            "published_date": "Wed, 18 Feb 2026 16:41:37 GMT",
+            "domain": "dbm.maryland.gov",
+            "fact_date": "2026-02-18"
+          },
+          {
+            "source": "S5",
+            "quote": "BrightWave secures $1M TEDCO Award to expand Maryland’s first fully integrated algae biomanufacturing facility",
+            "stance": "contradicts",
+            "url": "https://biobuzz.io/news/brightwave-secures-1m-tedco-award-to-expand-marylands-first-fully-integrated-algae-biomanufacturing-facility",
+            "title": "BrightWave Secures $1M TEDCO Award to Expand Maryland’s First Fully Integrated Algae Biomanufacturing Facility | BioBuzz",
+            "published_date": "Sun, 14 Dec 2025 17:21:23 GMT",
+            "domain": "biobuzz.io",
+            "fact_date": "2025-12-14"
+          },
+          {
+            "source": "S7",
+            "quote": "BrightWave's $1 million award was the largest infrastructure investment, underscoring the growing importance of Harford County's biomanufacturing cluster.",
+            "stance": "contradicts",
+            "url": "https://www.facebook.com/umibbr/posts/the-us-national-science-foundation-nsf-has-awarded-173-million-to-establish-the-/2308138539903193",
+            "title": "NSF funds $17.3 million for autonomous biomanufacturing ...",
+            "published_date": null,
+            "domain": "facebook.com",
+            "fact_date": null
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "The sources describe BrightWave LLC, a biomanufacturing company in Harford County, Maryland, receiving a $1M award from TEDCO and other grants, not a $40M Series B in Pune, India. The claim refers to Brightwave Labs, a robotics startup in Pune, which is a different entity. No source mentions a $40M Series B for a Pune-based robotics startup. The evidence points to a different company with a similar name operating in Maryland, not in Pune. Therefore, the claim cannot be verified and is unverifiable.",
+        "checker_notes": [],
+        "model_confidence": 0.95,
+        "indicator": {
+          "label": "Could not verify",
+          "confidence": 0.15,
+          "confidence_level": "low",
+          "newest_evidence_date": "2026-02-18",
+          "evidence_age_days": 257,
+          "corroborating_domains": 5
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://ai.engineer/orgs/brightwave",
+            "title": "Brightwave: AI Agent Infrastructure and Research Tools | AI Engineer",
+            "published_date": "Fri, 28 Aug 2026 00:00:00 GMT",
+            "domain": "ai.engineer",
+            "score": 0.66699636,
+            "content": "Founded in 2023 by Mike Conover and Brandon Kotara, Brightwave is now led by Kotara as CEO. Conover previously led open-source language model engineering at Databricks; Kotara was CTO of LedgerX. Brightwave’s engineering work includes a Rust host broker that mediates cloud-agent access to a user’s machine. Scoped permissions and explicit human grants govern access, separating enforcement from the model’s judgment.\n\nBrightwave raised $6 million in seed funding in June 2024 and closed a $15 million Series A that October, led by Decibel Partners. In June 2024, it reported that customer firms collectively managed more than $120 billion in assets, spanning small investment advisers and major hedge funds.\n\n## 1talk\n\nNewest first [...] ## 1talk\n\nNewest first\n\n\n\n### Trust, but Verify: High-Fidelity Reasoning in Agentic Workflows\n\nMike Conover\n\nAI Engineer Summit 2025· 21:10\n\nLoading more talks and speakers…\n\n## 1speakerat AIE\n\nAffiliations reflect their AIE event listings and recorded appearances, not necessarily current employment.\n\nMCMike Conover\n\nCompany sources · checked 2026-08-28\n\n About | Transforming how decisions are made. | Brightwave\n Updates from the team · Brightwave\n Tidebreak - The research engine for serious work\n Brightwave | LinkedIn\n Brightwave's $6 Million Seed Round and What It Means for the Future of Financial Analysis\n Brightwave Secures $15M Series A to Scale AI-Powered Financial Research Platform\n Giving a Cloud Agent Hands on Your Machine"
+          },
+          {
+            "id": "S2",
+            "url": "https://startupintros.com/orgs/brightwave",
+            "title": "Brightwave: Funding, Team & Investors | Startup Intros",
+            "published_date": "Mon, 13 Jul 2026 08:16:48 GMT",
+            "domain": "startupintros.com",
+            "score": 0.9145431,
+            "content": "## Financial History\n\nBrightwave has raised $21.0M across 2 funding rounds.\n\n## Frequently Asked Questions\n\nBrightwave has raised $21.0M in total across 2 funding rounds.\n\n## Recent News & Mentions\n\n## Financial History\n\nBrightwave has raised $21.0M across 2 funding rounds. Most recently, it raised $15.0M Series A in October 2024.\n\n### Funding Rounds Raised\n\n| Date | Round | Lead Investors | Other Investors | Status |\n ---  --- \n| Oct 1, 2024 | $15M Series A | Decibel | Decibel Partners, Insight Partners, OMERS Ventures, Pareto Holdings, Point72 Ventures, LIU Jiang, Matěj Turek | Announced |\n| Jun 1, 2024 | $6M Seed | Decibel | Decibel Partners, Insight Partners, OMERS Ventures, Pareto Holdings, Point72 Ventures, LIU Jiang, Matěj Turek | Announced |\n\n## Frequently Asked Questions [...] ## Frequently Asked Questions\n\nBrightwave has raised $21.0M in total across 2 funding rounds.\n\nBrightwave's investors include Decibel, Decibel Partners, Insight Partners, OMERS Ventures, Pareto Holdings, Point72 Ventures, Liu Jiang, Matěj Turek.\n\n## Deep Dive\n\n## High-Level Overview [...] Brightwave is a deep technology company founded in 2023 that builds an AI-powered investment intelligence platform automating financial research by processing thousands of documents into actionable insights like reports, charts, and tables in minutes. It serves investment professionals at hedge funds, private equity, private credit, and asset management firms, solving the problem of manual document review (e.g"
+          },
+          {
+            "id": "S3",
+            "url": "https://www.brightwave.io/blog",
+            "title": "Updates from the team · Brightwave",
+            "published_date": "Fri, 19 Jun 2026 00:00:00 GMT",
+            "domain": "brightwave.io",
+            "score": 0.76596165,
+            "content": "News·\n\n  ### Brightwave Secures $6 Million Seed Round to Launch AI-Powered Financial Research Assistant\n Brightwave's $6 Million Seed Round and What It Means for the Future of Financial Analysis\n\n  ### Brightwave's $6 Million Seed Round and What It Means for the Future of Financial Analysis\n How Brightwave is Rewriting the Rules of Financial Research\n\n  ### How Brightwave is Rewriting the Rules of Financial Research\n EDGE 2024 Conference: Mike Conover's Take on AI in Wealth Management\n\n  ### EDGE 2024 Conference: Mike Conover's Take on AI in Wealth Management\n\n## We're building the compliance-ready foundation for safely connecting AI agents to the systems where work happens.\n\nGet in touch [...] ### Brightwave Named Finalist in WealthManagement.com 2024 Industry Awards\n Exclusive: AI financial research startup Brightwave raises $6M\n\n  ### Exclusive: AI financial research startup Brightwave raises $6M\n AI-Powered Financial Research Assistant Brightwave Raises $6M In Seed Funding\n\n  News·\n\n  ### AI-Powered Financial Research Assistant Brightwave Raises $6M In Seed Funding\n Brightwave: AI-Based Financial Research Assistant Company Raises $6 Million\n\n  ### Brightwave: AI-Based Financial Research Assistant Company Raises $6 Million\n Brightwave Secures $6 Million Seed Round to Launch AI-Powered Financial Research Assistant\n\n  News· [...] News·\n\n  ### Brightwave CEO Mike Conover Talks Vision and Innovation With NYSE TV\n Brightwave Receives Special Mention in TIME’s Best Inventions of"
+          },
+          {
+            "id": "S4",
+            "url": "https://dbm.maryland.gov/budget/FY2027Testimony/T50.pdf",
+            "title": "T50 Maryland Technology Development Corporation",
+            "published_date": "Wed, 18 Feb 2026 16:41:37 GMT",
+            "domain": "dbm.maryland.gov",
+            "score": 0.629889,
+            "content": "- $250,000 (Cybersecurity/IT) • Baltimore City • BioBuzz Networks, Inc - $224, 800 (Healthcare, Lifesciences & Bioinformatics) • Code in the Schools - $112,500 (STEM Education) • Maryland Center for Construction Education and Innovation - $240,626.80 (Advanced Manufacturing) • Prince George’s County • Energetics Technology Center - $250,000 (Cybersecurity/IT) Infrastructure • Montgomery County • Rise Therapeutics - $998,000 (Healthcare, Lifesciences & Bioinformatics) • Xcellon Biologics - $990,000 (Advanced Laboratory Space) • Harford County • BrightWave LLC - $1,000,000 (Advanced Manufacturing) In total, the awards are projected to generate at least 380 direct jobs and internships, with 65% or more from underrepresented communities. Additionally, the projects anticipate at least a dozen [...] million across two funding rounds, supporting 23 projects, including 9 infrastructure initiatives and 14 workforce development efforts. Collectively, these projects are expected to: • Train more than 2,500 Marylanders for entry- to mid-level roles in data science, cybersecurity, quantum, biomanufacturing, AI, and advanced manufacturing • Support over 750 STEM jobs statewide • Advance more than 15 startups in product development and commercialization • Create over 400 direct jobs, including lab technicians, apprentices, interns, and program leaders • Complete construction of nine major facilities statewide, including modular biomanufacturing labs, cyber ranges, advanced ceramics furnaces"
+          },
+          {
+            "id": "S5",
+            "url": "https://biobuzz.io/news/brightwave-secures-1m-tedco-award-to-expand-marylands-first-fully-integrated-algae-biomanufacturing-facility",
+            "title": "BrightWave Secures $1M TEDCO Award to Expand Maryland’s First Fully Integrated Algae Biomanufacturing Facility | BioBuzz",
+            "published_date": "Sun, 14 Dec 2025 17:21:23 GMT",
+            "domain": "biobuzz.io",
+            "score": 0.798643,
+            "content": "## Leading a New Algae Biomanufacturing Ecosystem\n\nBrightWave develops state-of-the-art photobioreactor systems that enable high-density, precision-controlled algae growth—supporting applications in food manufacturing, cosmetics, sustainable materials, pigments, fuels, and more. As industries look to decarbonize and shift toward cleaner production models, algae-based systems offer a scalable pathway to dramatically lower emissions and waste.\n\nThe new EGF funding builds on Maryland’s earlier $500,000 Build Our Future investment, which helped establish foundational biomanufacturing tools now powering the CONVERGE ecosystem.\n\nThe expansion will support: [...] The award, administered through TEDCO, is matched by $2 million from Actual VC, accelerating BrightWave’s commercialization efforts in partnership with Early Charm Ventures. Together, these investments strengthen the region’s position as an emerging hub for sustainable, next-generation biomanufacturing.\n\nThis milestone arrives at a moment of momentum for the state’s innovation economy—one that BioBuzz is proud to help champion as a partner in the Tech Hubs Initiative and also an Equitech Growth Fund recipient for our MOORE-Bio program. Other EGF-supported, bio-focused companies include Xcellon Biologics and Rise Therapeutics, underscoring Maryland’s deep and growing bench of capabilities in advanced bioproduction.\n\n## Leading a New Algae Biomanufacturing Ecosystem [...] Skip to content\n\nBioBuzz\n\nLog In Sign Up\n\n \n\nBioHealth"
+          },
+          {
+            "id": "S6",
+            "url": "https://www.crunchbase.com/organization/brightwave-bc0d",
+            "title": "Brightwave - Crunchbase Company Profile & Funding",
+            "published_date": "Wed, 05 Nov 2025 00:00:00 GMT",
+            "domain": "crunchbase.com",
+            "score": 0.71995544,
+            "content": "Brightwave closed its last funding round on obfuscated obfuscation from a Series A round."
+          },
+          {
+            "id": "S7",
+            "url": "https://www.facebook.com/umibbr/posts/the-us-national-science-foundation-nsf-has-awarded-173-million-to-establish-the-/2308138539903193",
+            "title": "NSF funds $17.3 million for autonomous biomanufacturing ...",
+            "published_date": null,
+            "domain": "facebook.com",
+            "score": 0.63125396,
+            "content": "BrightWave's $1 million award was the largest infrastructure investment, underscoring the growing importance of Harford County's biomanufacturing cluster."
+          }
+        ]
+      }
+    }
+  ],
+  "rewritten_answer": null,
+  "gateway": {
+    "llm_calls": {
+      "calls": 4,
+      "fallback_calls": 4,
+      "prompt_tokens": 11224,
+      "completion_tokens": 1834,
+      "served_by": [
+        "otari/alibaba/qwen3-30b-a3b-instruct-2507",
+        "otari/mistralai/mistral-small-3"
+      ]
+    },
+    "bifrost": {
+      "logged_requests": 6,
+      "logged_errors": 3,
+      "logged_cost_usd": 0.001033,
+      "vk_budget_used_usd": 0.01006191,
+      "vk_budget_limit_usd": 0.3,
+      "vk_requests_used": 24,
+      "vk_requests_limit": 300
+    }
+  },
+  "research": {
+    "tavily_searches": 5,
+    "tavily_cache_hits": 1,
+    "tavily_credits_estimate": 10
+  }
+}

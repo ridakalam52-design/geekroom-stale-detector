@@ -1,0 +1,462 @@
+{
+  "tool": "stale-answer-detector",
+  "checked_at": "2026-11-01T22:56:43+00:00",
+  "as_of": "2026-11-02",
+  "question": "Who is the CEO of X (Twitter), what is the latest stable Python version, and which Node.js release is the current Active LTS?",
+  "answer": "\n\nHere are the answers to your questions:\n\n1. **CEO of Twitter**: Parag Agrawal (since November 2021)\n2. **Latest stable Python version**: Python 3.9.9 (released on October 4, 2021)\n3. **Current Active LTS Node.js release**: Node.js 14.17.0 (released on April 26, 2022)",
+  "summary": {
+    "claims_found": 3,
+    "claims_checked": 3,
+    "not_checked": 0,
+    "supported": 0,
+    "changed": 3,
+    "unverifiable": 0
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Parag Agrawal is the CEO of Twitter.",
+      "quote": "Parag Agrawal (since November 2021)",
+      "quote_found_in_answer": true,
+      "category": "leadership_or_role",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "role",
+        "date"
+      ],
+      "sensitivity_score": 1.0,
+      "why_time_sensitive": "CEO roles can change frequently, and the claim specifies a start date that may no longer be accurate in 2026.",
+      "search_query": "Parag Agrawal CEO Twitter 2026",
+      "change_query": "Parag Agrawal steps down as CEO of Twitter",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "Parag Agrawal is no longer CEO of Twitter; he was removed by Elon Musk in 2022 and is now the founder of AI startup Parallel Web Systems.",
+        "evidence": [
+          {
+            "source": "S1",
+            "quote": "Parag Agrawal, whom Elon Musk removed as Twitter CEO, deepens partnership with Google for his $2 billion AI search startup Parallel Web Systems",
+            "stance": "contradicts",
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/parag-agrawal-whom-elon-musk-removed-as-twitter-ceo-deepens-partnership-with-google-for-his-2-billion-ai-search-startup-parallel-web-systems/articleshow/132465891.cms",
+            "title": "Parag Agrawal, whom Elon Musk removed as Twitter CEO, deepens partnership with Google for his $2 billion AI search startup Parallel Web Systems - The Times of India",
+            "published_date": "Sat, 18 Jul 2026 00:00:00 GMT",
+            "domain": "timesofindia.indiatimes.com",
+            "fact_date": "2026-07-18"
+          },
+          {
+            "source": "S4",
+            "quote": "Parag Agrawal was CEO of Twitter until late 2022, when Twitter-acquirer Elon Musk ousted him.",
+            "stance": "contradicts",
+            "url": "https://m.economictimes.com/news/new-updates/who-is-parag-agrawal-this-indian-american-ceo-fired-by-elon-musk-is-now-leading-a-rs-16000-crore-company/articleshow/130674009.cms",
+            "title": "Who is Parag Agrawal? This Indian-American CEO, fired by Elon Musk, is now leading a Rs 16,000 crore company - The Economic Times",
+            "published_date": "Fri, 01 May 2026 00:00:00 GMT",
+            "domain": "m.economictimes.com",
+            "fact_date": "2026-05-01"
+          },
+          {
+            "source": "S5",
+            "quote": "Agrawal founded the company in early 2024, less than two years after he was forced out of his job at Twitter by Elon Musk, who acquired the social media startup in 2022 before transforming it into X Corp.",
+            "stance": "contradicts",
+            "url": "https://siliconangle.com/2026/04/28/parag-agrawals-startup-raises-100m-build-parallel-web-ai-agents",
+            "title": "Parag Agrawal's startup raises $100M to build a parallel web for AI agents - SiliconANGLE",
+            "published_date": "Wed, 29 Apr 2026 02:29:50 GMT",
+            "domain": "siliconangle.com",
+            "fact_date": "2026-04-29"
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "Multiple sources confirm that Parag Agrawal was removed as CEO of Twitter by Elon Musk in 2022, and is now leading a new AI startup. The claim that he is currently CEO is therefore outdated.",
+        "checker_notes": [],
+        "model_confidence": 1.0,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 0.96,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-07-18",
+          "evidence_age_days": 107,
+          "corroborating_domains": 3
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/parag-agrawal-whom-elon-musk-removed-as-twitter-ceo-deepens-partnership-with-google-for-his-2-billion-ai-search-startup-parallel-web-systems/articleshow/132465891.cms",
+            "title": "Parag Agrawal, whom Elon Musk removed as Twitter CEO, deepens partnership with Google for his $2 billion AI search startup Parallel Web Systems - The Times of India",
+            "published_date": "Sat, 18 Jul 2026 00:00:00 GMT",
+            "domain": "timesofindia.indiatimes.com",
+            "score": 0.79580134,
+            "content": "Elon Musk\n\nGTA 6 Xbox\n\nAI Data Privacy\n\nBoris Cherny\n\nTP Link Lawsuit\n\n# Parag Agrawal, whom Elon Musk removed as Twitter CEO, deepens partnership with Google for his $2 billion AI search startup Parallel Web Systems\n\nTOI Tech Desk / TIMESOFINDIA.COM /  Jul 18, 2026, 14:03 IST\n\nComments\n\nShare\n\nAa\n\nText Size\n\n Small\n Medium\n Large\n\nPrint [...] Copyright © 2026 Bennett, Coleman & Co. Ltd. All rights reserved. For reprint rights: Times Syndication Service\n\nFollow Us On [...] ₹15,999\n\nRealme P4s Lite 4G\n\n₹14,999\n\nMoto G67 Power\n\n₹23,500\n\nItel A300C 4G\n\n₹10,999\n\nSamsung Galaxy A08 4G\n\n₹18,499\n\nAi+ Nova 2 Neo 5G\n\n₹17,999\n\nNothing Phone 4b\n\n₹31,999\n\nNothing Phone 4a\n\n₹36,999\n\nAi+ Pulse 2 FE 4G\n\n₹9,999\n\nVivo S2 FE 5G\n\n₹38,999\n\nOPPO K14 Lite 4G\n\n₹18,999\n\nMotorola A300\n\n₹1,370\n\nOPPO F35 5G\n\n₹38,999\n\nLava Bold N4 Pro 5G\n\n₹15,999\n\nMoto G77 Power 5G\n\n₹26,499\n\nAi+ Nova 2 Power 5G\n\n₹16,999\n\nOPPO K14 Plus 5G\n\n₹25,999\n\nOnePlus N6 Lite 4G\n\n₹16,999\n\nOPPO F35 Pro 5G\n\n₹45,999\n\nRealme 16 Pro Harry Potter Edition\n\n₹62,999\n\nLava Virat Curve 5G\n\n₹23,999\n\nRealme Narzo 90X\n\n₹19,499\n\niQOO Z11xa 5G\n\n₹28,999\n\nApple iPhone Duo\n\n₹2,99,900\n\nFollow Us On Social Media\n\n### Hot Picks\n\nNobel Prize Award 2026\n\nMilk price hike\n\nIraq Dinar\n\nNobel Prize in Physics\n\nRepo Rate\n\nUP Scholarship 2026"
+          },
+          {
+            "id": "S2",
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/parag-agrawal-whom-elon-musk-removed-as-twitter-ceo-says-he-found-microsofts-satya-nadella-inspiring-i-thought-of-wanting-to-/articleshow/132342993.cms",
+            "title": "Parag Agrawal, whom Elon Musk removed as Twitter CEO, says he found Microsoft’s Satya Nadella inspiring: ‘I thought of wanting to …’ - The Times of India",
+            "published_date": "Tue, 14 Jul 2026 00:00:00 GMT",
+            "domain": "timesofindia.indiatimes.com",
+            "score": 0.83678174,
+            "content": "Parag Agrawal, who was ousted as Twitter CEO after billionaire Elon Musk acquired the platform, has opened up about the leadership figure who inspired him when he took the top job. Now the founder of AI startup Parallel Web Systems, Agrawal revealed hinted that he hoped to transform Twitter's culture and product line, drawing direct inspiration from how Satya Nadella revitalised Microsoft.In an interview, Parag Agrawal revealed that when he stepped into the high-profile CEO role at Twitter, he looked at Nadella as a blueprint for driving massive institutional change. \"When I took the job at Twitter, I was really inspired by Satya, and I used to call him the founder – or a re-founder, or whatever you want to call that,\" Agrawal shared in the interview earlier this year.Parag Agrawal [...] shared in the interview earlier this year.Parag Agrawal explained that taking over the top job at Twitter forced him to figure out how the social media giant could evolve under his leadership and how it could differentiate itself in a crowded tech market.“When I was taking on this Twitter CEO job, it was this moment where I had to figure out what this company was going to become with me and how it was going to be different and the inspiration I got on someone like completely changing a company a business a culture a product came from Satya and I thought of wanting to be a founder in that mold of a founder in that moment,” he said.Parag Agrawal did not have standard founder status at Twitter; "
+          },
+          {
+            "id": "S3",
+            "url": "https://fortune.com/2026/05/19/parag-agrawal-parallel-startup-pay-publishers-when-ai-agents-use-their-work",
+            "title": "Parag Agrawal’s Parallel wants to pay publishers when AI agents use their work | Fortune",
+            "published_date": "Tue, 19 May 2026 00:00:00 GMT",
+            "domain": "fortune.com",
+            "score": 0.7653308,
+            "content": "# 3\n\nNvidia built a $5 trillion company while making employees pay for their own lunch—but they get far more lucrative perks like stock discounts\n\nBig TechAI agents\n\n# Parag Agrawal’s AI startup wants to pay publishers when AI agents use their work\n\nBy \n\nBeatrice Nolan\n\nBeatrice Nolan\n\nTech Reporter\n\nBy \n\nBeatrice Nolan\n\nBeatrice Nolan\n\nTech Reporter\n\nMay 19, 2026, 7:00 AM ET\n\nParag Agrawal speaking onstage.\n\nThe former Twitter CEO’s company, Parallel Web Systems, is launching Index, a platform that helps content owners see how AI agents use their work and get paid for it.Photo by Big Event Media/Getty Images for HumanX Conference\n\nAdd Fortune on Google for similar content."
+          },
+          {
+            "id": "S4",
+            "url": "https://m.economictimes.com/news/new-updates/who-is-parag-agrawal-this-indian-american-ceo-fired-by-elon-musk-is-now-leading-a-rs-16000-crore-company/articleshow/130674009.cms",
+            "title": "Who is Parag Agrawal? This Indian-American CEO, fired by Elon Musk, is now leading a Rs 16,000 crore company - The Economic Times",
+            "published_date": "Fri, 01 May 2026 00:00:00 GMT",
+            "domain": "m.economictimes.com",
+            "score": 0.78074646,
+            "content": "SECTIONS\n\nWho is Parag Agrawal? This Indian-American CEO, fired by Elon Musk, is now leading a Rs 16,000 crore company\n\nBy\n\nTrending Desk\n\n, ET Online\n\nRate Story\n\nGoogle Logo\n\nWhatsapp Follow ChannelFollow us\n\nShare\n\nFont Size\n\nAbcSmall\n\nAbcMedium\n\nAbcLarge\n\nSave\n\nPrint\n\nComment\n\nSynopsis\n\nParag Agarwal has raised $100 million for his new AI startup called Parallel Web Systems and the worth of the company is around Rs 19,020 crore. Parag Agrawal was CEO of Twitter until late 2022, when Twitter-acquirer Elon Musk ousted him. He served as Twitter’s chief technology officer before stepping in as CEO in 2021, following co-founder Jack Dorsey’s departure.\n\nParag Agarwal\n\nParag Agarwal Parallels Rs 16,000 cr [...] Parag Agarwal\n\nParag Agarwal Parallels Rs 16,000 cr\n\nParag Agarwal, who launched the AI agent-tool startup, has raised a $100 million Series B at a $2 billion valuation led by Sequoia, reported Tech Crunch. Parag Agarwal, the former CEO of Twitter, now known as X, was fired after Elon Musk purchased Twitter for $44 billion.   \n  \nParag Agarwal is back with his AI startup, Parallel Web Systems, which has raised $100 million and is now valued at $2 billion (around Rs 16,600 crore). The Series B funding round was led by Sequoia Capital, The Wall Street Journal reported.  \n  \nALSO READ: 'Feels like crossing Strait of Hormuz': Noida Sector 51–52 Metro route becomes daily nightmare for commuters. Watch viral video\n  \n\n## Who is Parag Agarwal? [...] ## Who is Parag Agarwal?\n\nPa"
+          },
+          {
+            "id": "S5",
+            "url": "https://siliconangle.com/2026/04/28/parag-agrawals-startup-raises-100m-build-parallel-web-ai-agents",
+            "title": "Parag Agrawal's startup raises $100M to build a parallel web for AI agents - SiliconANGLE",
+            "published_date": "Wed, 29 Apr 2026 02:29:50 GMT",
+            "domain": "siliconangle.com",
+            "score": 0.77893573,
+            "content": "UPDATED 22:29 EDT / APRIL 28 2026\n\n### Parag Agrawal’s startup raises $100M to build a parallel web for AI agents\n\nFormer Twitter Inc. Chief Executive Parag Agrawal has raised $100 million to fund his new startup Parallel Web Systems Inc., which is focused on enabling artificial intelligence agents to search the web more efficiently.\n\nSequoia Capital led today’s Series B round and was joined by existing investors Kleiner Perkins, Index Ventures and Khosla Ventures, bringing the startup’s valuation to $2 billion. [...] Parallel’s solution is a programmatic web infrastructure based on a suite of specialized application programming interfaces for searching the internet, performing tasks online, extracting information from websites and monitoring the web. The APIs use a proprietary web index that’s optimized for “machine retrieval.” Agrawal founded the company in early 2024, less than two years after he was forced out of his job at Twitter by Elon Musk, who acquired the social media startup in 2022 before transforming it into X Corp."
+          },
+          {
+            "id": "S6",
+            "url": "https://www.wsj.com/cio-journal/ex-twitter-ceos-ai-startup-raises-funds-at-2-billion-valuation-63c927fc",
+            "title": "Ex-Twitter CEO’s AI Startup Raises Funds at $2 Billion Valuation - WSJ",
+            "published_date": "Wed, 29 Apr 2026 00:00:00 GMT",
+            "domain": "wsj.com",
+            "score": 0.70799106,
+            "content": "Parallel Web Systems, a startup founded by Parag Agrawal, the former chief executive of Twitter, has raised $100 million in Series B funding—reflecting increased interest in deploying autonomous artificial-intelligence agents.\n\nThe round was led by Sequoia Capital, and boosts the Palo Alto, Calif., startup’s valuation to $2 billion. Existing investors including Kleiner Perkins, Index Ventures and Khosla Ventures also participated.\n\nCopyright ©2026 Dow Jones & Company, Inc. All Rights Reserved. 87990cbe856818d5eddac44c7b1cdeb8"
+          },
+          {
+            "id": "S7",
+            "url": "https://www.madrona.com/twitter-ex-ceo-web-built-for-humans-make-it-work-for-ai-agents-nikita-shamgunov-parag-agrawal",
+            "title": "Twitter's Ex-CEO: The Web Was Built for Humans — Let's Make it Work for AI Agents",
+            "published_date": "Wed, 18 Mar 2026 14:27:03 GMT",
+            "domain": "madrona.com",
+            "score": 0.7593865,
+            "content": "Skip to content\n\nMadrona News\n\nMarch 18, 2026\n\n# Twitter’s Ex-CEO: The Web Was Built for Humans — Let’s Make it Work for AI Agents\n\nWhat happens when AI agents — not humans — become your primary customer? That’s not a hypothetical. It’s already happening, and the founders who recognize it earliest are rebuilding their entire infrastructure stacks from scratch.\n\nIn this live episode of Founded & Funded from our IA Summit in Seattle, Madrona Venture Partner Jon Turow sits down with Parag Agrawal, former CEO of Twitter and founder of Parallel Web Systems, and Nikita Shamgunov, who led Neon through a rapid AI pivot before its acquisition by Databricks.\n\nWhat they cover: [...] A single human action creates this always-on system that is now doing work for you repeatedly every day for a year. And so we go and focus on those use cases. Now, we’ve been lucky that there are a bunch of fast-moving companies. Some of them were even on a slide earlier today that are our customers who are innovating on the end user experiences. I know Jon is smiling because I was telling him that their lift is already still, we should be on there.\n\nJon: You got to come back next year.\n\nParag: Next year.\n\nJon: Well, that sounds like a good segue to a couple of minutes for questions from the group. The folks who would like to hear from Nikita and Parag, now’s the time. [...] Parag: Yeah, I have perhaps a couple things that were core to building the team. One, gently when you’re building in a time of extreme "
+          },
+          {
+            "id": "S8",
+            "url": "https://stocktwits.com/news-articles/markets/equity/remember-parag-agrawal-ex-twitter-ceo-fired-by-elon-musk-quietly-raises-100-m-for-his-ai-startup/cLPBqG0REdH",
+            "title": "Remember Parag Agrawal? Ex-Twitter CEO Fired By Elon Musk Quietly Raises $100M For His AI Startup",
+            "published_date": "Thu, 13 Nov 2025 04:02:40 GMT",
+            "domain": "stocktwits.com",
+            "score": 0.79522943,
+            "content": "The Palo Alto-based company had earlier raised $30 million from Silicon Valley venture capital firms, including Khosla Ventures. Parallel launched its first products in August this year.\n\nAdvertisement|Remove ads.\n\nAgrawal is best known for his 11-year tenure at Twitter, during which he served as CTO and CEO. He became the CEO in November 2021 after Twitter founder Jack Dorsey stepped down. He was fired, along with several other senior managers, after Elon Musk acquired Twitter in October 2022.\n\n_For updates and corrections, email newsroom[at]stocktwits[dot]com._\n\nRead More:Sealed Air Stock Jumps Over 20% After-Hours On Buyout Report: Retail Unmoved\n\nAdvertisement|Remove ads.\n\nBe the first to comment!\n\nShare your thoughts...\n\nComments posted here will also appear on symbol pages."
+          }
+        ]
+      }
+    },
+    {
+      "id": "c2",
+      "text": "The latest stable Python version is Python 3.9.9.",
+      "quote": "Python 3.9.9 (released on October 4, 2021)",
+      "quote_found_in_answer": true,
+      "category": "api_or_version",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "recency",
+        "date"
+      ],
+      "sensitivity_score": 0.95,
+      "why_time_sensitive": "Python releases new stable versions regularly; 3.9.9 is outdated as of 2026.",
+      "search_query": "latest stable Python version 2026",
+      "change_query": "new Python version released 2026",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "The latest stable Python version is Python 3.15.1, released on October 21, 2026.",
+        "evidence": [
+          {
+            "source": "S1",
+            "quote": "As of October 24, 2026, Python 3.15.1 (released October 21) is the newest stable Python, and Go 1.27 (released August 19) is the newest stable Go.",
+            "stance": "contradicts",
+            "url": "https://tech-insider.org/python-vs-go-2026",
+            "title": "Python vs Go 2026: 3.15 vs 1.27, 57.9% vs 17.4%",
+            "published_date": "Sat, 24 Oct 2026 14:48:57 GMT",
+            "domain": "tech-insider.org",
+            "fact_date": "2026-10-24"
+          },
+          {
+            "source": "S7",
+            "quote": "Latest Python 3 Release - Python 3.15.1",
+            "stance": "contradicts",
+            "url": "https://www.python.org/downloads/windows",
+            "title": "Python Releases for Windows",
+            "published_date": null,
+            "domain": "python.org",
+            "fact_date": null
+          },
+          {
+            "source": "S6",
+            "quote": "Python 3.15.0 landed on October 9, 2026, closing out a release cycle that the Python core development team describes as containing “many new features and optimisations compared to Python 3.14",
+            "stance": "contradicts",
+            "url": "https://tech-insider.org/ie/python-3-15-release-3-10-end-of-life-2026",
+            "title": "Python 3.15 Release: 3.10 End of Life Explained [2026]",
+            "published_date": null,
+            "domain": "tech-insider.org",
+            "fact_date": "2026-10-09"
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "Multiple sources, including the official Python download page (S7) and recent tech articles (S1, S6), confirm that Python 3.15.1 is the latest stable version as of October 2026, which is after the claim's stated version (3.9.9). The claim is outdated.",
+        "checker_notes": [],
+        "model_confidence": 0.95,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 0.91,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-10-24",
+          "evidence_age_days": 9,
+          "corroborating_domains": 2
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://tech-insider.org/python-vs-go-2026",
+            "title": "Python vs Go 2026: 3.15 vs 1.27, 57.9% vs 17.4%",
+            "published_date": "Sat, 24 Oct 2026 14:48:57 GMT",
+            "domain": "tech-insider.org",
+            "score": 0.8724455,
+            "content": "## Frequently Asked Questions About Python vs Go\n\nIs Go faster than Python?\n\nFor CPU-bound work, yes, because Go compiles to native code and Python runs on an interpreter. For services that mostly wait on databases and networks, the gap shrinks a lot. We found no verified head-to-head benchmark from this fall, so run the harness in the performance section on your own workload.\n\nWhat are the newest versions of Python and Go?\n\nAs of October 24, 2026, Python 3.15.1 (released October 21) is the newest stable Python, and Go 1.27 (released August 19) is the newest stable Go. Python 3.16.0a1 is an alpha only, and Go 1.28 has not shipped.\n\nIs Python 3.10 still safe to use? [...] Sofia Lindström\n\nOctober 24, 2026\n\n22 min read\n\nPython 3.15.1 shipped on October 21, 2026, and Go 1.27 arrived two months earlier on August 19. Both languages are free and open source, and both power a huge share of the backends people touch every day. The choice still decides your hiring pool, your cloud bill, and how your on-call rotation feels at 3 a.m. This python vs go comparison leans on release notes and official project blogs from this fall, so every version and date below is current as of October 24, 2026. [...] For a new backend started today with a small team and no special constraints, we lean toward Python for the first version and Go for the services that prove hot under real traffic. That ordering minimizes regret, since you spend engineering time where evidence shows it pays. If you already kn"
+          },
+          {
+            "id": "S2",
+            "url": "https://www.esri.com/arcgis-blog/products/api-python/announcements/whats-new-in-arcgis-api-for-python-2-4-3",
+            "title": "What’s new in ArcGIS API for Python 2.4.3",
+            "published_date": "Mon, 20 Apr 2026 19:55:04 GMT",
+            "domain": "esri.com",
+            "score": 0.8488849,
+            "content": "By Yuri Potawsky and Manushi Majumdar and Halle Martinucci\n\nThe ArcGIS API for Python released version 2.4.3 on March 31, 2026. This version expands what you can automate across ArcGIS, with key upgrades for ArcGIS Dashboards, the addition of the arcgis.ai module, new capabilities for raster analytics, and additions to the mapping module. The release also improves how you build and move connected content by adding support to convert an item graph to a knowledge graph as well as introducing the ability to create surveys in Python.  This update also adds new SDK guidance for interacting with the improved StoryMaps module of the API. You can read the full release notes here, which includes a detailed list of bug fixes.\n\n### The arcgis.apps.dashboards module"
+          },
+          {
+            "id": "S3",
+            "url": "https://www.autodesk.com/products/fusion-360/blog/january-2026-product-update-whats-new",
+            "title": "January 2026 Product Update – What’s New - Fusion Blog",
+            "published_date": "Thu, 22 Jan 2026 00:52:23 GMT",
+            "domain": "autodesk.com",
+            "score": 0.85097736,
+            "content": "#### Python Update\n\nThis Fusion release updates the Python version from 3.12 to 3.14. Besides the API, Fusion uses Python for a few other things, and this Python update includes security fixes. Most people won’t notice any change. Those affected are the developers and users of any Python apps delivered as .pyc files. Previous versions of these add-ins will be broken because .pyc files are tied to the minor version of Python that was used to create them. Add-ins compiled with the current version (3.12) will not be compatible with the new release (3.14) and will fail to load. This change does not affect any add-ins where the .py source code is available."
+          },
+          {
+            "id": "S4",
+            "url": "https://www.linkedin.com/pulse/latest-stable-release-python-3147-released-august-5-2026-hari-m-k9i3f",
+            "title": "The latest stable release of Python is Python 3.14.7 ...",
+            "published_date": null,
+            "domain": "linkedin.com",
+            "score": 0.91795975,
+            "content": "The latest stable release of Python is Python 3.14.7, released on August 5, 2026."
+          },
+          {
+            "id": "S5",
+            "url": "https://krishnamohanproductions.com/blog/tech-blog/which-python-version-should-i-use-2026",
+            "title": "Which Python Version Should I Use in 2026? | Krishnamohan Productions",
+            "published_date": null,
+            "domain": "krishnamohanproductions.com",
+            "score": 0.90452427,
+            "content": "← Back to blog\n\n# Which Python Version Should I Use in 2026?\n\nFebruary 1, 2026 tech\n\nPythonPython Versions2026Upgrade Guide\n\n## 📌 Quick Summary\n\nIn 2026, the best Python version for most users is the latest stable Python release that includes official installers, which is Python 3.14.x. It offers the newest features, long-term support, strong library compatibility, and easy installation on Windows and macOS. Older versions like Python 3.11 and 3.10 are still usable in specific cases, but source-only security releases (such as Python 3.11.14) are not recommended for everyday use unless required for compliance or enterprise environments.\n\n## 🐍 Why Python Version Choice Matters in 2026\n\nPython continues to evolve quickly. Each year brings: [...] ## 🏁 Final Verdict\n\nIn 2026, the safest and smartest choice for most users is Python 3.14.x. It offers the best balance of features, stability, security, and ease of installation across all platforms. Older versions still have their place, but for new users and new projects, sticking with the latest stable Python version is the best long-term decision.\n\nChoosing the right Python version today prevents headaches tomorrow.\n\n## 💖 Support the Creator\n\nDonate via Krishnamohan Productions\n\nkrishnamohanproductions [...] Once a version reaches security-only, Windows and macOS installers are discontinued. This is why some Python versions are harder to install even though they are still technically supported.\n\n## 🏆 Recommended Python Version in 20"
+          },
+          {
+            "id": "S6",
+            "url": "https://tech-insider.org/ie/python-3-15-release-3-10-end-of-life-2026",
+            "title": "Python 3.15 Release: 3.10 End of Life Explained [2026]",
+            "published_date": null,
+            "domain": "tech-insider.org",
+            "score": 0.843393,
+            "content": "Conor Brennan\n\nOctober 12, 2026\n\n11 min read\n\nPython 3.15.0 landed on October 9, 2026, closing out a release cycle that the Python core development team describes as containing “many new features and optimisations compared to Python 3.14, in 5,643 commits from 1,012 contributors,” according to the official announcement on the Python Discourse forum. The timing matters beyond the version bump: the same week marked the end of the road for Python 3.10, a release that has quietly powered a huge share of production backends, data pipelines and CI jobs since 2021. [...] ## Frequently Asked Questions\n\nWhen did Python 3.15.0 officially release?  \nPython 3.15.0 final shipped on October 9, 2026, following its third release candidate on October 2, 2026.\n\nIs Python 3.10 still safe to use?  \nIt will keep running, but Python 3.10.22, released October 1, 2026, was the final release in that series. No further security patches will come from the official Python project.\n\nWhat other Python versions got updates in October 2026?  \nAlongside Python 3.15.0 and the final 3.10.22, the core team released 3.11.17, 3.12.15, 3.13.16 and 3.14.8 as maintenance updates on October 1, 2026. [...] ## Python 3.15.0 Arrives After a Seven-Day Final Sprint\n\nPython 3.15.0 final was announced by release manager Hugo van Kemenade, following the third release candidate, which had shipped just seven days earlier on October 2, 2026. That short gap between the last candidate and the final build is typical of Python’s la"
+          },
+          {
+            "id": "S7",
+            "url": "https://www.python.org/downloads/windows",
+            "title": "Python Releases for Windows",
+            "published_date": null,
+            "domain": "python.org",
+            "score": 0.834852,
+            "content": "Events\n       Python Events\n       User Group Events\n       Python Events Archive\n       User Group Events Archive\n       Submit an Event\n\n   Python>>>\n   Downloads>>>\n   Windows\n\n# Python Releases for Windows\n\n   Latest Python install manager - Python install manager 26.4\n   Latest Python 3 Release - Python 3.15.1\n\n## Stable Releases\n\n   Python 3.13.17 - Oct. 21, 2026\nNote that Python 3.13.17 _cannot_ be used on Windows 7 or earlier.\n\n       Download Windows installer (64-bit)\n       Download Windows installer (32-bit)\n       Download Windows installer (ARM64)\n       Download Windows embeddable package (64-bit)\n       Download Windows embeddable package (32-bit)\n       Download Windows embeddable package (ARM64)\n       Download Windows release manifest [...] Python 3.14.4 - April 7, 2026\nDownload using the Python install manager.\n\n       Download Windows installer (64-bit)\n       Download Windows installer (32-bit)\n       Download Windows installer (ARM64)\n       Download Windows embeddable package (64-bit)\n       Download Windows embeddable package (32-bit)\n       Download Windows embeddable package (ARM64)\n       Download Windows release manifest\n\n   Python install manager 26.1 - March 31, 2026\n       Download Installer (MSIX)\n       Download MSI package\n\n   Python install manager 26.0 - Feb. 23, 2026\n       Download Installer (MSIX)\n       Download MSI package\n\n   Python 3.13.12 - Feb. 3, 2026\nNote that Python 3.13.12 _cannot_ be used on Windows 7 or earlier. [...] Python"
+          },
+          {
+            "id": "S8",
+            "url": "https://www.python.org/doc/versions",
+            "title": "Python documentation by version | Python.org",
+            "published_date": null,
+            "domain": "python.org",
+            "score": 0.8131201,
+            "content": "### Python 3.14\n\n Python 3.14.10, released on 25 October 2026\n Python 3.14.9, released on 21 October 2026\n Python 3.14.8, released on 30 September 2026\n Python 3.14.7, released on 5 August 2026\n Python 3.14.6, released on 10 June 2026\n Python 3.14.5, released on 10 May 2026\n Python 3.14.4, released on 7 April 2026\n Python 3.14.3, released on 3 February 2026\n Python 3.14.2, released on 5 December 2025\n Python 3.14.1, released on 2 December 2025\n Python 3.14.0, released on 7 October 2025\n\n### Python 3.13 [...] Python 3.13.18, released on 25 October 2026\n Python 3.13.17, released on 21 October 2026\n Python 3.13.16, released on 30 September 2026\n Python 3.13.15, released on 5 August 2026\n Python 3.13.14, released on 10 June 2026\n Python 3.13.13, released on 7 April 2026\n Python 3.13.12, released on 3 February 2026\n Python 3.13.11, released on 5 December 2025\n Python 3.13.10, released on 2 December 2025\n Python 3.13.9, released on 14 October 2025\n Python 3.13.8, released on 7 October 2025\n Python 3.13.7, released on 14 August 2025\n Python 3.13.6, released on 6 August 2025\n Python 3.13.5, released on 11 June 2025\n Python 3.13.4, released on 3 June 2025\n Python 3.13.3, released on 8 April 2025\n Python 3.13.2, released on 4 February 2025\n Python 3.13.1, released on 3 December 2024 [...] ### Python 3.12\n\n Python 3.12.16, released on 25 October 2026\n Python 3.12.15, released on 30 September 2026\n Python 3.12.14, released on 12 August 2026\n Python 3.12.13, released on 3 March 2026\n Pyth"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Node.js 14.17.0 is the current Active LTS release.",
+      "quote": "Node.js 14.17.0 (released on April 26, 2022)",
+      "quote_found_in_answer": true,
+      "category": "api_or_version",
+      "model_time_sensitivity": "high",
+      "heuristic_signals": [
+        "version",
+        "recency",
+        "date"
+      ],
+      "sensitivity_score": 1.0,
+      "why_time_sensitive": "Node.js Active LTS versions are updated every few years; Node.js 14 reached end-of-life in 2023.",
+      "search_query": "current Active LTS Node.js version 2026",
+      "change_query": "Node.js Active LTS version changed 2026",
+      "status": "checked",
+      "result": {
+        "verdict": "changed",
+        "current_fact": "Node.js 24.x is the current Active LTS release as of August 2026, with Node.js 26 scheduled to become Active LTS on October 28, 2026.",
+        "evidence": [
+          {
+            "source": "S2",
+            "quote": "JavaScript’s runtime landscape has fractured – productively – into three serious competitors. Node.js remains the default, and its current Active LTS line is Node.js 24.x, at version 24.19.0 as of August 3, 2026, running on the V8 13.6 engine.",
+            "stance": "contradicts",
+            "url": "https://tech-insider.org/python-vs-javascript-2026",
+            "title": "Python vs JavaScript 2026: 57.9% vs 66% Usage Gap",
+            "published_date": "Fri, 21 Aug 2026 14:40:57 GMT",
+            "domain": "tech-insider.org",
+            "fact_date": "2026-08-03"
+          },
+          {
+            "source": "S3",
+            "quote": "Node.js 24.x is the current Active LTS line — the version the project recommends for new production applications — and it carries a HIGH-severity finding.",
+            "stance": "contradicts",
+            "url": "https://www.techtimes.com/articles/321432/20260723/nodejs-security-release-high-severity-vulnerabilities-hit-all-three-lines.htm",
+            "title": "Node.js Security Release: HIGH Severity Vulnerabilities Hit All Three Lines",
+            "published_date": "Thu, 23 Jul 2026 19:38:58 GMT",
+            "domain": "techtimes.com",
+            "fact_date": "2026-07-23"
+          },
+          {
+            "source": "S7",
+            "quote": "Node.js 24 is the Active LTS line (EOL April 30, 2028) and Node.js 22 is in Maintenance LTS (EOL April 30, 2027). Node.js 26, released in May 2026, is the Current line and is scheduled to enter LTS in October 2026.",
+            "stance": "contradicts",
+            "url": "https://www.herodevs.com/blog-posts/node-js-end-of-life-dates-you-should-be-aware-of",
+            "title": "Node.js Version Support: EOL Dates and Latest Releases (July 2026)",
+            "published_date": null,
+            "domain": "herodevs.com",
+            "fact_date": "2026-10-01"
+          }
+        ],
+        "rejected_quotes": [],
+        "inference": "Multiple sources from 2026 consistently state that Node.js 24.x is the current Active LTS release, contradicting the claim that Node.js 14.17.0 is the current Active LTS. Node.js 14 is not mentioned in any source and is far older than the currently supported lines, which extend only to versions 22, 24, and 26. The claim is outdated and has been superseded by newer releases.",
+        "checker_notes": [],
+        "model_confidence": 0.99,
+        "indicator": {
+          "label": "Changed - answer is stale",
+          "confidence": 1.0,
+          "confidence_level": "high",
+          "newest_evidence_date": "2026-10-01",
+          "evidence_age_days": 32,
+          "corroborating_domains": 3
+        },
+        "sources": [
+          {
+            "id": "S1",
+            "url": "https://blog.qualys.com/product-tech/2026/10/23/node-js-patches-brotli-remote-code-execution-flaw-find-vulnerable-runtimes-before-attackers-do",
+            "title": "Node.js Patches Brotli Remote Code Execution Flaw: Find Vulnerable Runtimes Before Attackers Do | Qualys",
+            "published_date": "Fri, 23 Oct 2026 12:58:02 GMT",
+            "domain": "blog.qualys.com",
+            "score": 0.8573986,
+            "content": "## Fixed Versions and Upgrade Guidance\n\nEach supported line has a fixed release, and any subsequent release in the same line also includes the fixes.\n\nNode.js version 26 will become LTS on October 28, 2026. Teams using version 26.x should upgrade to version 26.12.1 before this transition.\n\n|  |  |  |\n --- \n| Node.js branch | Security Update | Priority |\n| 22.x LTS | 22.23.4 | High |\n| 24.x LTS | 24.22.1 | High |\n| 26.x | 26.12.1 | High |\n| 25.x, 23.x, 21.x | No Fix | Upgrade to a supported branch |\n| 20.x and older | End of Life | Upgrade to a supported branch |"
+          },
+          {
+            "id": "S2",
+            "url": "https://tech-insider.org/python-vs-javascript-2026",
+            "title": "Python vs JavaScript 2026: 57.9% vs 66% Usage Gap",
+            "published_date": "Fri, 21 Aug 2026 14:40:57 GMT",
+            "domain": "tech-insider.org",
+            "score": 0.91137725,
+            "content": "JavaScript’s runtime landscape has fractured – productively – into three serious competitors. Node.js remains the default, and its current Active LTS line is Node.js 24.x, at version 24.19.0 as of August 3, 2026, running on the V8 13.6 engine. Node.js 26.x is the “Current” release track, at 26.7.0 as of August 5, 2026, and is scheduled to graduate to LTS status in late October 2026. Each major V8 upgrade tends to bring double-digit percentage gains in execution speed, cold-start time, and HTTP throughput through better inline caching, smarter garbage collection, and faster snapshot deserialization – the kind of incremental performance work that rarely makes headlines but compounds year over year. [...] | Attribute | Python | JavaScript |\n --- \n| First released | 1991 | 1995 |\n| Latest stable version (Aug 2026) | 3.14.7 (released Aug 5, 2026) | ECMAScript 2026 / ECMA-262 17th edition (adopted June 2026) |\n| Reference runtime version | CPython 3.14 (3.15 in RC with JIT) | Node.js 24.19.0 LTS / 26.7.0 Current |\n| Typing | Dynamic, optional static hints (mypy, Pyright) | Dynamic; static typing via TypeScript superset |\n| Execution model | Bytecode interpreter; free-threaded build available (3.14t) | JIT-compiled via V8 (or JavaScriptCore/other engines) |\n| Concurrency model | asyncio event loop; true multithreading via 3.14 free-threading | Single-threaded event loop; worker\\_threads for parallelism |"
+          },
+          {
+            "id": "S3",
+            "url": "https://www.techtimes.com/articles/321432/20260723/nodejs-security-release-high-severity-vulnerabilities-hit-all-three-lines.htm",
+            "title": "Node.js Security Release: HIGH Severity Vulnerabilities Hit All Three Lines",
+            "published_date": "Thu, 23 Jul 2026 19:38:58 GMT",
+            "domain": "techtimes.com",
+            "score": 0.9018604,
+            "content": "For teams planning upgrade roadmaps, this means Node.js 26 is the last version under the decade-old odd/even model. Node.js 26 itself will become Active LTS in October 2026, with a support window running through April 30, 2029. After the July 27 patches, it remains the recommended upgrade target for teams not yet on a current LTS line.\n\nRelease Line\nStatus\nSeverity (July 27)\nEOL Date\n\nNode.js 26.x\n\nCurrent (Active LTS October 2026)\n\nHIGH\n\nApril 30, 2029\n\nNode.js 24.x\n\nActive LTS\n\nHIGH\n\nApril 30, 2028\n\nNode.js 22.x\n\nMaintenance LTS\n\nHIGH\n\nApril 30, 2027\n\nNode.js 20.x\n\nEnd of Life\n\nNo patch\n\nEOL April 30, 2026\n\nPatches are expected to be published on or shortly after Monday, July 27, 2026. [...] Node.js 24.x is the current Active LTS line — the version the project recommends for new production applications — and it carries a HIGH-severity finding. Node.js 22.x is in Maintenance LTS status, still receiving critical security patches until April 30, 2027, and it also carries a HIGH-severity finding. Node.js 26.x, which entered Current release status in May 2026 and is expected to become Active LTS in October 2026, is likewise rated HIGH. [...] Read more: npm v12 Ships This Month, Blocking Install Scripts That Enabled Year of Supply Chain Attacks\n\n## Frequently Asked Questions\n\n### What Node.js versions are affected by the July 27 security release?\n\nAll three actively maintained release lines — Node.js 22.x (Maintenance LTS), 24.x (Active LTS), and 26.x (Current) — will receive pat"
+          },
+          {
+            "id": "S4",
+            "url": "https://tech-insider.org/bun-vs-nodejs-2026",
+            "title": "Bun vs Node.js: 3x Faster, But Is It Ready? [2026]",
+            "published_date": "Sat, 04 Apr 2026 09:36:20 GMT",
+            "domain": "tech-insider.org",
+            "score": 0.8464638,
+            "content": "Meanwhile, Node.js 26, released in April 2026 and slated to enter LTS that October according to eSparkInfo, and the Node.js 24 branch – nicknamed “Krypton” and described by dayfing.dev as the Active LTS line still being benchmarked against Bun 1.3.14 as of July 2026 – have not stood still. The Node.js team shipped a stable permission model, experimental network inspection, and significant V8 engine upgrades that close some of the performance gap. The fundamental question in 2026 is no longer “Is Bun ready?” but rather “Which runtime is right for my specific workload?” Fireship summarized it well in his 2026 runtime comparison video: “Bun is no longer the experimental toy. It is the fastest JavaScript runtime on the planet, and the only question is whether you can afford the migration [...] For stability, Node.js’s LTS cycle (30 months of active support per LTS release) provides predictable upgrade paths for enterprises – and the data shows it: Node.js 18 and 20 alone still accounted for more than 136 million combined downloads in August 2026, according to a LinkedIn post tracking npm registry data, even with Node.js 24 already the Active LTS line and Node.js 26 queued to enter LTS that October. Bun follows semantic versioning but does not have a formal LTS program. In practice, Bun’s rapid release cycle (minor versions every 2-4 weeks) means you get fixes faster, but you also need to update more frequently. Organizations with strict change management processes may find Node.j"
+          },
+          {
+            "id": "S5",
+            "url": "https://pocketlantern.dev/briefs/node-22-maintenance-vs-node-24-active-lts-2026",
+            "title": "Node.js 22 Maintenance vs Node.js 24 Active LTS in 2026 — PocketLantern",
+            "published_date": null,
+            "domain": "pocketlantern.dev",
+            "score": 0.9240941,
+            "content": "### Upgrade to Node.js 24 Active LTS now\n\nAs of 2026-03-27, Node.js 24 \"Krypton\" is in Active LTS, with Active LTS having started on 2025-10-28, Maintenance scheduled for 2026-10-20, and end-of-life scheduled for 2028-04-30. The latest listed 24.x release is v24.14.1, last updated on 2026-03-24, with npm v11.11.0 and V8 v13.6. Active LTS is the production-preferred phase for new features, bug fixes, and audited updates. The official Node.js migration guide for v22 to v24 is already available and focuses the upgrade on platform support cuts and behavior/security-level changes.\n\n#### When to choose [...] ### Stay on Node.js 22 Maintenance LTS briefly\n\nAs of 2026-03-27, Node.js 22 \"Jod\" is in Maintenance LTS, with maintenance having started on 2025-10-21 and end-of-life scheduled for 2027-04-30. The latest listed 22.x release is v22.22.2, last updated on 2026-03-24, with npm v10.9.7 and V8 v12.4. Maintenance LTS means critical bug fixes and security updates, not the broader feature flow available in Active LTS. This is a support-window hold strategy, not a pricing decision; check platform vendor pricing separately.\n\n#### When to choose [...] #### Cautions\n\nAs of 2026-03-27, this upgrade can break older crypto setups because OpenSSL 3.5 security level 2 prohibits RSA, DSA, and DH keys shorter than 2048 bits, ECC keys shorter than 224 bits, and RC4 cipher suites. Node 24 no longer ships prebuilt binaries for 32-bit Windows as of 23.0.0 or Linux armv7 as of 24.0.0, macOS prebuilt b"
+          },
+          {
+            "id": "S6",
+            "url": "https://www.osseva.io/blog/nodejs-lts-schedule",
+            "title": "Node.js LTS Schedule: Current vs Active vs Maintenance",
+            "published_date": null,
+            "domain": "osseva.io",
+            "score": 0.9152729,
+            "content": "## The short answer\n\nRun an LTS line in production. Today that means Node.js 24, in Active LTS until 20 October 2026 and supported until 30 April 2028, or Node.js 22, already in Maintenance and supported until 30 April 2027. Node.js 26 becomes LTS on 28 October 2026 and is supported until 30 April 2029. Node.js 20 reached end of life on 30 April 2026. From Node.js 27, the project ships one major release a year instead of two, every major becomes LTS, and a new Alpha channel replaces the odd-numbered releases for early testing.\n\nWant the end dates in one table? Node.js end-of-life dates lists 18, 20, 22, 24 and 26, checked against endoflife.date on 20 October 2026.\n\n## The three phases: Current, Active LTS and Maintenance [...] ## Which Node.js version should you run?\n\n New services: Node.js 24 today, or 26 once it becomes LTS on 28 October 2026 if your dependencies support it. 26 gives a year more runway, to 30 April 2029.\n Services on Node.js 22: you are in Maintenance, with security fixes until 30 April 2027. Plan the move to 24 or 26 now rather than in the spring.\n Services on Node.js 20 or older: you have no upstream security fixes. Upgrade, or cover the runtime while you do. Our Node.js 18 and 20 to 22 and 24 upgrade guide walks through the breaking changes.\n Library authors: from October 2026, add the Node.js 27 Alpha to CI. The project specifically asks for it, so bugs surface before they reach users on LTS."
+          },
+          {
+            "id": "S7",
+            "url": "https://www.herodevs.com/blog-posts/node-js-end-of-life-dates-you-should-be-aware-of",
+            "title": "Node.js Version Support: EOL Dates and Latest Releases (July 2026)",
+            "published_date": null,
+            "domain": "herodevs.com",
+            "score": 0.914176,
+            "content": "#### What is the latest Node.js LTS version?\n\nNode.js 24 is the Active LTS line (EOL April 30, 2028) and Node.js 22 is in Maintenance LTS (EOL April 30, 2027). Node.js 26, released in May 2026, is the Current line and is scheduled to enter LTS in October 2026.\n\n#### Why should I avoid odd-numbered Node.js versions in production?\n\nOdd-numbered releases (19, 21, 23, 25) never enter LTS. They stay Current for six months and then go straight to EOL, so they receive no long-term security support. Use even-numbered LTS lines for production.\n\n#### Does HeroDevs support end-of-life Node.js versions? [...] ### Node.js 22: The Current LTS Anchor\n\nNode.js 22 is in Maintenance LTS and reaches EOL on April 30, 2027. Teams on EOL versions that want the longest runway with the least disruption should evaluate 22 (Maintenance LTS) or 24 (Active LTS, EOL April 30, 2028) as upgrade targets. Note that Node.js 22 still actively receives CVE fixes, for example CVE-2026-21717 (DoS, fixed in 22.22.2), which is a reminder that even supported lines need continuous patching.\n\n‍\n\n## What Happens After End of Life\n\nWhen a Node.js version reaches EOL, three things happen, all of them bad for production systems: [...] The only fully supported lines today are Node.js 26 (Current), 24 (Active LTS), and 22 (Maintenance LTS). Everything else is end-of-life.\n\n‍\n\n## Versions Reaching EOL Next: What to Watch\n\n### Node.js 20 End of Life\n\nNode.js 20 reached end-of-life on April 30, 2026. It was one of the most wid"
+          },
+          {
+            "id": "S8",
+            "url": "https://www.syntior.com/updates/nodejs-26-lts-new-release-schedule",
+            "title": "Node.js 26 becomes LTS this month, and Node.js changes how it releases | Syntior",
+            "published_date": null,
+            "domain": "syntior.com",
+            "score": 0.91118777,
+            "content": "## What is happening\n\nNode.js 26 moves to LTS. Node.js 26 was first released on May 5, 2026, as the \"Current\" line. According to the official release schedule, it enters Active LTS on October 28, 2026, and is supported until April 30, 2029. The latest Current release at the time of writing, 26.10.0 (September 22), added small but handy utilities such as `util.throttle()` and `util.debounce()`, plus a synchronous `fs.openAsBlobSync()` and other improvements.\n\nOther release lines shift too. On the same schedule: [...] Other release lines shift too. On the same schedule:\n\n Node.js 24 moves from Active LTS to Maintenance on October 20, 2026, and reaches end of life on April 30, 2028.\n Node.js 22 is already in Maintenance and reaches end of life on April 30, 2027.\n Node.js 20 reached end of life on April 30, 2026. It no longer receives security fixes.\n\nThe new yearly model. In an announcement published earlier in 2026, the Node.js project explained that starting with version 27 it will ship one major release per year instead of two. The new cycle works like this: [...] Skip to content\n\nSyntior\n\nContact us\n\nEngineering\n\n# Node.js 26 becomes LTS this month, and Node.js changes how it releases\n\nNode.js 26 is due to become LTS on October 28, and Node.js now moves to one major release a year. Here is how to plan your upgrades.\n\nSyntior Team4 min read\n\nOctober is an important month for anyone running JavaScript on the server. Node.js 26 is scheduled to become the new Long-Term Support ("
+          }
+        ]
+      }
+    }
+  ],
+  "rewritten_answer": null,
+  "gateway": {
+    "llm_calls": {
+      "calls": 4,
+      "fallback_calls": 0,
+      "prompt_tokens": 12722,
+      "completion_tokens": 1248,
+      "served_by": [
+        "otari/alibaba/qwen3-235b-a22b-instruct-2507",
+        "otari/alibaba/qwen3-30b-a3b-instruct-2507"
+      ]
+    },
+    "bifrost": {
+      "logged_requests": 3,
+      "logged_errors": 0,
+      "logged_cost_usd": 0.001148,
+      "vk_budget_used_usd": 0.0011799900000000001,
+      "vk_budget_limit_usd": 0.3,
+      "vk_requests_used": 4,
+      "vk_requests_limit": 300
+    }
+  },
+  "research": {
+    "tavily_searches": 5,
+    "tavily_cache_hits": 1,
+    "tavily_credits_estimate": 10
+  }
+}

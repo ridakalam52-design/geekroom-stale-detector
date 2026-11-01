@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "staledetect"
+version = "0.1.0"
+description = "Stale-answer detector: finds time-sensitive claims in LLM answers and re-checks them live (Bifrost + Tavily)."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Rida Kalam"}]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+staledetect = "staledetect.cli:main"
+
+[tool.setuptools]
+packages = ["staledetect"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
