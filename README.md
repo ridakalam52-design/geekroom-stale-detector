@@ -21,6 +21,8 @@ Bifrost: 4 calls, 0 via fallback; Tavily: 5 searches
 
 (Real output from 2 November 2026. The full report is in [`examples/run-ask-llama31-8b/`](examples/run-ask-llama31-8b/report.md).)
 
+**Demo video:** [`media/demo.mp4`](media/demo.mp4) (3 min 40 s, 1080p, captions burned in; [`media/demo.srt`](media/demo.srt)). The narration is an AI text-to-speech voice (Microsoft Edge neural TTS, en-IN). Terminal scenes replay the saved outputs of the runs in `examples/`, the test scene is a real `pytest` run, and the report scenes are screenshots of `examples/*/report.html`.
+
 ## What the challenge asks for, and where it is met
 
 | Requirement (brief, challenge 05) | How this project meets it |
@@ -119,6 +121,7 @@ Extra rules applied in code, not left to the model: a verdict with no verifiable
 
 - **In the product:** LLMs (open-weight Qwen3, Mistral and Llama models, served through Bifrost) extract claims, judge each claim against retrieved sources, and optionally rewrite the answer. They never supply evidence: every quote is matched against the retrieved page text by deterministic code, and the reports separate evidence from the model's inference.
 - **In building it:** I built this with help from an AI assistant (Hark), which drafted code, tests and documentation under my direction. I chose the challenge, reviewed the design and outputs, and ran the sample checks. All sample outputs in `examples/` come from real runs, not hand-edited.
+- **Demo video:** produced with AI help as well: the narration is AI text-to-speech (Microsoft Edge neural TTS), not a recorded human voice.
 
 ## Limitations
 

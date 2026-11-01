@@ -1,0 +1,175 @@
+1
+00:00:00,595 --> 00:00:07,193
+AI models repeat prices, versions, laws and job titles long after they change.
+
+2
+00:00:07,193 --> 00:00:12,159
+This is the Stale-Answer Detector, for challenge five of the Geek Room Global AI
+
+3
+00:00:12,159 --> 00:00:18,818
+Hackathon. It re-checks an AI answer against the live web, using Bifrost and Tavily.
+
+4
+00:00:21,162 --> 00:00:24,169
+First, let's get a stale answer.
+
+5
+00:00:24,169 --> 00:00:28,987
+The ask command sends a question through the Bifrost gateway to a deliberately older
+
+6
+00:00:28,987 --> 00:00:38,305
+model, Llama 3.1 8B. It says Parag Agrawal runs Twitter, the latest Python is 3.9.9,
+
+7
+00:00:38,305 --> 00:00:43,067
+and Node 14 is the Active LTS. All three sound confident.
+
+8
+00:00:45,362 --> 00:00:51,153
+Here is how the check works. Through Bifrost, a fast model splits the answer into
+
+9
+00:00:51,153 --> 00:00:55,142
+claims and rates how time-sensitive each one is.
+
+10
+00:00:55,142 --> 00:00:57,346
+Tavily runs two searches per claim:
+
+11
+00:00:57,346 --> 00:01:02,471
+one for the current state, and one that looks for news that it changed.
+
+12
+00:01:02,471 --> 00:01:07,778
+A stronger model judges each claim, and plain code verifies every quote and computes
+
+13
+00:01:07,778 --> 00:01:08,539
+the confidence.
+
+14
+00:01:10,829 --> 00:01:17,029
+Here is the result. Three claims, three re-checked, and all three have changed.
+
+15
+00:01:17,029 --> 00:01:22,017
+Parag Agrawal was removed as CEO in 2022.
+
+16
+00:01:22,017 --> 00:01:29,540
+The newest stable Python is 3.15.1, released in October 2026.
+
+17
+00:01:29,540 --> 00:01:33,438
+And Node 24 is the Active LTS line.
+
+18
+00:01:33,438 --> 00:01:38,540
+The run took four Bifrost calls and five Tavily searches, for about a tenth of a
+
+19
+00:01:38,540 --> 00:01:38,892
+cent.
+
+20
+00:01:41,195 --> 00:01:45,770
+Each run writes a Markdown, HTML and JSON report.
+
+21
+00:01:45,770 --> 00:01:48,986
+This one checks a longer sample answer.
+
+22
+00:01:48,986 --> 00:01:53,680
+Each card shows the verdict, a confidence bar, the newest evidence date,
+
+23
+00:01:53,680 --> 00:01:58,816
+and how many sites agree. Then the quotes, with links, and in yellow,
+
+24
+00:01:58,816 --> 00:02:02,543
+the model's inference, kept apart from the evidence.
+
+25
+00:02:02,543 --> 00:02:06,168
+Code checks every quote against the page text.
+
+26
+00:02:06,168 --> 00:02:08,305
+An invented quote is thrown out.
+
+27
+00:02:10,595 --> 00:02:13,250
+Not everything can be confirmed.
+
+28
+00:02:13,250 --> 00:02:17,784
+The sample answer says a Pune robotics startup, Brightwave Labs,
+
+29
+00:02:17,784 --> 00:02:20,148
+raised a forty million dollar Series B.
+
+30
+00:02:20,148 --> 00:02:25,420
+Tavily only finds unrelated companies with similar names, so the claim is marked
+
+31
+00:02:25,420 --> 00:02:29,398
+unverified, with low confidence, instead of guessed.
+
+32
+00:02:29,398 --> 00:02:33,943
+At the bottom, the rewrite step produces a corrected answer, with numbered
+
+33
+00:02:33,943 --> 00:02:34,693
+citations.
+
+34
+00:02:36,995 --> 00:02:43,048
+Now, reliability. With simulate outage, the primary model points at a provider that
+
+35
+00:02:43,048 --> 00:02:48,934
+is down. Bifrost answers from the fallback models, the summary warns which models
+
+36
+00:02:48,934 --> 00:02:51,730
+served the requests, and the check still completes.
+
+37
+00:02:57,195 --> 00:03:02,355
+The app only holds a Bifrost virtual key, with a thirty cent monthly budget,
+
+38
+00:03:02,355 --> 00:03:05,623
+a daily rate limit, and a model allow-list.
+
+39
+00:03:05,623 --> 00:03:13,441
+No key gets a 401. A model outside the list gets a 403, before any provider is
+
+40
+00:03:13,441 --> 00:03:13,827
+called.
+
+41
+00:03:16,129 --> 00:03:20,470
+Twenty-six tests run offline, with Bifrost and Tavily mocked,
+
+42
+00:03:20,470 --> 00:03:24,481
+covering claim selection, quote verification, and the confidence score.
+
+43
+00:03:29,929 --> 00:03:35,145
+The code, setup instructions, sample runs and known limitations are all in the
+
+44
+00:03:35,145 --> 00:03:38,026
+GitHub repository. Thanks for watching.
