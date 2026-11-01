@@ -138,6 +138,7 @@ bifrost/config.json gateway config: provider, virtual key, budget, rate limit, a
 scripts/            run_bifrost.sh
 tests/              26 offline tests (fake gateway server, fake Tavily, pipeline, evidence rules)
 examples/           sample answer and real run outputs
+docs/               slide deck (PDF) and demo script
 ```
 
 ## License
