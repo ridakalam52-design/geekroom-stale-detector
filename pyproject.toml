@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "staledetect"
-version = "0.1.0"
+version = "0.2.0"
 description = "Stale-answer detector: finds time-sensitive claims in LLM answers and re-checks them live (Bifrost + Tavily)."
 readme = "README.md"
 license = {text = "MIT"}
@@ -17,6 +17,7 @@ dev = ["pytest>=7"]
 
 [project.scripts]
 staledetect = "staledetect.cli:main"
+staledetect-mcp = "staledetect.mcp_server:main"
 
 [tool.setuptools]
 packages = ["staledetect"]

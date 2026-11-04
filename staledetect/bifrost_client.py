@@ -121,6 +121,37 @@ class BifrostClient:
             ], purpose=purpose + ":repair", max_tokens=max_tokens, model=model, fallbacks=fallbacks)
             return parse_json_object(repair)
 
+    # ---- MCP gateway (Freshness Guard) ---------------------------------------------------
+    def mcp_rpc(self, method: str, params: dict[str, Any] | None = None, timeout: float = 240.0) -> dict[str, Any]:
+        """One JSON-RPC request to Bifrost's MCP gateway endpoint (POST /mcp) under this app's virtual key.
+        Bifrost only lists and runs the tools that the virtual key's mcp_configs allow."""
+        if not self.settings.bifrost_vk:
+            raise GatewayError("BIFROST_VK is not set (the Bifrost virtual key for this app).", kind="config")
+        payload: dict[str, Any] = {"jsonrpc": "2.0", "id": int(time.time() * 1000) % 10**9, "method": method}
+        if params is not None:
+            payload["params"] = params
+        try:
+            body, _h, _t = request_json("POST", f"{self.settings.bifrost_url.rstrip('/')}/mcp", payload,
+                                        headers={"x-bf-vk": self.settings.bifrost_vk}, timeout=timeout)
+        except HTTPError as exc:
+            err = exc.json()
+            msg = ((err.get("error") or {}).get("message")) or exc.body[:300]
+            raise GatewayError(f"Bifrost MCP gateway refused the request ({exc.status}): {msg}",
+                               kind=str(err.get("type") or "mcp_error"), status=exc.status) from None
+        except OSError as exc:
+            raise GatewayError(f"Could not reach Bifrost at {self.settings.bifrost_url}: {exc}", kind="unreachable") from None
+        if body.get("error"):
+            raise GatewayError(f"MCP error from Bifrost: {body['error'].get('message')}", kind="mcp_error")
+        return body.get("result") or {}
+
+    def mcp_tools(self) -> list[str]:
+        return [t.get("name", "") for t in self.mcp_rpc("tools/list").get("tools") or []]
+
+    def call_mcp_tool(self, name: str, arguments: dict[str, Any], timeout: float = 240.0) -> dict[str, Any]:
+        """Run an MCP tool through Bifrost (tools/call). Returns the MCP tool result
+        ({content, structuredContent, isError})."""
+        return self.mcp_rpc("tools/call", {"name": name, "arguments": arguments}, timeout=timeout)
+
     # ---- observability -------------------------------------------------------------------
     def gateway_summary(self, since_iso: str | None = None) -> dict[str, Any] | None:
         """Read spend/latency from Bifrost's own logs and the virtual key's budget counters.

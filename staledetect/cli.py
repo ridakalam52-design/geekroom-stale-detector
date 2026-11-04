@@ -1,4 +1,4 @@
-"""Command line: `staledetect check`, `staledetect ask`, `staledetect doctor`."""
+"""Command line: `staledetect check`, `ask`, `guard` and `doctor`."""
 
 from __future__ import annotations
 
@@ -6,7 +6,7 @@ import argparse
 import json
 import os
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 
 from . import prompts
 from .bifrost_client import BifrostClient, GatewayError
@@ -89,6 +89,111 @@ def cmd_ask(args: argparse.Namespace) -> int:
     args.question = args.question
     return cmd_check(args, answer=answer)
 
+GUARD_TOOL_PREFIX = "freshness_guard-"
+
+
+def cmd_guard(args: argparse.Namespace) -> int:
+    """Freshness Guard through a stock Bifrost: the app never imports the detector. It discovers the tools on
+    Bifrost's MCP gateway with its virtual key, runs the free triage tool, and runs the live check only if the
+    triage says it is worth it."""
+    settings = Settings()
+    llm = BifrostClient(settings)
+    started = datetime.now(timezone.utc)
+    try:
+        if args.answer_file:
+            with open(args.answer_file, encoding="utf-8") as fh:
+                answer = fh.read()
+            source = args.answer_file
+        else:
+            answer = llm.chat([{"role": "system", "content": prompts.ASK_SYSTEM},
+                               {"role": "user", "content": args.question}], purpose="answer",
+                              model=args.answer_model, fallbacks=[], max_tokens=700, temperature=0.2)
+            source = f"{args.answer_model} via Bifrost"
+        print(f"--- answer ({source}) ---\n{answer.strip()}\n---", file=sys.stderr)
+        tools = llm.mcp_tools()
+        print(f"Tools this virtual key sees on Bifrost's MCP gateway: {', '.join(tools) or '(none)'}")
+        triage_name, check_name = GUARD_TOOL_PREFIX + "triage_freshness", GUARD_TOOL_PREFIX + "check_freshness"
+        if triage_name not in tools:
+            print("Freshness Guard is not registered on this gateway (see bifrost/config.json, mcp.client_configs).",
+                  file=sys.stderr)
+            return 2
+        tri = llm.call_mcp_tool(triage_name, {"answer": answer}, timeout=30)
+        tri_data = tri.get("structuredContent") or {}
+        print(f"triage_freshness: {tri_data.get('advice', _tool_text(tri))}")
+        check = None
+        if tri.get("isError"):
+            print(f"triage failed: {_tool_text(tri)}", file=sys.stderr)
+            return 2
+        if tri_data.get("recommend_live_check") or args.force:
+            arguments: dict = {"answer": answer, "max_claims": args.max_claims}
+            if args.question:
+                arguments["question"] = args.question
+            if args.as_of:
+                arguments["as_of"] = args.as_of
+            check = llm.call_mcp_tool(check_name, arguments)
+            print(_tool_text(check))
+    except GatewayError as exc:
+        print(f"Stopped: {exc}", file=sys.stderr)
+        return 2
+    os.makedirs(args.out, exist_ok=True)
+    record = {"tool": "freshness-guard", "ran_at": started.isoformat(timespec="seconds"), "question": args.question,
+              "answer_source": source, "answer": answer, "gateway_tools": tools,
+              "triage": tri.get("structuredContent"),
+              "check": (check or {}).get("structuredContent"), "check_text": _tool_text(check) if check else None,
+              "check_is_error": bool(check and check.get("isError")),
+              "bifrost": llm.gateway_summary(started.strftime("%Y-%m-%dT%H:%M:%SZ"))}
+    with open(os.path.join(args.out, "guard.json"), "w", encoding="utf-8") as fh:
+        json.dump(record, fh, indent=2, ensure_ascii=False)
+    with open(os.path.join(args.out, "guard.md"), "w", encoding="utf-8") as fh:
+        fh.write(guard_markdown(record))
+    print(f"Written to {args.out}/guard.json and guard.md")
+    return 1 if check and check.get("isError") else 0
+
+
+def guard_markdown(record: dict) -> str:
+    lines = ["# Freshness Guard run (through Bifrost's MCP gateway)", "",
+             f"- Ran at: {record['ran_at']}", f"- Question: {record.get('question') or '(none)'}",
+             f"- Answer from: {record['answer_source']}",
+             f"- Tools the virtual key saw on Bifrost: {', '.join(record['gateway_tools'])}", "",
+             "## Answer checked", "", "```", (record.get("answer") or "").strip(), "```", ""]
+    tri = record.get("triage") or {}
+    lines += ["## 1. triage_freshness (free, offline)", "", tri.get("advice", ""), ""]
+    flagged = [r for r in tri.get("results", []) if r.get("flagged")]
+    if flagged:
+        lines += ["| score | signals | sentence |", "|---|---|---|"]
+        lines += [f"| {r['score']:.2f} | {', '.join(r['signals'])} | {r['sentence'].replace('|', '/')} |" for r in flagged]
+        lines.append("")
+    chk = record.get("check")
+    if chk:
+        s = chk["summary"]
+        lines += ["## 2. check_freshness (live: Tavily evidence, model calls through Bifrost)", "",
+                  f"{s['claims_found']} claims, {s['claims_checked']} re-checked: {s['supported']} supported, "
+                  f"{s['changed']} changed, {s['unverifiable']} unverifiable (as of {chk['as_of']}).", "",
+                  "| verdict | confidence | claim | current fact | sources |", "|---|---|---|---|---|"]
+        for c in chk["claims"]:
+            if c["verdict"] == "not_checked":
+                continue
+            src = " ".join(f"[{i}]({u})" for i, u in enumerate(c.get("sources") or [], start=1))
+            lines.append(f"| {c['verdict'].upper()} | {c['confidence']:.2f} | {c['claim'].replace('|', '/')} | "
+                         f"{(c.get('current_fact') or '').replace('|', '/')} | {src} |")
+        u = chk.get("usage") or {}
+        lines += ["", f"Detector usage: {u.get('bifrost_calls')} model calls through Bifrost "
+                      f"({u.get('bifrost_fallback_calls')} via fallback), {u.get('tavily_searches')} Tavily searches."]
+    elif record.get("check_text"):
+        lines += ["## 2. check_freshness", "", record["check_text"]]
+    b = record.get("bifrost")
+    if b:
+        lines += ["", "## Bifrost's own numbers for this run", "",
+                  f"- Requests logged: {b.get('logged_requests')}, errors: {b.get('logged_errors')}, "
+                  f"cost: ${b.get('logged_cost_usd', 0):.6f}",
+                  f"- Virtual key budget used: ${b.get('vk_budget_used_usd')} of ${b.get('vk_budget_limit_usd')}; "
+                  f"requests {b.get('vk_requests_used')} of {b.get('vk_requests_limit')}"]
+    return "\n".join(lines) + "\n"
+
+
+def _tool_text(result: dict | None) -> str:
+    return "\n".join(c.get("text", "") for c in (result or {}).get("content") or [] if c.get("type") == "text").strip()
+
 
 def cmd_doctor(_args: argparse.Namespace) -> int:
     settings = Settings()
@@ -142,6 +247,16 @@ def build_parser() -> argparse.ArgumentParser:
     common(a)
     a.set_defaults(func=cmd_ask)
 
+    g = sub.add_parser("guard", help="Freshness Guard: check an answer through Bifrost's MCP gateway tools")
+    g.add_argument("question", nargs="?", help="question to ask the answer model (or use --answer-file)")
+    g.add_argument("--answer-file", help="check this answer instead of generating one")
+    g.add_argument("--answer-model", default="otari/meta/llama-3.1-8b-instruct")
+    g.add_argument("--max-claims", type=int, default=3, help="max claims for the live check (default 3)")
+    g.add_argument("--force", action="store_true", help="run the live check even if triage says it is not needed")
+    g.add_argument("--as-of", help="treat this date (YYYY-MM-DD) as today")
+    g.add_argument("--out", default="runs/guard")
+    g.set_defaults(func=cmd_guard)
+
     d = sub.add_parser("doctor", help="check Bifrost and Tavily connectivity")
     d.set_defaults(func=cmd_doctor)
     return p
@@ -149,6 +264,8 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
+    if args.cmd == "guard" and not (args.question or args.answer_file):
+        build_parser().error("guard needs a question or --answer-file")
     return args.func(args)
 
 

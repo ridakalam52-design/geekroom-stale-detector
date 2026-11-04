@@ -6,7 +6,8 @@
     "allowed_origins": [
       "*"
     ],
-    "enforce_auth_on_inference": true
+    "enforce_auth_on_inference": true,
+    "mcp_disable_auto_tool_inject": true
   },
   "logs_store": {
     "enabled": true,
@@ -68,6 +69,31 @@
       }
     }
   },
+  "mcp": {
+    "client_configs": [
+      {
+        "name": "freshness_guard",
+        "connection_type": "stdio",
+        "is_ping_available": true,
+        "stdio_config": {
+          "command": "staledetect-mcp",
+          "args": [],
+          "envs": [
+            "PATH",
+            "HOME",
+            "BIFROST_URL",
+            "BIFROST_VK",
+            "TAVILY_API_KEY"
+          ]
+        },
+        "auth_type": "none",
+        "tools_to_execute": [
+          "*"
+        ],
+        "tool_execution_timeout": 180
+      }
+    ]
+  },
   "governance": {
     "virtual_keys": [
       {
@@ -99,6 +125,14 @@
               "alibaba/qwen3-235b-a22b-instruct-2507"
             ],
             "key_ids": [
+              "*"
+            ]
+          }
+        ],
+        "mcp_configs": [
+          {
+            "mcp_client_name": "freshness_guard",
+            "tools_to_execute": [
               "*"
             ]
           }

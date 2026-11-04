@@ -9,3 +9,5 @@ runs/
 bifrost/*.db
 bifrost/*.db-*
 bifrost/logs/
+logs.db
+logs.db-*
